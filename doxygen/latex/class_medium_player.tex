@@ -1,0 +1,342 @@
+\hypertarget{class_medium_player}{}\section{Medium\+Player Class Reference}
+\label{class_medium_player}\index{Medium\+Player@{Medium\+Player}}
+Inheritance diagram for Medium\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medium_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medium_player_ade2cbbd7600c6958afdd214414d62174}{Medium\+Player}} (string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\begin{DoxyCompactList}\small\item\em Constructor for medium bot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_medium_player_a59749832be9905531c9b5eb0b67edf83}{$\sim$\+Medium\+Player}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_medium_player_ac4d4748e2c27a2a51033bbce9f12de26}{place\+Ships}} (\mbox{\hyperlink{class_board}{Board}} \&b)
+\begin{DoxyCompactList}\small\item\em Destructor for medium player. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_medium_player_a2e99d57f30f3f7f929840b8cda16527d}{recommend}} ()
+\item 
+virtual void \mbox{\hyperlink{class_medium_player_aeadd8498cba5c447afbb5a0eb7408285}{record\+Result}} (\mbox{\hyperlink{class_point}{Point}} p, bool valid\+Shot, bool hit, bool destroyed, int ship\+ID)
+\begin{DoxyCompactList}\small\item\em Method for recording attack result. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_medium_player_a6183d4a8fe3d68419afcfa9e33cd5928}{record\+Opponent}} (\mbox{\hyperlink{class_point}{Point}} p)
+\item 
+bool \mbox{\hyperlink{class_medium_player_a502c34f56cfe60def6d01de7c4f300e2}{medium\+Helper}} (\mbox{\hyperlink{class_board}{Board}} \&b, int ship\+ID, int r, int c, \mbox{\hyperlink{_globals_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} ld)
+\begin{DoxyCompactList}\small\item\em Method for helping medium bot\textquotesingle{}s operations. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_medium_player_a90a8cd5feeaa759043af77afe266907c}{get\+State}} () const
+\item 
+virtual void \mbox{\hyperlink{class_medium_player_ae0f69d678d6567e09baed0350468be61}{change\+State}} (bool state)
+\begin{DoxyCompactList}\small\item\em Getter for last state. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_medium_player_abd585986250a5b713d6a554ea70e3ba6}{get\+LastP}} () const
+\begin{DoxyCompactList}\small\item\em Method for changing state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_medium_player_afc952f7dac91d979743154c021d8dee8}{change\+LastP}} (\mbox{\hyperlink{class_point}{Point}} p)
+\begin{DoxyCompactList}\small\item\em Method for changing last point. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_medium_player_a0c237af510ff84898759ed2e9a9271ce}{already\+Shot}} (\mbox{\hyperlink{class_point}{Point}} p)
+\begin{DoxyCompactList}\small\item\em Method for checking if player has already shot. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_medium_player_a4cd5cbf0327e002112c80a52b279358f}{add\+Point}} (\mbox{\hyperlink{class_point}{Point}} p)
+\begin{DoxyCompactList}\small\item\em Method for adding point into shots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_medium_player}{Medium\+Player}}\+: class implementation for player class that\textquotesingle{}s controlled by medium bot 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_medium_player_ade2cbbd7600c6958afdd214414d62174}\label{class_medium_player_ade2cbbd7600c6958afdd214414d62174}} 
+\index{Medium\+Player@{Medium\+Player}!Medium\+Player@{Medium\+Player}}
+\index{Medium\+Player@{Medium\+Player}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{Medium\+Player()}{MediumPlayer()}}
+{\footnotesize\ttfamily Medium\+Player\+::\+Medium\+Player (\begin{DoxyParamCaption}\item[{string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for medium bot. 
+
+\mbox{\Hypertarget{class_medium_player_a59749832be9905531c9b5eb0b67edf83}\label{class_medium_player_a59749832be9905531c9b5eb0b67edf83}} 
+\index{Medium\+Player@{Medium\+Player}!````~Medium\+Player@{$\sim$\+Medium\+Player}}
+\index{````~Medium\+Player@{$\sim$\+Medium\+Player}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{$\sim$\+Medium\+Player()}{~MediumPlayer()}}
+{\footnotesize\ttfamily Medium\+Player\+::$\sim$\+Medium\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_medium_player_a4cd5cbf0327e002112c80a52b279358f}\label{class_medium_player_a4cd5cbf0327e002112c80a52b279358f}} 
+\index{Medium\+Player@{Medium\+Player}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{add\+Point()}{addPoint()}}
+{\footnotesize\ttfamily void Medium\+Player\+::add\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method for adding point into shots. 
+
+Method for adding point into shots 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_point}{Point}} for target cell \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_medium_player_a0c237af510ff84898759ed2e9a9271ce}\label{class_medium_player_a0c237af510ff84898759ed2e9a9271ce}} 
+\index{Medium\+Player@{Medium\+Player}!already\+Shot@{already\+Shot}}
+\index{already\+Shot@{already\+Shot}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{already\+Shot()}{alreadyShot()}}
+{\footnotesize\ttfamily bool Medium\+Player\+::already\+Shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method for checking if player has already shot. 
+
+Method for checking if medium bot has already shot 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_point}{Point}} containing target cell \\
+\hline
+\end{DoxyParams}
+Checks if given point\textquotesingle{}s rows and columns are greater than game\textquotesingle{}s or less than 0
+
+Loops through number of shots
+
+Checks if point\textquotesingle{}s rows and columns correspond to shot\textquotesingle{}s rows and columns \mbox{\Hypertarget{class_medium_player_afc952f7dac91d979743154c021d8dee8}\label{class_medium_player_afc952f7dac91d979743154c021d8dee8}} 
+\index{Medium\+Player@{Medium\+Player}!change\+LastP@{change\+LastP}}
+\index{change\+LastP@{change\+LastP}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{change\+Last\+P()}{changeLastP()}}
+{\footnotesize\ttfamily virtual void Medium\+Player\+::change\+LastP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Method for changing last point. 
+
+Getter for last point \mbox{\Hypertarget{class_medium_player_ae0f69d678d6567e09baed0350468be61}\label{class_medium_player_ae0f69d678d6567e09baed0350468be61}} 
+\index{Medium\+Player@{Medium\+Player}!change\+State@{change\+State}}
+\index{change\+State@{change\+State}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{change\+State()}{changeState()}}
+{\footnotesize\ttfamily virtual void Medium\+Player\+::change\+State (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Getter for last state. 
+
+\mbox{\Hypertarget{class_medium_player_abd585986250a5b713d6a554ea70e3ba6}\label{class_medium_player_abd585986250a5b713d6a554ea70e3ba6}} 
+\index{Medium\+Player@{Medium\+Player}!get\+LastP@{get\+LastP}}
+\index{get\+LastP@{get\+LastP}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{get\+Last\+P()}{getLastP()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_point}{Point}} Medium\+Player\+::get\+LastP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Method for changing state. 
+
+\mbox{\Hypertarget{class_medium_player_a90a8cd5feeaa759043af77afe266907c}\label{class_medium_player_a90a8cd5feeaa759043af77afe266907c}} 
+\index{Medium\+Player@{Medium\+Player}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily virtual bool Medium\+Player\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_medium_player_a502c34f56cfe60def6d01de7c4f300e2}\label{class_medium_player_a502c34f56cfe60def6d01de7c4f300e2}} 
+\index{Medium\+Player@{Medium\+Player}!medium\+Helper@{medium\+Helper}}
+\index{medium\+Helper@{medium\+Helper}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{medium\+Helper()}{mediumHelper()}}
+{\footnotesize\ttfamily bool Medium\+Player\+::medium\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{b,  }\item[{int}]{ship\+ID,  }\item[{int}]{r,  }\item[{int}]{c,  }\item[{\mbox{\hyperlink{_globals_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{ld }\end{DoxyParamCaption})}
+
+
+
+Method for helping medium bot\textquotesingle{}s operations. 
+
+Method for medium bot\textquotesingle{}s operations 
+\begin{DoxyParams}{Parameters}
+{\em b} & reference to game board object \\
+\hline
+{\em ship\+ID} & integer containing ship\textquotesingle{}s ID \\
+\hline
+{\em r} & integer containing row \\
+\hline
+{\em c} & integer containing column \\
+\hline
+{\em ld} & Direction object containing last direction \\
+\hline
+\end{DoxyParams}
+Checks if we are at the last ship
+
+Loops through point\textquotesingle{}s rows
+
+Loops through point\textquotesingle{}s columns
+
+Try to place ship horizontally
+
+Try to place ship vertically
+
+Checks if ship id is less than game\textquotesingle{}s number of ships -\/ 1
+
+Loops through game\textquotesingle{}s rows
+
+Loops through game\textquotesingle{}s columns
+
+Try to place ship horizontally
+
+Try to place ship vertically
+
+Checks if method has been success
+
+Checks if method has been success
+
+$<$ Checks if method hasn\textquotesingle{}t been success and backtracks the move
+
+$<$ Otherwise this is a first ship and we have failed \mbox{\Hypertarget{class_medium_player_ac4d4748e2c27a2a51033bbce9f12de26}\label{class_medium_player_ac4d4748e2c27a2a51033bbce9f12de26}} 
+\index{Medium\+Player@{Medium\+Player}!place\+Ships@{place\+Ships}}
+\index{place\+Ships@{place\+Ships}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{place\+Ships()}{placeShips()}}
+{\footnotesize\ttfamily bool Medium\+Player\+::place\+Ships (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for medium player. 
+
+Method for placing ships
+
+Method for placing ships 
+\begin{DoxyParams}{Parameters}
+{\em b} & reference to game board object \\
+\hline
+\end{DoxyParams}
+$<$ Integer for count ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Loops while count is less than 50
+
+$<$ Blocks the game board ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Checks if medium helper is success with 0 values
+
+$<$ Unblocks the game board
+
+$<$ Increases count
+
+$<$ Unblocks the game board
+
+$<$ Unblocks the game board 
+
+Implements \mbox{\hyperlink{class_player_ab89c1180c7314d3e19bcf4b2bed2e02a}{Player}}.
+
+\mbox{\Hypertarget{class_medium_player_a2e99d57f30f3f7f929840b8cda16527d}\label{class_medium_player_a2e99d57f30f3f7f929840b8cda16527d}} 
+\index{Medium\+Player@{Medium\+Player}!recommend@{recommend}}
+\index{recommend@{recommend}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{recommend()}{recommend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Medium\+Player\+::recommend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Method for recommending attack
+
+Method for recommending attack for medium bot $<$ Random integer with limit 4 + 1
+
+$<$ \mbox{\hyperlink{class_point}{Point}} for answer cell
+
+$<$ Random integer with limit 2
+
+$<$ Random integer with limit 2
+
+$<$ integer for count
+
+Checks if state isn\textquotesingle{}t 1
+
+Loops from 1 to 5
+
+Checks if cells around the last point haven\textquotesingle{}t been shot
+
+Checks if while loop finished
+
+Checks if state is 1
+
+Get random point
+
+Checks if random point has already been shot
+
+$<$ Recommends attack
+
+$<$ Returns random point
+
+Checks if first random integer is 0
+
+Checks if second random integer is 1
+
+$<$ Second random integer is 0
+
+$<$ First random integer is 1 ~\newline
+~\newline
+~\newline
+ Checks if second random integer is 0
+
+$<$ First random integer is 1
+
+Checks if answer cell has already been shot or target is OoB 
+
+Implements \mbox{\hyperlink{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}{Player}}.
+
+\mbox{\Hypertarget{class_medium_player_a6183d4a8fe3d68419afcfa9e33cd5928}\label{class_medium_player_a6183d4a8fe3d68419afcfa9e33cd5928}} 
+\index{Medium\+Player@{Medium\+Player}!record\+Opponent@{record\+Opponent}}
+\index{record\+Opponent@{record\+Opponent}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{record\+Opponent()}{recordOpponent()}}
+{\footnotesize\ttfamily void Medium\+Player\+::record\+Opponent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Method for recording opponent\textquotesingle{}s result
+
+Method for recording opponent\textquotesingle{}s attacks 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_point}{Point}} containing target cell \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_player_a768e14edee61e208e6fd295cdd72a49c}{Player}}.
+
+\mbox{\Hypertarget{class_medium_player_aeadd8498cba5c447afbb5a0eb7408285}\label{class_medium_player_aeadd8498cba5c447afbb5a0eb7408285}} 
+\index{Medium\+Player@{Medium\+Player}!record\+Result@{record\+Result}}
+\index{record\+Result@{record\+Result}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{record\+Result()}{recordResult()}}
+{\footnotesize\ttfamily void Medium\+Player\+::record\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p,  }\item[{bool}]{valid\+Shot,  }\item[{bool}]{hit,  }\item[{bool}]{destroyed,  }\item[{int}]{ship\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method for recording attack result. 
+
+Method for recording attack result 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_point}{Point}} object of cell \\
+\hline
+{\em valid\+Shot} & boolean for checking if shot was valid \\
+\hline
+{\em hit} & boolean for checking if ship was hit \\
+\hline
+{\em destroyed} & boolean for checking if ship was destroyed \\
+\hline
+{\em ship\+ID} & integer containing ship id \\
+\hline
+\end{DoxyParams}
+Checks if shot wasn\textquotesingle{}t valid
+
+Checks if target cell hasn\textquotesingle{}t already been shot
+
+$<$ Adds point into shots
+
+$<$ Increases number of shots
+
+Checks if ship was hit and state is 1
+
+$<$ Last point updated
+
+$<$ Shot hit so turn to state 2
+
+Checks if ship was destroyed
+
+$<$ \mbox{\hyperlink{class_ship}{Ship}} was destroyed so turn to state 1 
+
+Implements \mbox{\hyperlink{class_player_a368527cfefaac58dc942b32658f977ed}{Player}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

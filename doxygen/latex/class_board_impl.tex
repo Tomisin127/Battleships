@@ -1,0 +1,189 @@
+\hypertarget{class_board_impl}{}\section{Board\+Impl Class Reference}
+\label{class_board_impl}\index{Board\+Impl@{Board\+Impl}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_impl_a2c3f1cce7def17781c0025d1e68d0af5}{Board\+Impl}} (const \mbox{\hyperlink{class_game}{Game}} \&g)
+\item 
+void \mbox{\hyperlink{class_board_impl_a47c7733ed5ec7a09fe9710f443fe0952}{clear}} ()
+\item 
+void \mbox{\hyperlink{class_board_impl_abd7743ed758876c2855b2bb7474cf2eb}{block}} ()
+\item 
+void \mbox{\hyperlink{class_board_impl_a36defeb0096154a4606442da9122c810}{unblock}} ()
+\item 
+void \mbox{\hyperlink{class_board_impl_a4b600b257cfe79f10ac8792ab69eb388}{display}} (bool show\+Shots) const
+\item 
+bool \mbox{\hyperlink{class_board_impl_af0fd0226fc1f401374a0cbbfbab98769}{place\+Ship}} (\mbox{\hyperlink{class_point}{Point}} tl, int ship\+ID, \mbox{\hyperlink{_globals_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d)
+\item 
+bool \mbox{\hyperlink{class_board_impl_a8573ccd5fb2a837f324cc0f190cece5d}{remove\+Ship}} (\mbox{\hyperlink{class_point}{Point}} tl, int ship\+ID, \mbox{\hyperlink{_globals_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d)
+\item 
+bool \mbox{\hyperlink{class_board_impl_afd58266f5c81679fef78c0d1abb9d0d5}{attack}} (\mbox{\hyperlink{class_point}{Point}} p, bool \&hit, bool \&destroyed, int \&ship\+ID)
+\item 
+bool \mbox{\hyperlink{class_board_impl_a00ae397df7ab1a47868078a2e0ec54b8}{all\+Destroyed}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_board_impl}{Board\+Impl}}\+: class for board implementation 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_impl_a2c3f1cce7def17781c0025d1e68d0af5}\label{class_board_impl_a2c3f1cce7def17781c0025d1e68d0af5}} 
+\index{Board\+Impl@{Board\+Impl}!Board\+Impl@{Board\+Impl}}
+\index{Board\+Impl@{Board\+Impl}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{Board\+Impl()}{BoardImpl()}}
+{\footnotesize\ttfamily Board\+Impl\+::\+Board\+Impl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_board_impl}{Board\+Impl}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em g} & reference to game object Loops through rows and columns and fills them with \textquotesingle{}.\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_impl_a00ae397df7ab1a47868078a2e0ec54b8}\label{class_board_impl_a00ae397df7ab1a47868078a2e0ec54b8}} 
+\index{Board\+Impl@{Board\+Impl}!all\+Destroyed@{all\+Destroyed}}
+\index{all\+Destroyed@{all\+Destroyed}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{all\+Destroyed()}{allDestroyed()}}
+{\footnotesize\ttfamily bool Board\+Impl\+::all\+Destroyed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Method for checking if all ships have been destroyed Loops through rows and columns
+
+Checks if board contains other symbols than \textquotesingle{}X\textquotesingle{}, \textquotesingle{}.\textquotesingle{} or \textquotesingle{}o\textquotesingle{} If yes, then there are still ships left\mbox{\Hypertarget{class_board_impl_afd58266f5c81679fef78c0d1abb9d0d5}\label{class_board_impl_afd58266f5c81679fef78c0d1abb9d0d5}} 
+\index{Board\+Impl@{Board\+Impl}!attack@{attack}}
+\index{attack@{attack}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily bool Board\+Impl\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p,  }\item[{bool \&}]{hit,  }\item[{bool \&}]{destroyed,  }\item[{int \&}]{ship\+ID }\end{DoxyParamCaption})}
+
+Method for shooting on a cell 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_point}{Point}} that has the cell \\
+\hline
+{\em hit} & reference to boolean which indicates if ship was hit \\
+\hline
+{\em destroyed} & reference to boolean which indicates if ship was destroyed \\
+\hline
+{\em ship\+ID} & reference to integer which returns ID of ship that was hit \\
+\hline
+\end{DoxyParams}
+Returns false if target is out of bounds
+
+Returns false if target has already been shot
+
+Checks if it\textquotesingle{}s possible to attack target cell
+
+Checks if target doesn\textquotesingle{}t have a dot on it
+
+Updates array with hit mark
+
+Checks if ship exists
+
+Checks if ship doesn\textquotesingle{}t exist, it has been sunk
+
+Loop that finds the right ship
+
+$<$ If hit was a miss \mbox{\Hypertarget{class_board_impl_abd7743ed758876c2855b2bb7474cf2eb}\label{class_board_impl_abd7743ed758876c2855b2bb7474cf2eb}} 
+\index{Board\+Impl@{Board\+Impl}!block@{block}}
+\index{block@{block}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{block()}{block()}}
+{\footnotesize\ttfamily void Board\+Impl\+::block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for blocking cells loops through game\textquotesingle{}s rows and columns and blocks them with \textquotesingle{}\#\textquotesingle{} symbol with 50\% chance \mbox{\Hypertarget{class_board_impl_a47c7733ed5ec7a09fe9710f443fe0952}\label{class_board_impl_a47c7733ed5ec7a09fe9710f443fe0952}} 
+\index{Board\+Impl@{Board\+Impl}!clear@{clear}}
+\index{clear@{clear}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Board\+Impl\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for clearing the game screen Loops through rows and columns and fills them with \textquotesingle{}.\textquotesingle{} \mbox{\Hypertarget{class_board_impl_a4b600b257cfe79f10ac8792ab69eb388}\label{class_board_impl_a4b600b257cfe79f10ac8792ab69eb388}} 
+\index{Board\+Impl@{Board\+Impl}!display@{display}}
+\index{display@{display}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Board\+Impl\+::display (\begin{DoxyParamCaption}\item[{bool}]{show\+Shots }\end{DoxyParamCaption}) const}
+
+Display method for showing game screen 
+\begin{DoxyParams}{Parameters}
+{\em show\+Shots} & boolean to check if shots are visible or not \\
+\hline
+\end{DoxyParams}
+$<$ Empty spaces to line header numbers with cells ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Loops through columns to create line with header (numbers)
+
+Loops through rows
+
+$<$ Creates header numbers for columns
+
+Checks if shots are visible
+
+Checks if cells don\textquotesingle{}t contain \textquotesingle{}X\textquotesingle{} and \textquotesingle{}o\textquotesingle{} and if cells contain alphabetic character
+
+$<$ If cell is alphabetic, turns it into \textquotesingle{}.\textquotesingle{}
+
+$<$ If cell is not alphabetic or contains \textquotesingle{}X\textquotesingle{} or \textquotesingle{}o\textquotesingle{}
+
+Prints the cell
+
+$<$ If show\+Shots is false it prints the cell \mbox{\Hypertarget{class_board_impl_af0fd0226fc1f401374a0cbbfbab98769}\label{class_board_impl_af0fd0226fc1f401374a0cbbfbab98769}} 
+\index{Board\+Impl@{Board\+Impl}!place\+Ship@{place\+Ship}}
+\index{place\+Ship@{place\+Ship}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{place\+Ship()}{placeShip()}}
+{\footnotesize\ttfamily bool Board\+Impl\+::place\+Ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{tl,  }\item[{int}]{ship\+ID,  }\item[{\mbox{\hyperlink{_globals_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d }\end{DoxyParamCaption})}
+
+Method for placing a ship on cell 
+\begin{DoxyParams}{Parameters}
+{\em tl} & \mbox{\hyperlink{class_point}{Point}} for top left cell \\
+\hline
+{\em ship\+ID} & integer used as ship\textquotesingle{}s ID \\
+\hline
+{\em d} & Direction where the ship is facing \\
+\hline
+\end{DoxyParams}
+$<$ Boolean for checking if ship placement is valid
+
+Checks if ID is invalid
+
+Checks if cell is outside of board
+
+Checks if ship extends outside of board
+
+Checks if ship has been placed before
+
+Checks if ship overlaps another one
+
+Places ship on game board only if ship placement is valid \mbox{\Hypertarget{class_board_impl_a8573ccd5fb2a837f324cc0f190cece5d}\label{class_board_impl_a8573ccd5fb2a837f324cc0f190cece5d}} 
+\index{Board\+Impl@{Board\+Impl}!remove\+Ship@{remove\+Ship}}
+\index{remove\+Ship@{remove\+Ship}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{remove\+Ship()}{removeShip()}}
+{\footnotesize\ttfamily bool Board\+Impl\+::remove\+Ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{tl,  }\item[{int}]{ship\+ID,  }\item[{\mbox{\hyperlink{_globals_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d }\end{DoxyParamCaption})}
+
+Method for taking a ship away from grid 
+\begin{DoxyParams}{Parameters}
+{\em tl} & \mbox{\hyperlink{class_point}{Point}} for top left cell \\
+\hline
+{\em ship\+ID} & integer used as ship\textquotesingle{}s ID \\
+\hline
+{\em d} & Direction where the ship is facing \\
+\hline
+\end{DoxyParams}
+Checks if ID is invalid
+
+Checks if ship is there
+
+Clears the cell if ship is there \mbox{\Hypertarget{class_board_impl_a36defeb0096154a4606442da9122c810}\label{class_board_impl_a36defeb0096154a4606442da9122c810}} 
+\index{Board\+Impl@{Board\+Impl}!unblock@{unblock}}
+\index{unblock@{unblock}!Board\+Impl@{Board\+Impl}}
+\subsubsection{\texorpdfstring{unblock()}{unblock()}}
+{\footnotesize\ttfamily void Board\+Impl\+::unblock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for unblocking cells loops through game\textquotesingle{}s rows and columns and replaces \textquotesingle{}\#\textquotesingle{} with \textquotesingle{}.\textquotesingle{} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_board_8cpp}{Board.\+cpp}}\end{DoxyCompactItemize}

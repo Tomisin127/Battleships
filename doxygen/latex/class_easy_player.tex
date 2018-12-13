@@ -1,0 +1,135 @@
+\hypertarget{class_easy_player}{}\section{Easy\+Player Class Reference}
+\label{class_easy_player}\index{Easy\+Player@{Easy\+Player}}
+Inheritance diagram for Easy\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_easy_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easy_player_a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c}{Easy\+Player}} (string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\begin{DoxyCompactList}\small\item\em Constructor for easy player. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_easy_player_a4b9d5815113f393615412f7a98176a6c}{place\+Ships}} (\mbox{\hyperlink{class_board}{Board}} \&b)
+\begin{DoxyCompactList}\small\item\em Method for placing ships. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_easy_player_a9b00f4a9acc74ff688c609bc15bdbb4d}{recommend}} ()
+\begin{DoxyCompactList}\small\item\em Recommends attack for easy player. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_easy_player_a254a5ddcd421e1dc71e45125e7ab04d8}{record\+Result}} (\mbox{\hyperlink{class_point}{Point}} p, bool valid\+Shot, bool hit, bool destroyed, int ship\+ID)
+\begin{DoxyCompactList}\small\item\em Record attack result. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_easy_player_a2121149ace67b4a67a5dfa7633738ea3}{record\+Opponent}} (\mbox{\hyperlink{class_point}{Point}} p)
+\begin{DoxyCompactList}\small\item\em Records opponent\textquotesingle{}s result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_easy_player}{Easy\+Player}}\+: class containing implementation of easy bot 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_easy_player_a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c}\label{class_easy_player_a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c}} 
+\index{Easy\+Player@{Easy\+Player}!Easy\+Player@{Easy\+Player}}
+\index{Easy\+Player@{Easy\+Player}!Easy\+Player@{Easy\+Player}}
+\subsubsection{\texorpdfstring{Easy\+Player()}{EasyPlayer()}}
+{\footnotesize\ttfamily Easy\+Player\+::\+Easy\+Player (\begin{DoxyParamCaption}\item[{string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})}
+
+
+
+Constructor for easy player. 
+
+Method for creating easy player 
+\begin{DoxyParams}{Parameters}
+{\em nm} & string containing player name \\
+\hline
+{\em g} & reference to game object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_player_a4b9d5815113f393615412f7a98176a6c}\label{class_easy_player_a4b9d5815113f393615412f7a98176a6c}} 
+\index{Easy\+Player@{Easy\+Player}!place\+Ships@{place\+Ships}}
+\index{place\+Ships@{place\+Ships}!Easy\+Player@{Easy\+Player}}
+\subsubsection{\texorpdfstring{place\+Ships()}{placeShips()}}
+{\footnotesize\ttfamily bool Easy\+Player\+::place\+Ships (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method for placing ships. 
+
+Method for placing easy player\textquotesingle{}s ships 
+\begin{DoxyParams}{Parameters}
+{\em b} & Reference to game board object \\
+\hline
+\end{DoxyParams}
+Loops through ships in game
+
+Checks if ship is placed on the game board 
+
+Implements \mbox{\hyperlink{class_player_ab89c1180c7314d3e19bcf4b2bed2e02a}{Player}}.
+
+\mbox{\Hypertarget{class_easy_player_a9b00f4a9acc74ff688c609bc15bdbb4d}\label{class_easy_player_a9b00f4a9acc74ff688c609bc15bdbb4d}} 
+\index{Easy\+Player@{Easy\+Player}!recommend@{recommend}}
+\index{recommend@{recommend}!Easy\+Player@{Easy\+Player}}
+\subsubsection{\texorpdfstring{recommend()}{recommend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Easy\+Player\+::recommend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Recommends attack for easy player. 
+
+Method that recommends attack for easy player Checks if last attacked cell\textquotesingle{}s column is larger than 0
+
+Decreases last attacked cell\textquotesingle{}s column with game\textquotesingle{}s columns -\/ 1
+
+Checks if last attacked cell\textquotesingle{}s rows is larger than 0
+
+Decreases last attacked cell\textquotesingle{}s rows with game\textquotesingle{}s rows -\/ 1 
+
+Implements \mbox{\hyperlink{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}{Player}}.
+
+\mbox{\Hypertarget{class_easy_player_a2121149ace67b4a67a5dfa7633738ea3}\label{class_easy_player_a2121149ace67b4a67a5dfa7633738ea3}} 
+\index{Easy\+Player@{Easy\+Player}!record\+Opponent@{record\+Opponent}}
+\index{record\+Opponent@{record\+Opponent}!Easy\+Player@{Easy\+Player}}
+\subsubsection{\texorpdfstring{record\+Opponent()}{recordOpponent()}}
+{\footnotesize\ttfamily void Easy\+Player\+::record\+Opponent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Records opponent\textquotesingle{}s result. 
+
+Method for recording opponent\textquotesingle{}s result 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_point}{Point}} containing attacked cell \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_player_a768e14edee61e208e6fd295cdd72a49c}{Player}}.
+
+\mbox{\Hypertarget{class_easy_player_a254a5ddcd421e1dc71e45125e7ab04d8}\label{class_easy_player_a254a5ddcd421e1dc71e45125e7ab04d8}} 
+\index{Easy\+Player@{Easy\+Player}!record\+Result@{record\+Result}}
+\index{record\+Result@{record\+Result}!Easy\+Player@{Easy\+Player}}
+\subsubsection{\texorpdfstring{record\+Result()}{recordResult()}}
+{\footnotesize\ttfamily void Easy\+Player\+::record\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p,  }\item[{bool}]{valid\+Shot,  }\item[{bool}]{hit,  }\item[{bool}]{destroyed,  }\item[{int}]{ship\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Record attack result. 
+
+Method for recording result 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_point}{Point}} containing attacked cell \\
+\hline
+{\em valid\+Shot} & boolean that checks if attack was valid \\
+\hline
+{\em hit} & boolean to check if ship was hit @ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_player_a368527cfefaac58dc942b32658f977ed}{Player}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

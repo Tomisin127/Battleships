@@ -1,0 +1,115 @@
+\hypertarget{_player_8cpp}{}\section{D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\+Player.cpp File Reference}
+\label{_player_8cpp}\index{D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\+Player.\+cpp@{D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\+Player.\+cpp}}
+
+
+contains implementation for \mbox{\hyperlink{class_player}{Player}} classes and assisting functions  
+
+
+{\ttfamily \#include \char`\"{}Player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Globals.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_human_player}{Human\+Player}}
+\item 
+class \mbox{\hyperlink{class_easy_player}{Easy\+Player}}
+\item 
+class \mbox{\hyperlink{class_medium_player}{Medium\+Player}}
+\item 
+class \mbox{\hyperlink{class_hard_player}{Hard\+Player}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56}{next\+Shot}} \{ \mbox{\hyperlink{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56adb45120aafd37a973140edee24708065}{L\+E\+FT}}, 
+\mbox{\hyperlink{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56aec8379af7490bb9eaaf579cf17876f38}{R\+I\+G\+HT}}, 
+\mbox{\hyperlink{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56aba595d8bca8bc5e67c37c0a9d89becfa}{UP}}, 
+\mbox{\hyperlink{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56a9b0b4a95b99523966e0e34ffdadac9da}{D\+O\+WN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration containing directions for next shot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_player_8cpp_a72b0e7e7c053e4606495cd4c782504f4}{get\+Two\+Integers}} (int \&r, int \&c)
+\item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{_player_8cpp_a35d3f9cfbb66e2ee6234e8552f14ca7c}{create}} (string type, string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains implementation for \mbox{\hyperlink{class_player}{Player}} classes and assisting functions 
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56}\label{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56}} 
+\index{Player.\+cpp@{Player.\+cpp}!next\+Shot@{next\+Shot}}
+\index{next\+Shot@{next\+Shot}!Player.\+cpp@{Player.\+cpp}}
+\subsubsection{\texorpdfstring{next\+Shot}{nextShot}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56}{next\+Shot}}}
+
+
+
+Enumeration containing directions for next shot. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+E\+FT@{L\+E\+FT}!Player.\+cpp@{Player.\+cpp}}\index{Player.\+cpp@{Player.\+cpp}!L\+E\+FT@{L\+E\+FT}}}\mbox{\Hypertarget{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56adb45120aafd37a973140edee24708065}\label{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56adb45120aafd37a973140edee24708065}} 
+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+I\+G\+HT@{R\+I\+G\+HT}!Player.\+cpp@{Player.\+cpp}}\index{Player.\+cpp@{Player.\+cpp}!R\+I\+G\+HT@{R\+I\+G\+HT}}}\mbox{\Hypertarget{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56aec8379af7490bb9eaaf579cf17876f38}\label{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56aec8379af7490bb9eaaf579cf17876f38}} 
+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!Player.\+cpp@{Player.\+cpp}}\index{Player.\+cpp@{Player.\+cpp}!UP@{UP}}}\mbox{\Hypertarget{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56aba595d8bca8bc5e67c37c0a9d89becfa}\label{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56aba595d8bca8bc5e67c37c0a9d89becfa}} 
+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+O\+WN@{D\+O\+WN}!Player.\+cpp@{Player.\+cpp}}\index{Player.\+cpp@{Player.\+cpp}!D\+O\+WN@{D\+O\+WN}}}\mbox{\Hypertarget{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56a9b0b4a95b99523966e0e34ffdadac9da}\label{_player_8cpp_a1e07068d5a987b2549ecb468bd821b56a9b0b4a95b99523966e0e34ffdadac9da}} 
+D\+O\+WN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_player_8cpp_a35d3f9cfbb66e2ee6234e8552f14ca7c}\label{_player_8cpp_a35d3f9cfbb66e2ee6234e8552f14ca7c}} 
+\index{Player.\+cpp@{Player.\+cpp}!create@{create}}
+\index{create@{create}!Player.\+cpp@{Player.\+cpp}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ create (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})}
+
+Method for creating a player 
+\begin{DoxyParams}{Parameters}
+{\em type} & string containing player type \\
+\hline
+{\em nm} & string containing player\textquotesingle{}s name \\
+\hline
+{\em g} & reference to game object \\
+\hline
+\end{DoxyParams}
+String array containing player types
+
+$<$ Switch case for creating players \mbox{\Hypertarget{_player_8cpp_a72b0e7e7c053e4606495cd4c782504f4}\label{_player_8cpp_a72b0e7e7c053e4606495cd4c782504f4}} 
+\index{Player.\+cpp@{Player.\+cpp}!get\+Two\+Integers@{get\+Two\+Integers}}
+\index{get\+Two\+Integers@{get\+Two\+Integers}!Player.\+cpp@{Player.\+cpp}}
+\subsubsection{\texorpdfstring{get\+Two\+Integers()}{getTwoIntegers()}}
+{\footnotesize\ttfamily bool get\+Two\+Integers (\begin{DoxyParamCaption}\item[{int \&}]{r,  }\item[{int \&}]{c }\end{DoxyParamCaption})}
+
+Function for getting two integers from user input 
+\begin{DoxyParams}{Parameters}
+{\em r} & reference to row \\
+\hline
+{\em c} & reference to column \\
+\hline
+\end{DoxyParams}
+$<$ Checks if result isn\textquotesingle{}t valid
+
+$<$ Clear error state so can\textquotesingle{}t do more input operations 
