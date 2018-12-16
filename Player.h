@@ -81,7 +81,7 @@ class MediumPlayer : public Player{
         virtual void recordOpponent(Point p);
         /// Method for helping medium bot's operations
         bool mediumHelper(Board& b, int shipID, int r, int c, Direction ld);
-        virtual bool getState() const { return state1; };   ///< Getter for last state
+        virtual bool getState() const { return state1; };   ///< Getter for the last state
         virtual void changeState(bool state) { state1 = state; };   ///< Method for changing state
         virtual Point getLastP() const { return lastState; };   ///< Getter for last point
         ///Method for changing last point

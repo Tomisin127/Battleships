@@ -33,15 +33,29 @@
 		</Compiler>
 		<Unit filename="Board.cpp" />
 		<Unit filename="Board.h" />
-		<Unit filename="Board_tests.cpp" />
+		<Unit filename="BoardImpl.cpp" />
+		<Unit filename="Board_tests.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
-		<Unit filename="Game_tests.cpp" />
+		<Unit filename="GameImpl.cpp" />
+		<Unit filename="Game_tests.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="Globals.h" />
 		<Unit filename="Main.cpp" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
-		<Unit filename="Player_tests.cpp" />
+		<Unit filename="Player_tests.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="Setup.cpp" />
+		<Unit filename="Setup.h" />
+		<Unit filename="Ship.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
