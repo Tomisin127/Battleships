@@ -6,6 +6,6 @@ var searchData=
   ['recordresult',['recordResult',['../class_player.html#a368527cfefaac58dc942b32658f977ed',1,'Player::recordResult()'],['../class_human_player.html#a19be81244b7a1c88a3ca89d207055b6e',1,'HumanPlayer::recordResult()'],['../class_easy_player.html#a254a5ddcd421e1dc71e45125e7ab04d8',1,'EasyPlayer::recordResult()'],['../class_medium_player.html#aeadd8498cba5c447afbb5a0eb7408285',1,'MediumPlayer::recordResult()'],['../class_hard_player.html#aa8977ca3294daf996707bd0ff434d69e',1,'HardPlayer::recordResult()']]],
   ['recordship',['recordShip',['../class_hard_player.html#a9358a28f7f0e618d3c98aba7b135e6a8',1,'HardPlayer']]],
   ['removeship',['removeShip',['../class_board.html#a7d2f52e12bb4c861a1484ec0f54897d0',1,'Board::removeShip()'],['../class_board_impl.html#a8573ccd5fb2a837f324cc0f190cece5d',1,'BoardImpl::removeShip()']]],
-  ['rndpoint',['rndPoint',['../class_game_impl.html#a647d740893579abd77cc1d58ac600da7',1,'GameImpl::rndPoint()'],['../class_game.html#acd99c992d69fe990abfb16ab1bde177c',1,'Game::rndPoint()']]],
-  ['rows',['rows',['../class_game_impl.html#a705c32b11b7cfaf9e8fd442c6434f7df',1,'GameImpl::rows()'],['../class_game.html#a0a0531ce88923b4fbe2b3fea4c9d27f5',1,'Game::rows()']]]
+  ['rndpoint',['rndPoint',['../class_game.html#acd99c992d69fe990abfb16ab1bde177c',1,'Game::rndPoint()'],['../class_game_impl.html#a647d740893579abd77cc1d58ac600da7',1,'GameImpl::rndPoint()']]],
+  ['rows',['rows',['../class_game.html#a0a0531ce88923b4fbe2b3fea4c9d27f5',1,'Game::rows()'],['../class_game_impl.html#a705c32b11b7cfaf9e8fd442c6434f7df',1,'GameImpl::rows()']]]
 ];

@@ -1,7 +1,7 @@
 var class_game_impl =
 [
     [ "GameImpl", "class_game_impl.html#a1ec88dfb57e180ee008cff4cf10934bf", null ],
-    [ "addShip", "class_game_impl.html#aef43cebeefb09e330346a30a67430345", null ],
+    [ "addShip", "class_game_impl.html#a181c0a610e9d11739dd1a96a73703103", null ],
     [ "cols", "class_game_impl.html#a73a94a0378afbe0ae9369afcdabc51ab", null ],
     [ "nShips", "class_game_impl.html#a15bfe27ab66ca758afaed1cc805c2f10", null ],
     [ "play", "class_game_impl.html#adf2cc88e7c3f617a7033512d05a6ba0c", null ],

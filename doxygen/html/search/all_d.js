@@ -13,6 +13,6 @@ var searchData=
   ['resultdisposition',['ResultDisposition',['../struct_catch_1_1_result_disposition.html',1,'Catch']]],
   ['resultwas',['ResultWas',['../struct_catch_1_1_result_was.html',1,'Catch']]],
   ['reusablestringstream',['ReusableStringStream',['../class_catch_1_1_reusable_string_stream.html',1,'Catch']]],
-  ['rndpoint',['rndPoint',['../class_game_impl.html#a647d740893579abd77cc1d58ac600da7',1,'GameImpl::rndPoint()'],['../class_game.html#acd99c992d69fe990abfb16ab1bde177c',1,'Game::rndPoint()']]],
-  ['rows',['rows',['../class_game_impl.html#a705c32b11b7cfaf9e8fd442c6434f7df',1,'GameImpl::rows()'],['../class_game.html#a0a0531ce88923b4fbe2b3fea4c9d27f5',1,'Game::rows()']]]
+  ['rndpoint',['rndPoint',['../class_game.html#acd99c992d69fe990abfb16ab1bde177c',1,'Game::rndPoint()'],['../class_game_impl.html#a647d740893579abd77cc1d58ac600da7',1,'GameImpl::rndPoint()']]],
+  ['rows',['rows',['../class_game.html#a0a0531ce88923b4fbe2b3fea4c9d27f5',1,'Game::rows()'],['../class_game_impl.html#a705c32b11b7cfaf9e8fd442c6434f7df',1,'GameImpl::rows()']]]
 ];

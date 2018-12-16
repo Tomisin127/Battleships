@@ -10,7 +10,7 @@ var searchData=
   ['checkships',['checkShips',['../class_hard_player.html#aebad1f5ad6f9ac20eb4f1ca639088c7b',1,'HardPlayer']]],
   ['clear',['clear',['../class_board.html#af74f0d4b43e5aa3faea16d7c6407b05e',1,'Board::clear()'],['../class_board_impl.html#a47c7733ed5ec7a09fe9710f443fe0952',1,'BoardImpl::clear()']]],
   ['closeby',['closeBy',['../class_hard_player.html#a91cdd6239e111ea02bff561f6a3a0c41',1,'HardPlayer']]],
-  ['cols',['cols',['../class_game_impl.html#a73a94a0378afbe0ae9369afcdabc51ab',1,'GameImpl::cols()'],['../class_game.html#afbb769ac9dc75bd26e33a74a3cce5009',1,'Game::cols()']]],
+  ['cols',['cols',['../class_game.html#afbb769ac9dc75bd26e33a74a3cce5009',1,'Game::cols()'],['../class_game_impl.html#a73a94a0378afbe0ae9369afcdabc51ab',1,'GameImpl::cols()']]],
   ['containselementmatcher',['ContainsElementMatcher',['../struct_catch_1_1_matchers_1_1_vector_1_1_contains_element_matcher.html',1,'Catch::Matchers::Vector']]],
   ['containsmatcher',['ContainsMatcher',['../struct_catch_1_1_matchers_1_1_std_string_1_1_contains_matcher.html',1,'Catch::Matchers::StdString::ContainsMatcher'],['../struct_catch_1_1_matchers_1_1_vector_1_1_contains_matcher.html',1,'Catch::Matchers::Vector::ContainsMatcher&lt; T &gt;']]],
   ['counts',['Counts',['../struct_catch_1_1_counts.html',1,'Catch']]],

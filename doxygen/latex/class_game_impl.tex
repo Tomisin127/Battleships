@@ -1,5 +1,9 @@
 \hypertarget{class_game_impl}{}\section{Game\+Impl Class Reference}
 \label{class_game_impl}\index{Game\+Impl@{Game\+Impl}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,11 +19,11 @@ int \mbox{\hyperlink{class_game_impl_aa3b7b99102e9bcb3c9d06a1d3c672dc0}{ship\+Le
 \item 
 char \mbox{\hyperlink{class_game_impl_a1138859824715420317de50ffb15fdb9}{ship\+Symbol}} (int ship\+ID) const
 \item 
-string \mbox{\hyperlink{class_game_impl_ad39261b5f7198a6bacf99188e1108a50}{ship\+Name}} (int ship\+ID) const
+std\+::string \mbox{\hyperlink{class_game_impl_ad39261b5f7198a6bacf99188e1108a50}{ship\+Name}} (int ship\+ID) const
 \item 
 bool \mbox{\hyperlink{class_game_impl_adae52d5fa830b6f0f0585e24cde3af3b}{valid}} (\mbox{\hyperlink{class_point}{Point}} p) const
 \item 
-bool \mbox{\hyperlink{class_game_impl_aef43cebeefb09e330346a30a67430345}{add\+Ship}} (int length, char symbol, string name)
+bool \mbox{\hyperlink{class_game_impl_a181c0a610e9d11739dd1a96a73703103}{add\+Ship}} (int length, char symbol, std\+::string name)
 \item 
 \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_game_impl_a647d740893579abd77cc1d58ac600da7}{rnd\+Point}} () const
 \item 
@@ -47,11 +51,11 @@ bool \mbox{\hyperlink{class_game_impl_aef43cebeefb09e330346a30a67430345}{add\+Sh
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_game_impl_aef43cebeefb09e330346a30a67430345}\label{class_game_impl_aef43cebeefb09e330346a30a67430345}} 
+\mbox{\Hypertarget{class_game_impl_a181c0a610e9d11739dd1a96a73703103}\label{class_game_impl_a181c0a610e9d11739dd1a96a73703103}} 
 \index{Game\+Impl@{Game\+Impl}!add\+Ship@{add\+Ship}}
 \index{add\+Ship@{add\+Ship}!Game\+Impl@{Game\+Impl}}
 \subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
-{\footnotesize\ttfamily bool Game\+Impl\+::add\+Ship (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{char}]{symbol,  }\item[{string}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Game\+Impl\+::add\+Ship (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{char}]{symbol,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
 Method for checking if it\textquotesingle{}s possible to add ship 
 \begin{DoxyParams}{Parameters}
@@ -257,6 +261,7 @@ Method for checking if target is valid
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_game_impl_8cpp}{Game\+Impl.\+cpp}}\end{DoxyCompactItemize}

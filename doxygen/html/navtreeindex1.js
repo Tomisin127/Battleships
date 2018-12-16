@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"class_game.html#a783885809649e4799b199ece36c72be0":[1,0,5,5],
+"class_game.html#a848102f31ba288bac7aa39db4378db7a":[1,0,5,0],
 "class_game.html#a9102360e66754f58044c93d80260f6d0":[1,0,5,7],
 "class_game.html#aa652b00557acd25657c4aeface33d29a":[1,0,5,11],
 "class_game.html#abb28875d74d25fa9e0dcdbe37c6ad89c":[1,0,5,2],
@@ -10,6 +12,7 @@ var NAVTREEINDEX1 =
 "class_game_impl.html":[1,0,6],
 "class_game_impl.html#a1138859824715420317de50ffb15fdb9":[1,0,6,9],
 "class_game_impl.html#a15bfe27ab66ca758afaed1cc805c2f10":[1,0,6,3],
+"class_game_impl.html#a181c0a610e9d11739dd1a96a73703103":[1,0,6,1],
 "class_game_impl.html#a1ec88dfb57e180ee008cff4cf10934bf":[1,0,6,0],
 "class_game_impl.html#a647d740893579abd77cc1d58ac600da7":[1,0,6,5],
 "class_game_impl.html#a705c32b11b7cfaf9e8fd442c6434f7df":[1,0,6,6],
@@ -18,7 +21,6 @@ var NAVTREEINDEX1 =
 "class_game_impl.html#ad39261b5f7198a6bacf99188e1108a50":[1,0,6,8],
 "class_game_impl.html#adae52d5fa830b6f0f0585e24cde3af3b":[1,0,6,10],
 "class_game_impl.html#adf2cc88e7c3f617a7033512d05a6ba0c":[1,0,6,4],
-"class_game_impl.html#aef43cebeefb09e330346a30a67430345":[1,0,6,1],
 "class_hard_player.html":[1,0,7],
 "class_hard_player.html#a063d9f4071b687339fbc134239771ef3":[1,0,7,8],
 "class_hard_player.html#a27d0ad3353eba585d7a93d2092036f98":[1,0,7,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "struct_catch_1_1_matchers_1_1_std_string_1_1_ends_with_matcher.html#aa5ec700b4629562f74f362080accfd7b":[1,0,0,2,3,2,0],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_ends_with_matcher.html#aca2741fa57374a2a98d2a84ac3e13a6d":[1,0,0,2,3,2,1],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html":[1,0,0,2,3,3],
-"struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#a0bb9d64693f7bb1ef7441062d219f21a":[1,0,0,2,3,3,1],
-"struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#ab740f1fb2310e9fe3fed5134d4c7e4c8":[1,0,0,2,3,3,0],
-"struct_catch_1_1_matchers_1_1_std_string_1_1_regex_matcher.html":[1,0,0,2,3,4]
+"struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#a0bb9d64693f7bb1ef7441062d219f21a":[1,0,0,2,3,3,1]
 };
