@@ -30,9 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Game where players can shoot each other&#39;s ships</div>
   </td>
  </tr>
  </tbody>
@@ -94,6 +93,8 @@ $(document).ready(function(){initNavTree('class_easy_player.html','');});
 <div class="title">EasyPlayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_player_8h_source.html">Player.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for EasyPlayer:</div>
 <div class="dyncontent">
@@ -106,9 +107,9 @@ Inheritance diagram for EasyPlayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_player.html#a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c">EasyPlayer</a> (string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
-<tr class="memdesc:a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for easy player.  <a href="#a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c">More...</a><br /></td></tr>
-<tr class="separator:a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0692676d0bf3c0eb6f6741c621c7ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_player.html#abf0692676d0bf3c0eb6f6741c621c7ec">EasyPlayer</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
+<tr class="memdesc:abf0692676d0bf3c0eb6f6741c621c7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for easy player.  <a href="#abf0692676d0bf3c0eb6f6741c621c7ec">More...</a><br /></td></tr>
+<tr class="separator:abf0692676d0bf3c0eb6f6741c621c7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9d5815113f393615412f7a98176a6c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_player.html#a4b9d5815113f393615412f7a98176a6c">placeShips</a> (<a class="el" href="class_board.html">Board</a> &amp;b)</td></tr>
 <tr class="memdesc:a4b9d5815113f393615412f7a98176a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for placing ships.  <a href="#a4b9d5815113f393615412f7a98176a6c">More...</a><br /></td></tr>
 <tr class="separator:a4b9d5815113f393615412f7a98176a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,32 +123,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2121149ace67b4a67a5dfa7633738ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records opponent's result.  <a href="#a2121149ace67b4a67a5dfa7633738ea3">More...</a><br /></td></tr>
 <tr class="separator:a2121149ace67b4a67a5dfa7633738ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_player"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_player')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_player.html">Player</a></td></tr>
-<tr class="memitem:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf">Player</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
-<tr class="memdesc:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for player.  <a href="class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf">More...</a><br /></td></tr>
+<tr class="memitem:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="adebc0e1afa34a20c0be570f8e9e3a9bf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf">Player</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
+<tr class="memdesc:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for player. <br /></td></tr>
 <tr class="separator:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8981c201ffb2270c0b6dbd467b627376">~Player</a> ()</td></tr>
-<tr class="memdesc:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for player.  <a href="class_player.html#a8981c201ffb2270c0b6dbd467b627376">More...</a><br /></td></tr>
+<tr class="memitem:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a8981c201ffb2270c0b6dbd467b627376"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8981c201ffb2270c0b6dbd467b627376">~Player</a> ()</td></tr>
+<tr class="memdesc:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for player. <br /></td></tr>
 <tr class="separator:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a422139ad63182cfc9f82305b87a3f9a5">name</a> () const</td></tr>
-<tr class="memdesc:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for name.  <a href="class_player.html#a422139ad63182cfc9f82305b87a3f9a5">More...</a><br /></td></tr>
+<tr class="memitem:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a422139ad63182cfc9f82305b87a3f9a5"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a422139ad63182cfc9f82305b87a3f9a5">name</a> () const</td></tr>
+<tr class="memdesc:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for name. <br /></td></tr>
 <tr class="separator:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab4ef841709083fe60f6647ce0a7ca816">game</a> () const</td></tr>
-<tr class="memdesc:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for reference of game.  <a href="class_player.html#ab4ef841709083fe60f6647ce0a7ca816">More...</a><br /></td></tr>
+<tr class="memitem:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ab4ef841709083fe60f6647ce0a7ca816"></a>
+const <a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab4ef841709083fe60f6647ce0a7ca816">game</a> () const</td></tr>
+<tr class="memdesc:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for reference of game. <br /></td></tr>
 <tr class="separator:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a47c5497b2d8bf5d745e85952d0bf097f">human</a> () const</td></tr>
-<tr class="memdesc:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player is human.  <a href="class_player.html#a47c5497b2d8bf5d745e85952d0bf097f">More...</a><br /></td></tr>
+<tr class="memitem:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a47c5497b2d8bf5d745e85952d0bf097f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a47c5497b2d8bf5d745e85952d0bf097f">human</a> () const</td></tr>
+<tr class="memdesc:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player is human. <br /></td></tr>
 <tr class="separator:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4">Player</a> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
-<tr class="memdesc:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents player object from being copied/assigned.  <a href="class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4">More...</a><br /></td></tr>
+<tr class="memitem:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ae8015d1f08ba69d663cfdaea1a64d1a4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4">Player</a> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents player object from being copied/assigned. <br /></td></tr>
 <tr class="separator:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81d34e4adb4e329d26b1635d866462d inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab81d34e4adb4e329d26b1635d866462d">operator=</a> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
+<tr class="memitem:ab81d34e4adb4e329d26b1635d866462d inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ab81d34e4adb4e329d26b1635d866462d"></a>
+<a class="el" href="class_player.html">Player</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
 <tr class="separator:ab81d34e4adb4e329d26b1635d866462d inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_easy_player.html">EasyPlayer</a>: class containing implementation of easy bot </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab4cbdc4e8e353e0dbecb9c2c4e3f7c">&#9670;&nbsp;</a></span>EasyPlayer()</h2>
+<a id="abf0692676d0bf3c0eb6f6741c621c7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0692676d0bf3c0eb6f6741c621c7ec">&#9670;&nbsp;</a></span>EasyPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +163,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">EasyPlayer::EasyPlayer </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>nm</em>, </td>
         </tr>
         <tr>
@@ -358,7 +366,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="_player_8h_source.html">Player.h</a></li>
 <li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="_player_8cpp.html">Player.cpp</a></li>
 </ul>
 </div><!-- contents -->

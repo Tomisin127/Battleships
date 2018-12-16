@@ -36,9 +36,11 @@ bool \mbox{\hyperlink{class_game_a3ac4fd5a820cafec68f05cc81c26492a}{add\+Ship}} 
 \begin{DoxyCompactList}\small\item\em Getter for random point. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_game_a9102360e66754f58044c93d80260f6d0}{play}} (\mbox{\hyperlink{class_player}{Player}} $\ast$p1, \mbox{\hyperlink{class_player}{Player}} $\ast$p2, bool pause=true)
 \item 
+\mbox{\Hypertarget{class_game_abb28875d74d25fa9e0dcdbe37c6ad89c}\label{class_game_abb28875d74d25fa9e0dcdbe37c6ad89c}} 
 \mbox{\hyperlink{class_game_abb28875d74d25fa9e0dcdbe37c6ad89c}{Game}} (const \mbox{\hyperlink{class_game}{Game}} \&)=delete
 \begin{DoxyCompactList}\small\item\em Prevents game object from being copied/assigned. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_game}{Game}} \& \mbox{\hyperlink{class_game_a4d0c0503733cc50b0b5cb8d7ef1237ec}{operator=}} (const \mbox{\hyperlink{class_game}{Game}} \&)=delete
+\mbox{\Hypertarget{class_game_a4d0c0503733cc50b0b5cb8d7ef1237ec}\label{class_game_a4d0c0503733cc50b0b5cb8d7ef1237ec}} 
+\mbox{\hyperlink{class_game}{Game}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_game}{Game}} \&)=delete
 \end{DoxyCompactItemize}
 
 
@@ -49,7 +51,7 @@ Declaration for game implementation class.
 \mbox{\Hypertarget{class_game_a848102f31ba288bac7aa39db4378db7a}\label{class_game_a848102f31ba288bac7aa39db4378db7a}} 
 \index{Game@{Game}!Game@{Game}}
 \index{Game@{Game}!Game@{Game}}
-\subsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
 {\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{n\+Rows,  }\item[{int}]{n\+Cols }\end{DoxyParamCaption})}
 
 
@@ -73,17 +75,7 @@ Checks if the number of rows is valid \mbox{\Hypertarget{class_game_ae3d112ca6e0
 
 Destructor for game object. 
 
-Deletes to game implementation \mbox{\Hypertarget{class_game_abb28875d74d25fa9e0dcdbe37c6ad89c}\label{class_game_abb28875d74d25fa9e0dcdbe37c6ad89c}} 
-\index{Game@{Game}!Game@{Game}}
-\index{Game@{Game}!Game@{Game}}
-\subsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-
-
-Prevents game object from being copied/assigned. 
-
-
+Deletes to game implementation 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{class_game_a3ac4fd5a820cafec68f05cc81c26492a}\label{class_game_a3ac4fd5a820cafec68f05cc81c26492a}} 
@@ -140,13 +132,7 @@ Delegates to game implementations columns method \mbox{\Hypertarget{class_game_a
 
 Getter for number of ships. 
 
-Delegates into game implementations number of ships method \mbox{\Hypertarget{class_game_a4d0c0503733cc50b0b5cb8d7ef1237ec}\label{class_game_a4d0c0503733cc50b0b5cb8d7ef1237ec}} 
-\index{Game@{Game}!operator=@{operator=}}
-\index{operator=@{operator=}!Game@{Game}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_game}{Game}}\& Game\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-\mbox{\Hypertarget{class_game_a9102360e66754f58044c93d80260f6d0}\label{class_game_a9102360e66754f58044c93d80260f6d0}} 
+Delegates into game implementations number of ships method \mbox{\Hypertarget{class_game_a9102360e66754f58044c93d80260f6d0}\label{class_game_a9102360e66754f58044c93d80260f6d0}} 
 \index{Game@{Game}!play@{play}}
 \index{play@{play}!Game@{Game}}
 \subsubsection{\texorpdfstring{play()}{play()}}

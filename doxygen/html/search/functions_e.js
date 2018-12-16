@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['random',['random',['../namespace_catch_1_1_generators.html#a13afd4c586149e2c76bfb26396cb4b96',1,'Catch::Generators::random(T const &amp;first, T const &amp;last) -&gt; Generator&lt; T &gt;'],['../namespace_catch_1_1_generators.html#a81f960beb999d6ebc1d50036122b8ee0',1,'Catch::Generators::random(size_t size) -&gt; Generator&lt; T &gt;']]],
-  ['randomint',['randomInt',['../_globals_8h.html#a96fd653a75890268fa4616e1c6442343',1,'Globals.h']]],
-  ['randomiseindices',['randomiseIndices',['../namespace_catch_1_1_generators.html#a4ee4b9f5df1ceedc8ffc6c31b5a7d68b',1,'Catch::Generators']]],
-  ['range',['range',['../namespace_catch_1_1_generators.html#acb1dc71e5494dbc60eb69a3136a5484c',1,'Catch::Generators']]],
-  ['rangegenerator',['RangeGenerator',['../class_catch_1_1_generators_1_1_range_generator.html#a56c5fcc855bdb668d7b93c2017a7c44c',1,'Catch::Generators::RangeGenerator']]],
-  ['rangetostring',['rangeToString',['../namespace_catch_1_1_detail.html#a6650a1dff325bf29962ff15ae73fd972',1,'Catch::Detail::rangeToString()'],['../namespace_catch.html#af13494e925a793e3e7143c6ce6f442c2',1,'Catch::rangeToString(Range const &amp;range)'],['../namespace_catch.html#ae162dc66b7767a52e7e4283915fd3d9f',1,'Catch::rangeToString(std::vector&lt; bool, Allocator &gt; const &amp;v)']]],
-  ['rawmemorytostring',['rawMemoryToString',['../namespace_catch_1_1_detail.html#ac5d6c510e565ee5bddcc2236194ce29e',1,'Catch::Detail::rawMemoryToString(const void *object, std::size_t size)'],['../namespace_catch_1_1_detail.html#a371620ed524abfcae5c3772bf49b563a',1,'Catch::Detail::rawMemoryToString(const T &amp;object)']]],
-  ['recommend',['recommend',['../class_human_player.html#a718f16f3ddeeb34c9f2e93cf1d805b46',1,'HumanPlayer::recommend()'],['../class_easy_player.html#a9b00f4a9acc74ff688c609bc15bdbb4d',1,'EasyPlayer::recommend()'],['../class_medium_player.html#a2e99d57f30f3f7f929840b8cda16527d',1,'MediumPlayer::recommend()'],['../class_hard_player.html#ae1d21325a648a88f1bf51f2b0b286190',1,'HardPlayer::recommend()'],['../class_player.html#a2cc7a83d11158eafd8d49d4b9f23ce56',1,'Player::recommend()']]],
-  ['recordopponent',['recordOpponent',['../class_human_player.html#a16b18f42e02d7c8d1f0971ce5e91595f',1,'HumanPlayer::recordOpponent()'],['../class_easy_player.html#a2121149ace67b4a67a5dfa7633738ea3',1,'EasyPlayer::recordOpponent()'],['../class_medium_player.html#a6183d4a8fe3d68419afcfa9e33cd5928',1,'MediumPlayer::recordOpponent()'],['../class_hard_player.html#a986175fb966099ac5fe39950e18799ae',1,'HardPlayer::recordOpponent()'],['../class_player.html#a768e14edee61e208e6fd295cdd72a49c',1,'Player::recordOpponent()']]],
-  ['recordresult',['recordResult',['../class_human_player.html#a19be81244b7a1c88a3ca89d207055b6e',1,'HumanPlayer::recordResult()'],['../class_easy_player.html#a254a5ddcd421e1dc71e45125e7ab04d8',1,'EasyPlayer::recordResult()'],['../class_medium_player.html#aeadd8498cba5c447afbb5a0eb7408285',1,'MediumPlayer::recordResult()'],['../class_hard_player.html#aa8977ca3294daf996707bd0ff434d69e',1,'HardPlayer::recordResult()'],['../class_player.html#a368527cfefaac58dc942b32658f977ed',1,'Player::recordResult()']]],
-  ['recordship',['recordShip',['../class_hard_player.html#a9358a28f7f0e618d3c98aba7b135e6a8',1,'HardPlayer']]],
-  ['regexmatcher',['RegexMatcher',['../struct_catch_1_1_matchers_1_1_std_string_1_1_regex_matcher.html#ab914deb885fe25558c41ab368c6b3916',1,'Catch::Matchers::StdString::RegexMatcher']]],
-  ['registerlistener',['registerListener',['../struct_catch_1_1_i_mutable_registry_hub.html#abd892a133f85581fd00ee75bb379ca56',1,'Catch::IMutableRegistryHub']]],
-  ['registerreporter',['registerReporter',['../struct_catch_1_1_i_mutable_registry_hub.html#a1c0ac202ac31ee9f88e8ff5cbac4b243',1,'Catch::IMutableRegistryHub']]],
-  ['registerstartupexception',['registerStartupException',['../struct_catch_1_1_i_mutable_registry_hub.html#a72a7d5386851ac3200f8da794a009c86',1,'Catch::IMutableRegistryHub']]],
-  ['registertagalias',['registerTagAlias',['../struct_catch_1_1_i_mutable_registry_hub.html#abf2e386b6f94f615719ada711adbf822',1,'Catch::IMutableRegistryHub']]],
-  ['registertest',['registerTest',['../struct_catch_1_1_i_mutable_registry_hub.html#a11b85c6744d88c9f83fe16ad4a8dd451',1,'Catch::IMutableRegistryHub']]],
-  ['registertranslator',['registerTranslator',['../struct_catch_1_1_i_mutable_registry_hub.html#ae6825365102693cf7707db022a2c2b49',1,'Catch::IMutableRegistryHub']]],
-  ['registrarfortagaliases',['RegistrarForTagAliases',['../struct_catch_1_1_registrar_for_tag_aliases.html#ae4e45830e4763bcd65d55d8db9167b69',1,'Catch::RegistrarForTagAliases']]],
-  ['removeship',['removeShip',['../class_board_impl.html#a8573ccd5fb2a837f324cc0f190cece5d',1,'BoardImpl::removeShip()'],['../class_board.html#a7d2f52e12bb4c861a1484ec0f54897d0',1,'Board::removeShip()']]],
-  ['replaceinplace',['replaceInPlace',['../namespace_catch.html#afe4e6770da547e43e9e4eeaa05f946ea',1,'Catch']]],
-  ['reportstart',['reportStart',['../class_catch_1_1_benchmark_looper.html#a0697d1b266112b110edf2025b82c4e77',1,'Catch::BenchmarkLooper']]],
-  ['reusablestringstream',['ReusableStringStream',['../class_catch_1_1_reusable_string_stream.html#a9b3f8c52b0d2d63ffd825297a9c09781',1,'Catch::ReusableStringStream']]],
-  ['rndpoint',['rndPoint',['../class_game_impl.html#a647d740893579abd77cc1d58ac600da7',1,'GameImpl::rndPoint()'],['../class_game.html#acd99c992d69fe990abfb16ab1bde177c',1,'Game::rndPoint()']]],
-  ['rngseed',['rngSeed',['../namespace_catch.html#acf5ea05e942d2d7fe79111e12754ed76',1,'Catch']]],
-  ['rows',['rows',['../class_game_impl.html#a705c32b11b7cfaf9e8fd442c6434f7df',1,'GameImpl::rows()'],['../class_game.html#a0a0531ce88923b4fbe2b3fea4c9d27f5',1,'Game::rows()']]]
+  ['wait',['wait',['../_game_8cpp.html#aa3b21853f890838c88d047d6c2786917',1,'Game.cpp']]]
 ];

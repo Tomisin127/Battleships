@@ -1,6 +1,6 @@
 var class_human_player =
 [
-    [ "HumanPlayer", "class_human_player.html#a70910b8414dda741db2e2f08e048cfe4", null ],
+    [ "HumanPlayer", "class_human_player.html#a443ff25b201959966555c0902a10e19c", null ],
     [ "~HumanPlayer", "class_human_player.html#abdeb9d120fc74c8d82ec0c688883f16f", null ],
     [ "human", "class_human_player.html#acecbe621447504a013c2a763aaba05fa", null ],
     [ "placeShips", "class_human_player.html#ae9315a3c66f6b2f2bf4d1ebb09669aff", null ],

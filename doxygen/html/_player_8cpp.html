@@ -30,9 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Game where players can shoot each other&#39;s ships</div>
   </td>
  </tr>
  </tbody>
@@ -88,8 +87,6 @@ $(document).ready(function(){initNavTree('_player_8cpp.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/Player.cpp File Reference</div>  </div>
@@ -108,27 +105,6 @@ $(document).ready(function(){initNavTree('_player_8cpp.html','');});
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human_player.html">HumanPlayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_player.html">EasyPlayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_medium_player.html">MediumPlayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html">HardPlayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a1e07068d5a987b2549ecb468bd821b56"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_player_8cpp.html#a1e07068d5a987b2549ecb468bd821b56">nextShot</a> { <a class="el" href="_player_8cpp.html#a1e07068d5a987b2549ecb468bd821b56adb45120aafd37a973140edee24708065">LEFT</a>, 
-<a class="el" href="_player_8cpp.html#a1e07068d5a987b2549ecb468bd821b56aec8379af7490bb9eaaf579cf17876f38">RIGHT</a>, 
-<a class="el" href="_player_8cpp.html#a1e07068d5a987b2549ecb468bd821b56aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>, 
-<a class="el" href="_player_8cpp.html#a1e07068d5a987b2549ecb468bd821b56a9b0b4a95b99523966e0e34ffdadac9da">DOWN</a>
- }</td></tr>
-<tr class="memdesc:a1e07068d5a987b2549ecb468bd821b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration containing directions for next shot.  <a href="_player_8cpp.html#a1e07068d5a987b2549ecb468bd821b56">More...</a><br /></td></tr>
-<tr class="separator:a1e07068d5a987b2549ecb468bd821b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a72b0e7e7c053e4606495cd4c782504f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_player_8cpp.html#a72b0e7e7c053e4606495cd4c782504f4">getTwoIntegers</a> (int &amp;r, int &amp;c)</td></tr>
@@ -138,30 +114,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>contains implementation for <a class="el" href="class_player.html" title="Declaration for Game class. ">Player</a> classes and assisting functions </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a1e07068d5a987b2549ecb468bd821b56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e07068d5a987b2549ecb468bd821b56">&#9670;&nbsp;</a></span>nextShot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="_player_8cpp.html#a1e07068d5a987b2549ecb468bd821b56">nextShot</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enumeration containing directions for next shot. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1e07068d5a987b2549ecb468bd821b56adb45120aafd37a973140edee24708065"></a>LEFT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1e07068d5a987b2549ecb468bd821b56aec8379af7490bb9eaaf579cf17876f38"></a>RIGHT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1e07068d5a987b2549ecb468bd821b56aba595d8bca8bc5e67c37c0a9d89becfa"></a>UP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1e07068d5a987b2549ecb468bd821b56a9b0b4a95b99523966e0e34ffdadac9da"></a>DOWN&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a35d3f9cfbb66e2ee6234e8552f14ca7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35d3f9cfbb66e2ee6234e8552f14ca7c">&#9670;&nbsp;</a></span>create()</h2>
 

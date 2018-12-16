@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['name',['name',['../class_player.html#a422139ad63182cfc9f82305b87a3f9a5',1,'Player']]],
-  ['nameandtags',['NameAndTags',['../struct_catch_1_1_name_and_tags.html#ab585111e615ce8c504a2b9630de8ee94',1,'Catch::NameAndTags']]],
-  ['needsmoreiterations',['needsMoreIterations',['../class_catch_1_1_benchmark_looper.html#a97bd944521f519b1593a5d1d2f9998fa',1,'Catch::BenchmarkLooper']]],
-  ['noncopyable',['NonCopyable',['../class_catch_1_1_non_copyable.html#a4b492dd5753f9952350fb64dc6cb9fe2',1,'Catch::NonCopyable']]],
-  ['nships',['nShips',['../class_game_impl.html#a15bfe27ab66ca758afaed1cc805c2f10',1,'GameImpl::nShips()'],['../class_game.html#a783885809649e4799b199ece36c72be0',1,'Game::nShips()']]],
-  ['numberofcharacters',['numberOfCharacters',['../class_catch_1_1_string_ref.html#a6a6cac7430e626ffdd7550a081e8168f',1,'Catch::StringRef']]]
+  ['selectbot',['selectBot',['../_main_8cpp.html#a34f202909819f5d93192830d691e7a7b',1,'Main.cpp']]],
+  ['ship',['Ship',['../class_ship.html#a1836f4ce3f031b8490a37ac02c5ad65b',1,'Ship']]],
+  ['shiplength',['shipLength',['../class_game_impl.html#aa3b7b99102e9bcb3c9d06a1d3c672dc0',1,'GameImpl::shipLength()'],['../class_game.html#af447d664cda0ae50f98afaa1e75ec0e3',1,'Game::shipLength()']]],
+  ['shipname',['shipName',['../class_game_impl.html#ad39261b5f7198a6bacf99188e1108a50',1,'GameImpl::shipName()'],['../class_game.html#aa652b00557acd25657c4aeface33d29a',1,'Game::shipName()']]],
+  ['shipsymbol',['shipSymbol',['../class_game_impl.html#a1138859824715420317de50ffb15fdb9',1,'GameImpl::shipSymbol()'],['../class_game.html#a4d7e709c85b6abd5defa24f5f78cd1d1',1,'Game::shipSymbol()']]]
 ];

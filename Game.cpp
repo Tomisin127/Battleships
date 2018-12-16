@@ -7,6 +7,7 @@
 #include "Board.h"
 #include "Player.h"
 #include "Globals.h"
+#include "Ship.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -16,10 +17,6 @@
 
 using namespace std;
 
-/**
- *  Preliminary declaration of Ship class
- */
-class Ship;
 
 /**
  * GameImpl: class for game implementation
@@ -41,23 +38,6 @@ private:
 	int gRows;  ///< Game rows
 	int gCols;  ///< Game columns
 	vector<Ship> gShips;    ///< Vector for game's ships
-};
-
-/**
- *  Ship class
- */
-class Ship{
-    public:
-        Ship(int length, char symbol, string name, int id); ///< Creates Ship class
-        int getLength() const { return sLength; };  ///< Getter for ship's length
-        int getShipID() const { return sShipID; };  ///< Getter for ship's ID
-        char getSymbol() const { return sSymbol; }; ///< Getter for ship's symbol
-        string getName() const { return sName; };   ///< Getter for ship's name
-    private:
-        int sLength;    ///< Ship's length
-        int sShipID;    ///< Ship's ID
-        char sSymbol;   ///< Ship's symbol
-        string sName;   ///< Ship's name
 };
 
 /**

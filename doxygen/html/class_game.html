@@ -30,9 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Game where players can shoot each other&#39;s ships</div>
   </td>
  </tr>
  </tbody>
@@ -137,17 +136,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd99c992d69fe990abfb16ab1bde177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9102360e66754f58044c93d80260f6d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a9102360e66754f58044c93d80260f6d0">play</a> (<a class="el" href="class_player.html">Player</a> *p1, <a class="el" href="class_player.html">Player</a> *p2, bool pause=true)</td></tr>
 <tr class="separator:a9102360e66754f58044c93d80260f6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb28875d74d25fa9e0dcdbe37c6ad89c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#abb28875d74d25fa9e0dcdbe37c6ad89c">Game</a> (const <a class="el" href="class_game.html">Game</a> &amp;)=delete</td></tr>
-<tr class="memdesc:abb28875d74d25fa9e0dcdbe37c6ad89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents game object from being copied/assigned.  <a href="#abb28875d74d25fa9e0dcdbe37c6ad89c">More...</a><br /></td></tr>
+<tr class="memitem:abb28875d74d25fa9e0dcdbe37c6ad89c"><td class="memItemLeft" align="right" valign="top"><a id="abb28875d74d25fa9e0dcdbe37c6ad89c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#abb28875d74d25fa9e0dcdbe37c6ad89c">Game</a> (const <a class="el" href="class_game.html">Game</a> &amp;)=delete</td></tr>
+<tr class="memdesc:abb28875d74d25fa9e0dcdbe37c6ad89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents game object from being copied/assigned. <br /></td></tr>
 <tr class="separator:abb28875d74d25fa9e0dcdbe37c6ad89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0c0503733cc50b0b5cb8d7ef1237ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a4d0c0503733cc50b0b5cb8d7ef1237ec">operator=</a> (const <a class="el" href="class_game.html">Game</a> &amp;)=delete</td></tr>
+<tr class="memitem:a4d0c0503733cc50b0b5cb8d7ef1237ec"><td class="memItemLeft" align="right" valign="top"><a id="a4d0c0503733cc50b0b5cb8d7ef1237ec"></a>
+<a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_game.html">Game</a> &amp;)=delete</td></tr>
 <tr class="separator:a4d0c0503733cc50b0b5cb8d7ef1237ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration for game implementation class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a848102f31ba288bac7aa39db4378db7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a848102f31ba288bac7aa39db4378db7a">&#9670;&nbsp;</a></span>Game() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a848102f31ba288bac7aa39db4378db7a">&#9670;&nbsp;</a></span>Game()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,34 +202,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor for game object. </p>
 <p>Deletes to game implementation </p>
-
-</div>
-</div>
-<a id="abb28875d74d25fa9e0dcdbe37c6ad89c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb28875d74d25fa9e0dcdbe37c6ad89c">&#9670;&nbsp;</a></span>Game() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Game::Game </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prevents game object from being copied/assigned. </p>
 
 </div>
 </div>
@@ -324,32 +297,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Getter for number of ships. </p>
 <p>Delegates into game implementations number of ships method </p>
-
-</div>
-</div>
-<a id="a4d0c0503733cc50b0b5cb8d7ef1237ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d0c0503733cc50b0b5cb8d7ef1237ec">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_game.html">Game</a>&amp; Game::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

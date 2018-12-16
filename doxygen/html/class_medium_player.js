@@ -1,6 +1,6 @@
 var class_medium_player =
 [
-    [ "MediumPlayer", "class_medium_player.html#ade2cbbd7600c6958afdd214414d62174", null ],
+    [ "MediumPlayer", "class_medium_player.html#a76923857c4fa54d192ed4644c72bce2d", null ],
     [ "~MediumPlayer", "class_medium_player.html#a59749832be9905531c9b5eb0b67edf83", null ],
     [ "addPoint", "class_medium_player.html#a4cd5cbf0327e002112c80a52b279358f", null ],
     [ "alreadyShot", "class_medium_player.html#a0c237af510ff84898759ed2e9a9271ce", null ],

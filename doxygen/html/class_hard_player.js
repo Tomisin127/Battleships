@@ -1,6 +1,6 @@
 var class_hard_player =
 [
-    [ "HardPlayer", "class_hard_player.html#a37cfa417c531f1988469965a7b4adc9e", null ],
+    [ "HardPlayer", "class_hard_player.html#a40d564084e88021b21324672bf67b169", null ],
     [ "~HardPlayer", "class_hard_player.html#a86f3946384b7ca6c3e92a992b11a0ba8", null ],
     [ "addPoint", "class_hard_player.html#a77c82c1a36c9e956fdab98837ed888e5", null ],
     [ "alreadyShot", "class_hard_player.html#a8107a94c8db7d5f1023dbeeddfaaedb2", null ],

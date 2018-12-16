@@ -11,25 +11,6 @@
 using namespace std;
 
 /**
- *  BoardImpl: class for board implementation
- */
-class BoardImpl{
-    public:
-        BoardImpl(const Game& g);
-        void clear();
-        void block();
-        void unblock();
-        void display(bool showShots) const;
-        bool placeShip(Point tl, int shipID, Direction d);
-        bool removeShip(Point tl, int shipID, Direction d);
-        bool attack(Point p, bool& hit, bool& destroyed, int& shipID);
-        bool allDestroyed() const;
-    private:
-        char mArr[MAXROWS][MAXCOLS];    ///< Member array for rows and columns
-        const Game& mGame;  ///< Member object referencing to game object
-};
-
-/**
  * BoardImpl constructor
  * @param g reference to game object
  * Loops through rows and columns and fills them with '.'
@@ -188,7 +169,7 @@ bool BoardImpl::placeShip(Point tl, int shipID, Direction d){
 }
 
 /**
- * Method for taking a ship away from grid
+ * Method for taking a ship away from the grid
  * @param tl Point for top left cell
  * @param shipID integer used as ship's ID
  * @param d Direction where the ship is facing

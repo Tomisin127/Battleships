@@ -18,121 +18,43 @@ Inheritance diagram for Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}\label{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}} 
 \mbox{\hyperlink{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}{Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Constructor for player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a8981c201ffb2270c0b6dbd467b627376}\label{class_player_a8981c201ffb2270c0b6dbd467b627376}} 
 virtual \mbox{\hyperlink{class_player_a8981c201ffb2270c0b6dbd467b627376}{$\sim$\+Player}} ()
 \begin{DoxyCompactList}\small\item\em Destructor for player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a422139ad63182cfc9f82305b87a3f9a5}\label{class_player_a422139ad63182cfc9f82305b87a3f9a5}} 
 std\+::string \mbox{\hyperlink{class_player_a422139ad63182cfc9f82305b87a3f9a5}{name}} () const
 \begin{DoxyCompactList}\small\item\em Getter for name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ab4ef841709083fe60f6647ce0a7ca816}\label{class_player_ab4ef841709083fe60f6647ce0a7ca816}} 
 const \mbox{\hyperlink{class_game}{Game}} \& \mbox{\hyperlink{class_player_ab4ef841709083fe60f6647ce0a7ca816}{game}} () const
 \begin{DoxyCompactList}\small\item\em Getter for reference of game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a47c5497b2d8bf5d745e85952d0bf097f}\label{class_player_a47c5497b2d8bf5d745e85952d0bf097f}} 
 virtual bool \mbox{\hyperlink{class_player_a47c5497b2d8bf5d745e85952d0bf097f}{human}} () const
 \begin{DoxyCompactList}\small\item\em Checks if player is human. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ab89c1180c7314d3e19bcf4b2bed2e02a}\label{class_player_ab89c1180c7314d3e19bcf4b2bed2e02a}} 
 virtual bool \mbox{\hyperlink{class_player_ab89c1180c7314d3e19bcf4b2bed2e02a}{place\+Ships}} (\mbox{\hyperlink{class_board}{Board}} \&b)=0
 \begin{DoxyCompactList}\small\item\em Places ships on game board. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}{recommend}} ()=0
 \item 
+\mbox{\Hypertarget{class_player_a368527cfefaac58dc942b32658f977ed}\label{class_player_a368527cfefaac58dc942b32658f977ed}} 
 virtual void \mbox{\hyperlink{class_player_a368527cfefaac58dc942b32658f977ed}{record\+Result}} (\mbox{\hyperlink{class_point}{Point}} p, bool valid\+Shot, bool hit, bool destroyed, int ship\+ID)=0
 \begin{DoxyCompactList}\small\item\em Records attack result. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_player_a768e14edee61e208e6fd295cdd72a49c}{record\+Opponent}} (\mbox{\hyperlink{class_point}{Point}} p)=0
 \item 
+\mbox{\Hypertarget{class_player_ae8015d1f08ba69d663cfdaea1a64d1a4}\label{class_player_ae8015d1f08ba69d663cfdaea1a64d1a4}} 
 \mbox{\hyperlink{class_player_ae8015d1f08ba69d663cfdaea1a64d1a4}{Player}} (const \mbox{\hyperlink{class_player}{Player}} \&)=delete
 \begin{DoxyCompactList}\small\item\em Prevents player object from being copied/assigned. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_player}{Player}} \& \mbox{\hyperlink{class_player_ab81d34e4adb4e329d26b1635d866462d}{operator=}} (const \mbox{\hyperlink{class_player}{Player}} \&)=delete
+\mbox{\Hypertarget{class_player_ab81d34e4adb4e329d26b1635d866462d}\label{class_player_ab81d34e4adb4e329d26b1635d866462d}} 
+\mbox{\hyperlink{class_player}{Player}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_player}{Player}} \&)=delete
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Declaration for \mbox{\hyperlink{class_game}{Game}} class. 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}\label{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}} 
-\index{Player@{Player}!Player@{Player}}
-\index{Player@{Player}!Player@{Player}}
-\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Constructor for player. 
-
-\mbox{\Hypertarget{class_player_a8981c201ffb2270c0b6dbd467b627376}\label{class_player_a8981c201ffb2270c0b6dbd467b627376}} 
-\index{Player@{Player}!````~Player@{$\sim$\+Player}}
-\index{````~Player@{$\sim$\+Player}!Player@{Player}}
-\subsubsection{\texorpdfstring{$\sim$\+Player()}{~Player()}}
-{\footnotesize\ttfamily virtual Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Destructor for player. 
-
-\mbox{\Hypertarget{class_player_ae8015d1f08ba69d663cfdaea1a64d1a4}\label{class_player_ae8015d1f08ba69d663cfdaea1a64d1a4}} 
-\index{Player@{Player}!Player@{Player}}
-\index{Player@{Player}!Player@{Player}}
-\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-
-
-Prevents player object from being copied/assigned. 
-
-
-
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_player_ab4ef841709083fe60f6647ce0a7ca816}\label{class_player_ab4ef841709083fe60f6647ce0a7ca816}} 
-\index{Player@{Player}!game@{game}}
-\index{game@{game}!Player@{Player}}
-\subsubsection{\texorpdfstring{game()}{game()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{class_game}{Game}}\& Player\+::game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Getter for reference of game. 
-
-\mbox{\Hypertarget{class_player_a47c5497b2d8bf5d745e85952d0bf097f}\label{class_player_a47c5497b2d8bf5d745e85952d0bf097f}} 
-\index{Player@{Player}!human@{human}}
-\index{human@{human}!Player@{Player}}
-\subsubsection{\texorpdfstring{human()}{human()}}
-{\footnotesize\ttfamily virtual bool Player\+::human (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Checks if player is human. 
-
-
-
-Reimplemented in \mbox{\hyperlink{class_human_player_acecbe621447504a013c2a763aaba05fa}{Human\+Player}}.
-
-\mbox{\Hypertarget{class_player_a422139ad63182cfc9f82305b87a3f9a5}\label{class_player_a422139ad63182cfc9f82305b87a3f9a5}} 
-\index{Player@{Player}!name@{name}}
-\index{name@{name}!Player@{Player}}
-\subsubsection{\texorpdfstring{name()}{name()}}
-{\footnotesize\ttfamily std\+::string Player\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Getter for name. 
-
-\mbox{\Hypertarget{class_player_ab81d34e4adb4e329d26b1635d866462d}\label{class_player_ab81d34e4adb4e329d26b1635d866462d}} 
-\index{Player@{Player}!operator=@{operator=}}
-\index{operator=@{operator=}!Player@{Player}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}\& Player\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-\mbox{\Hypertarget{class_player_ab89c1180c7314d3e19bcf4b2bed2e02a}\label{class_player_ab89c1180c7314d3e19bcf4b2bed2e02a}} 
-\index{Player@{Player}!place\+Ships@{place\+Ships}}
-\index{place\+Ships@{place\+Ships}!Player@{Player}}
-\subsubsection{\texorpdfstring{place\+Ships()}{placeShips()}}
-{\footnotesize\ttfamily virtual bool Player\+::place\+Ships (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Places ships on game board. 
-
-
-
-Implemented in \mbox{\hyperlink{class_hard_player_a27d0ad3353eba585d7a93d2092036f98}{Hard\+Player}}, \mbox{\hyperlink{class_medium_player_ac4d4748e2c27a2a51033bbce9f12de26}{Medium\+Player}}, \mbox{\hyperlink{class_easy_player_a4b9d5815113f393615412f7a98176a6c}{Easy\+Player}}, and \mbox{\hyperlink{class_human_player_ae9315a3c66f6b2f2bf4d1ebb09669aff}{Human\+Player}}.
-
 \mbox{\Hypertarget{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}\label{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}} 
 \index{Player@{Player}!recommend@{recommend}}
 \index{recommend@{recommend}!Player@{Player}}
@@ -152,20 +74,6 @@ Implemented in \mbox{\hyperlink{class_hard_player_ae1d21325a648a88f1bf51f2b0b286
 Records opponent\textquotesingle{}s attack 
 
 Implemented in \mbox{\hyperlink{class_hard_player_a986175fb966099ac5fe39950e18799ae}{Hard\+Player}}, \mbox{\hyperlink{class_medium_player_a6183d4a8fe3d68419afcfa9e33cd5928}{Medium\+Player}}, \mbox{\hyperlink{class_easy_player_a2121149ace67b4a67a5dfa7633738ea3}{Easy\+Player}}, and \mbox{\hyperlink{class_human_player_a16b18f42e02d7c8d1f0971ce5e91595f}{Human\+Player}}.
-
-\mbox{\Hypertarget{class_player_a368527cfefaac58dc942b32658f977ed}\label{class_player_a368527cfefaac58dc942b32658f977ed}} 
-\index{Player@{Player}!record\+Result@{record\+Result}}
-\index{record\+Result@{record\+Result}!Player@{Player}}
-\subsubsection{\texorpdfstring{record\+Result()}{recordResult()}}
-{\footnotesize\ttfamily virtual void Player\+::record\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p,  }\item[{bool}]{valid\+Shot,  }\item[{bool}]{hit,  }\item[{bool}]{destroyed,  }\item[{int}]{ship\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Records attack result. 
-
-
-
-Implemented in \mbox{\hyperlink{class_hard_player_aa8977ca3294daf996707bd0ff434d69e}{Hard\+Player}}, \mbox{\hyperlink{class_medium_player_aeadd8498cba5c447afbb5a0eb7408285}{Medium\+Player}}, \mbox{\hyperlink{class_easy_player_a254a5ddcd421e1dc71e45125e7ab04d8}{Easy\+Player}}, and \mbox{\hyperlink{class_human_player_a19be81244b7a1c88a3ca89d207055b6e}{Human\+Player}}.
 
 
 

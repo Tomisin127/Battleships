@@ -1,5 +1,9 @@
 \hypertarget{class_hard_player}{}\section{Hard\+Player Class Reference}
 \label{class_hard_player}\index{Hard\+Player@{Hard\+Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
 Inheritance diagram for Hard\+Player\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,26 +13,27 @@ Inheritance diagram for Hard\+Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_hard_player_a37cfa417c531f1988469965a7b4adc9e}{Hard\+Player}} (string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\mbox{\hyperlink{class_hard_player_a40d564084e88021b21324672bf67b169}{Hard\+Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Constructor for hard bot. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_hard_player_a86f3946384b7ca6c3e92a992b11a0ba8}{$\sim$\+Hard\+Player}} ()
-\item 
 virtual bool \mbox{\hyperlink{class_hard_player_a27d0ad3353eba585d7a93d2092036f98}{place\+Ships}} (\mbox{\hyperlink{class_board}{Board}} \&b)
 \begin{DoxyCompactList}\small\item\em Destructor for hard player. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_hard_player_ae1d21325a648a88f1bf51f2b0b286190}{recommend}} ()
 \item 
 virtual void \mbox{\hyperlink{class_hard_player_aa8977ca3294daf996707bd0ff434d69e}{record\+Result}} (\mbox{\hyperlink{class_point}{Point}} p, bool valid\+Shot, bool hit, bool destroyed, int ship\+ID)
-\begin{DoxyCompactList}\small\item\em Method for recording attack result. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_hard_player_a986175fb966099ac5fe39950e18799ae}{record\+Opponent}} (\mbox{\hyperlink{class_point}{Point}} p)
-\begin{DoxyCompactList}\small\item\em Method for recording opponent\textquotesingle{}s attack result. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{class_hard_player_a063d9f4071b687339fbc134239771ef3}{get\+State}} () const
 \item 
-virtual void \mbox{\hyperlink{class_hard_player_aa25afded558192bd39d8d2c1b2a8209a}{change\+State}} (bool state)
-\begin{DoxyCompactList}\small\item\em Method for getting state 1. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_hard_player_ad86f7d42434ae5526d7a1ca4ea65b51a}{get\+LastP}} () const
-\begin{DoxyCompactList}\small\item\em Method for changing state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hard_player_a986175fb966099ac5fe39950e18799ae}{record\+Opponent}} (\mbox{\hyperlink{class_point}{Point}} p)
+\item 
+\mbox{\Hypertarget{class_hard_player_a063d9f4071b687339fbc134239771ef3}\label{class_hard_player_a063d9f4071b687339fbc134239771ef3}} 
+virtual bool {\bfseries get\+State} () const
+\item 
+\mbox{\Hypertarget{class_hard_player_aa25afded558192bd39d8d2c1b2a8209a}\label{class_hard_player_aa25afded558192bd39d8d2c1b2a8209a}} 
+virtual void {\bfseries change\+State} (bool state)
+\item 
+\mbox{\Hypertarget{class_hard_player_ad86f7d42434ae5526d7a1ca4ea65b51a}\label{class_hard_player_ad86f7d42434ae5526d7a1ca4ea65b51a}} 
+virtual \mbox{\hyperlink{class_point}{Point}} {\bfseries get\+LastP} () const
+\item 
 virtual bool \mbox{\hyperlink{class_hard_player_a8107a94c8db7d5f1023dbeeddfaaedb2}{already\+Shot}} (\mbox{\hyperlink{class_point}{Point}} p)
-\begin{DoxyCompactList}\small\item\em Getter for last point. \end{DoxyCompactList}\item 
+\item 
 virtual void \mbox{\hyperlink{class_hard_player_a77c82c1a36c9e956fdab98837ed888e5}{add\+Point}} (\mbox{\hyperlink{class_point}{Point}} p)
 \item 
 bool \mbox{\hyperlink{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}{hard\+Helper}} (\mbox{\hyperlink{class_board}{Board}} \&b, int ship\+ID, int c, int track)
@@ -45,11 +50,11 @@ bool \mbox{\hyperlink{class_hard_player_a91cdd6239e111ea02bff561f6a3a0c41}{close
 \mbox{\hyperlink{class_hard_player}{Hard\+Player}}\+: implementation for player class that\textquotesingle{}s controlled by hard bot 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_hard_player_a37cfa417c531f1988469965a7b4adc9e}\label{class_hard_player_a37cfa417c531f1988469965a7b4adc9e}} 
+\mbox{\Hypertarget{class_hard_player_a40d564084e88021b21324672bf67b169}\label{class_hard_player_a40d564084e88021b21324672bf67b169}} 
 \index{Hard\+Player@{Hard\+Player}!Hard\+Player@{Hard\+Player}}
 \index{Hard\+Player@{Hard\+Player}!Hard\+Player@{Hard\+Player}}
 \subsubsection{\texorpdfstring{Hard\+Player()}{HardPlayer()}}
-{\footnotesize\ttfamily Hard\+Player\+::\+Hard\+Player (\begin{DoxyParamCaption}\item[{string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Hard\+Player\+::\+Hard\+Player (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -59,13 +64,7 @@ Loops through game\textquotesingle{}s rows
 
 Loops through games columns
 
-$<$ Clears screen \mbox{\Hypertarget{class_hard_player_a86f3946384b7ca6c3e92a992b11a0ba8}\label{class_hard_player_a86f3946384b7ca6c3e92a992b11a0ba8}} 
-\index{Hard\+Player@{Hard\+Player}!````~Hard\+Player@{$\sim$\+Hard\+Player}}
-\index{````~Hard\+Player@{$\sim$\+Hard\+Player}!Hard\+Player@{Hard\+Player}}
-\subsubsection{\texorpdfstring{$\sim$\+Hard\+Player()}{~HardPlayer()}}
-{\footnotesize\ttfamily Hard\+Player\+::$\sim$\+Hard\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
+$<$ Clears screen 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{class_hard_player_a77c82c1a36c9e956fdab98837ed888e5}\label{class_hard_player_a77c82c1a36c9e956fdab98837ed888e5}} 
@@ -73,8 +72,6 @@ $<$ Clears screen \mbox{\Hypertarget{class_hard_player_a86f3946384b7ca6c3e92a992
 \index{add\+Point@{add\+Point}!Hard\+Player@{Hard\+Player}}
 \subsubsection{\texorpdfstring{add\+Point()}{addPoint()}}
 {\footnotesize\ttfamily void Hard\+Player\+::add\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-Method for adding point to shots
 
 Method for adding target location to shots 
 \begin{DoxyParams}{Parameters}
@@ -87,12 +84,6 @@ Method for adding target location to shots
 \subsubsection{\texorpdfstring{already\+Shot()}{alreadyShot()}}
 {\footnotesize\ttfamily bool Hard\+Player\+::already\+Shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-
-
-Getter for last point. 
-
-Method for checking if point has already been shot
-
 Method for checking if player has already shot targeted location 
 \begin{DoxyParams}{Parameters}
 {\em p} & \mbox{\hyperlink{class_point}{Point}} containing target cell \\
@@ -102,17 +93,7 @@ Checks if target is OoB
 
 Loops through number of shots
 
-Checks if shots contain targeted cell \mbox{\Hypertarget{class_hard_player_aa25afded558192bd39d8d2c1b2a8209a}\label{class_hard_player_aa25afded558192bd39d8d2c1b2a8209a}} 
-\index{Hard\+Player@{Hard\+Player}!change\+State@{change\+State}}
-\index{change\+State@{change\+State}!Hard\+Player@{Hard\+Player}}
-\subsubsection{\texorpdfstring{change\+State()}{changeState()}}
-{\footnotesize\ttfamily virtual void Hard\+Player\+::change\+State (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Method for getting state 1. 
-
-\mbox{\Hypertarget{class_hard_player_aebad1f5ad6f9ac20eb4f1ca639088c7b}\label{class_hard_player_aebad1f5ad6f9ac20eb4f1ca639088c7b}} 
+Checks if shots contain targeted cell \mbox{\Hypertarget{class_hard_player_aebad1f5ad6f9ac20eb4f1ca639088c7b}\label{class_hard_player_aebad1f5ad6f9ac20eb4f1ca639088c7b}} 
 \index{Hard\+Player@{Hard\+Player}!check\+Ships@{check\+Ships}}
 \index{check\+Ships@{check\+Ships}!Hard\+Player@{Hard\+Player}}
 \subsubsection{\texorpdfstring{check\+Ships()}{checkShips()}}
@@ -211,23 +192,7 @@ Method for checking if there are targets close by
 {\em p} & \mbox{\hyperlink{class_point}{Point}} containing targeted cell \\
 \hline
 \end{DoxyParams}
-Loops through number of shots \mbox{\Hypertarget{class_hard_player_ad86f7d42434ae5526d7a1ca4ea65b51a}\label{class_hard_player_ad86f7d42434ae5526d7a1ca4ea65b51a}} 
-\index{Hard\+Player@{Hard\+Player}!get\+LastP@{get\+LastP}}
-\index{get\+LastP@{get\+LastP}!Hard\+Player@{Hard\+Player}}
-\subsubsection{\texorpdfstring{get\+Last\+P()}{getLastP()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_point}{Point}} Hard\+Player\+::get\+LastP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Method for changing state. 
-
-\mbox{\Hypertarget{class_hard_player_a063d9f4071b687339fbc134239771ef3}\label{class_hard_player_a063d9f4071b687339fbc134239771ef3}} 
-\index{Hard\+Player@{Hard\+Player}!get\+State@{get\+State}}
-\index{get\+State@{get\+State}!Hard\+Player@{Hard\+Player}}
-\subsubsection{\texorpdfstring{get\+State()}{getState()}}
-{\footnotesize\ttfamily virtual bool Hard\+Player\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-\mbox{\Hypertarget{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}\label{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}} 
+Loops through number of shots \mbox{\Hypertarget{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}\label{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}} 
 \index{Hard\+Player@{Hard\+Player}!hard\+Helper@{hard\+Helper}}
 \index{hard\+Helper@{hard\+Helper}!Hard\+Player@{Hard\+Player}}
 \subsubsection{\texorpdfstring{hard\+Helper()}{hardHelper()}}
@@ -318,8 +283,6 @@ $<$ Place ship into grid to track it \mbox{\Hypertarget{class_hard_player_a27d0a
 
 
 Destructor for hard player. 
-
-Method for placing ships
 
 Method for placing ships 
 \begin{DoxyParams}{Parameters}
@@ -661,10 +624,6 @@ Implements \mbox{\hyperlink{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}{Play
 \subsubsection{\texorpdfstring{record\+Opponent()}{recordOpponent()}}
 {\footnotesize\ttfamily void Hard\+Player\+::record\+Opponent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-
-
-Method for recording opponent\textquotesingle{}s attack result. 
-
 Method for recording opponent\textquotesingle{}s attacks 
 \begin{DoxyParams}{Parameters}
 {\em p} & \mbox{\hyperlink{class_point}{Point}} containing targeted cell \\
@@ -679,10 +638,6 @@ Implements \mbox{\hyperlink{class_player_a768e14edee61e208e6fd295cdd72a49c}{Play
 \index{record\+Result@{record\+Result}!Hard\+Player@{Hard\+Player}}
 \subsubsection{\texorpdfstring{record\+Result()}{recordResult()}}
 {\footnotesize\ttfamily void Hard\+Player\+::record\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p,  }\item[{bool}]{valid\+Shot,  }\item[{bool}]{hit,  }\item[{bool}]{destroyed,  }\item[{int}]{ship\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Method for recording attack result. 
 
 Method for recording attack result 
 \begin{DoxyParams}{Parameters}
@@ -745,6 +700,7 @@ Loops through ship length by ID
 $<$ Direction is vertical ~\newline
  Loops through ship length by ID 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
 D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

@@ -1,17 +1,18 @@
 # depslib dependency file v1.0
-1544155897 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\main.cpp
+1544679453 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\main.cpp
 	"Game.h"
 	"Player.h"
 	<iostream>
 	<string>
 	<cassert>
 
-1544401471 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\game.h
+1544959435 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\game.h
 	<string>
 	<cassert>
 
-1544401511 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\player.h
-	<string>
+1544959189 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\player.h
+	"Board.h"
+	"Game.h"
 
 1544615352 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\board_tests.cpp
 	"catch.hpp"
@@ -237,17 +238,18 @@
 	<algorithm>
 	<cassert>
 
-1544614977 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\board.h
+1544958633 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\board.h
 	"Globals.h"
 
-1544400986 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\globals.h
+1544679453 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\globals.h
 	<random>
 
-1544412566 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\game.cpp
+1544959433 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\game.cpp
 	"Game.h"
 	"Board.h"
 	"Player.h"
 	"Globals.h"
+	"Ship.h"
 	<iostream>
 	<string>
 	<cstdlib>
@@ -267,13 +269,13 @@
 	"Game.h"
 	"Player.h"
 
-1544400222 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\board.cpp
+1544958640 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\board.cpp
 	"Board.h"
 	"Game.h"
 	"Globals.h"
 	<iostream>
 
-1544129298 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\player.cpp
+1544958928 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\player.cpp
 	"Player.h"
 	"Board.h"
 	"Game.h"
@@ -290,4 +292,13 @@
 	"Board.h"
 	"Player.h"
 	"Globals.h"
+
+1544958740 d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\ship.h
+
+1544958294 source:d:\kouluhommat\advanced object-oriented programming\lopputyö\battleship\battleship\menu.cpp
+	"Game.h"
+	"Player.h"
+	<iostream>
+	<string>
+	<cassert>
 

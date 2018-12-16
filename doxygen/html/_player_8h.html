@@ -30,9 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Game where players can shoot each other&#39;s ships</div>
   </td>
  </tr>
  </tbody>
@@ -89,15 +88,17 @@ $(document).ready(function(){initNavTree('_player_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/Player.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>contains header for player class  
+<p>contains header for player classes  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_board_8h_source.html">Board.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_game_8h_source.html">Game.h</a>&quot;</code><br />
 </div>
 <p><a href="_player_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -106,53 +107,35 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html">Player</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration for <a class="el" href="class_game.html" title="Declaration for game implementation class. ">Game</a> class.  <a href="class_player.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_human_player.html">HumanPlayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_player.html">EasyPlayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_medium_player.html">MediumPlayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html">HardPlayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a1e07068d5a987b2549ecb468bd821b56"><td class="memItemLeft" align="right" valign="top"><a id="a1e07068d5a987b2549ecb468bd821b56"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_player_8h.html#a1e07068d5a987b2549ecb468bd821b56">nextShot</a> { <b>LEFT</b>, 
+<b>RIGHT</b>, 
+<b>UP</b>, 
+<b>DOWN</b>
+ }</td></tr>
+<tr class="memdesc:a1e07068d5a987b2549ecb468bd821b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration containing directions for next shot. <br /></td></tr>
+<tr class="separator:a1e07068d5a987b2549ecb468bd821b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af7e3874732b33899b107a77fb0d4f339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_player_8h.html#af7e3874732b33899b107a77fb0d4f339">create</a> (std::string type, std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
-<tr class="memdesc:af7e3874732b33899b107a77fb0d4f339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for creating player.  <a href="#af7e3874732b33899b107a77fb0d4f339">More...</a><br /></td></tr>
+<tr class="memitem:af7e3874732b33899b107a77fb0d4f339"><td class="memItemLeft" align="right" valign="top"><a id="af7e3874732b33899b107a77fb0d4f339"></a>
+<a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_player_8h.html#af7e3874732b33899b107a77fb0d4f339">create</a> (std::string type, std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
+<tr class="memdesc:af7e3874732b33899b107a77fb0d4f339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for creating player. <br /></td></tr>
 <tr class="separator:af7e3874732b33899b107a77fb0d4f339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains header for player class </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="af7e3874732b33899b107a77fb0d4f339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7e3874732b33899b107a77fb0d4f339">&#9670;&nbsp;</a></span>create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_player.html">Player</a>* create </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>nm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Method for creating player. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>contains header for player classes </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

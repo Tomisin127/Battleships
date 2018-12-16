@@ -2,35 +2,42 @@
 \label{_player_8h}\index{D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\+Player.\+h@{D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\+Player.\+h}}
 
 
-contains header for player class  
+contains header for player classes  
 
 
-{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_player}{Player}}
-\begin{DoxyCompactList}\small\item\em Declaration for \mbox{\hyperlink{class_game}{Game}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Declaration for \mbox{\hyperlink{class_game}{Game}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_human_player}{Human\+Player}}
+\item 
+class \mbox{\hyperlink{class_easy_player}{Easy\+Player}}
+\item 
+class \mbox{\hyperlink{class_medium_player}{Medium\+Player}}
+\item 
+class \mbox{\hyperlink{class_hard_player}{Hard\+Player}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_player_8h_a1e07068d5a987b2549ecb468bd821b56}\label{_player_8h_a1e07068d5a987b2549ecb468bd821b56}} 
+enum \mbox{\hyperlink{_player_8h_a1e07068d5a987b2549ecb468bd821b56}{next\+Shot}} \{ {\bfseries L\+E\+FT}, 
+{\bfseries R\+I\+G\+HT}, 
+{\bfseries UP}, 
+{\bfseries D\+O\+WN}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration containing directions for next shot. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{_player_8h_af7e3874732b33899b107a77fb0d4f339}\label{_player_8h_af7e3874732b33899b107a77fb0d4f339}} 
 \mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{_player_8h_af7e3874732b33899b107a77fb0d4f339}{create}} (std\+::string type, std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Method for creating player. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-contains header for player class 
-
-
-
-\subsection{Function Documentation}
-\mbox{\Hypertarget{_player_8h_af7e3874732b33899b107a77fb0d4f339}\label{_player_8h_af7e3874732b33899b107a77fb0d4f339}} 
-\index{Player.\+h@{Player.\+h}!create@{create}}
-\index{create@{create}!Player.\+h@{Player.\+h}}
-\subsubsection{\texorpdfstring{create()}{create()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ create (\begin{DoxyParamCaption}\item[{std\+::string}]{type,  }\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})}
-
-
-
-Method for creating player. 
+contains header for player classes 
 

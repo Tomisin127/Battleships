@@ -30,9 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Game where players can shoot each other&#39;s ships</div>
   </td>
  </tr>
  </tbody>
@@ -94,8 +93,6 @@ $(document).ready(function(){initNavTree('class_board.html','');});
 <div class="title">Board Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_board_8h_source.html">Board.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -128,15 +125,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aad9932b230d16c6eef6fd9305399fbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4653d3028e70fea9f56523173a2e0a13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#a4653d3028e70fea9f56523173a2e0a13">allDestroyed</a> () const</td></tr>
 <tr class="separator:a4653d3028e70fea9f56523173a2e0a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b25abe81ff08e6b574ecfc2dcaaa5be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#a1b25abe81ff08e6b574ecfc2dcaaa5be">Board</a> (const <a class="el" href="class_board.html">Board</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a1b25abe81ff08e6b574ecfc2dcaaa5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents board object from being copied/assigned.  <a href="#a1b25abe81ff08e6b574ecfc2dcaaa5be">More...</a><br /></td></tr>
+<tr class="memitem:a1b25abe81ff08e6b574ecfc2dcaaa5be"><td class="memItemLeft" align="right" valign="top"><a id="a1b25abe81ff08e6b574ecfc2dcaaa5be"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#a1b25abe81ff08e6b574ecfc2dcaaa5be">Board</a> (const <a class="el" href="class_board.html">Board</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a1b25abe81ff08e6b574ecfc2dcaaa5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents board object from being copied/assigned. <br /></td></tr>
 <tr class="separator:a1b25abe81ff08e6b574ecfc2dcaaa5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892306c4b944bfe904b297092763084a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_board.html">Board</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#a892306c4b944bfe904b297092763084a">operator=</a> (const <a class="el" href="class_board.html">Board</a> &amp;)=delete</td></tr>
+<tr class="memitem:a892306c4b944bfe904b297092763084a"><td class="memItemLeft" align="right" valign="top"><a id="a892306c4b944bfe904b297092763084a"></a>
+<a class="el" href="class_board.html">Board</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_board.html">Board</a> &amp;)=delete</td></tr>
 <tr class="separator:a892306c4b944bfe904b297092763084a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa08d83943c9f7c727a96175feb05f1f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa08d83943c9f7c727a96175feb05f1f8">&#9670;&nbsp;</a></span>Board() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08d83943c9f7c727a96175feb05f1f8">&#9670;&nbsp;</a></span>Board()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,34 +177,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor for board object. </p>
 <p>Deletes board implementation </p>
-
-</div>
-</div>
-<a id="a1b25abe81ff08e6b574ecfc2dcaaa5be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b25abe81ff08e6b574ecfc2dcaaa5be">&#9670;&nbsp;</a></span>Board() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Board::Board </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prevents board object from being copied/assigned. </p>
 
 </div>
 </div>
@@ -343,32 +314,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a892306c4b944bfe904b297092763084a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892306c4b944bfe904b297092763084a">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_board.html">Board</a>&amp; Board::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

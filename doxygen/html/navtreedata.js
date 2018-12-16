@@ -24,27 +24,15 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Battleships", "index.html", [
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
-      ] ]
-    ] ],
+    [ "Battleships", "md__d_1_kouluhommat__advanced__object-_oriented__programming_lopputy_xC3_xB6__battleship__battleship__r_e_a_d_m_e.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -53,9 +41,7 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Enumerations", "globals_enum.html", null ]
       ] ]
     ] ]
   ] ]
@@ -63,10 +49,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_board_8cpp.html",
-"catch_8hpp.html#ad512fd95a78b95770b9759823f8fbc21",
-"class_game.html#abb28875d74d25fa9e0dcdbe37c6ad89c",
-"struct_catch_1_1_i_result_capture.html#ab020d111e29ad1cabe1227dcfda712ef"
+".html",
+"class_game.html#a9102360e66754f58044c93d80260f6d0",
+"struct_catch_1_1_matchers_1_1_std_string_1_1_regex_matcher.html#a1f788cd5258c987e5043f6c7f43adeb9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

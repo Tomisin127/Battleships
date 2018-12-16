@@ -30,9 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Game where players can shoot each other&#39;s ships</div>
   </td>
  </tr>
  </tbody>
@@ -94,8 +93,6 @@ $(document).ready(function(){initNavTree('struct_catch_1_1_generators_1_1_i_gene
 <div class="title">Catch::Generators::IGenerator&lt; T &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="catch_8hpp_source.html">catch.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Catch::Generators::IGenerator&lt; T &gt;:</div>
 <div class="dyncontent">
@@ -112,70 +109,10 @@ Inheritance diagram for Catch::Generators::IGenerator&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d877bd8144e71d402347b227c909ffb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_catch_1_1_generators_1_1_i_generator.html#a7d877bd8144e71d402347b227c909ffb">~IGenerator</a> ()</td></tr>
-<tr class="separator:a7d877bd8144e71d402347b227c909ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a737a89eb0bff02e580e36c59fb0d1171"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_catch_1_1_generators_1_1_i_generator.html#a737a89eb0bff02e580e36c59fb0d1171">get</a> (size_t index) const -&gt; T=0</td></tr>
+<tr class="memitem:a737a89eb0bff02e580e36c59fb0d1171"><td class="memItemLeft" align="right" valign="top"><a id="a737a89eb0bff02e580e36c59fb0d1171"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (size_t index) const -&gt; T=0</td></tr>
 <tr class="separator:a737a89eb0bff02e580e36c59fb0d1171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7d877bd8144e71d402347b227c909ffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d877bd8144e71d402347b227c909ffb">&#9670;&nbsp;</a></span>~IGenerator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="struct_catch_1_1_generators_1_1_i_generator.html">Catch::Generators::IGenerator</a>&lt; T &gt;::~<a class="el" href="struct_catch_1_1_generators_1_1_i_generator.html">IGenerator</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a737a89eb0bff02e580e36c59fb0d1171"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a737a89eb0bff02e580e36c59fb0d1171">&#9670;&nbsp;</a></span>get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual auto <a class="el" href="struct_catch_1_1_generators_1_1_i_generator.html">Catch::Generators::IGenerator</a>&lt; T &gt;::get </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const -&gt;  T</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_catch_1_1_generators_1_1_generator_randomiser.html#a4ad5de15865727bdaa638863e0969ab4">Catch::Generators::GeneratorRandomiser&lt; T &gt;</a>, <a class="el" href="struct_catch_1_1_generators_1_1_null_generator.html#a17a2cc82d644e97afded4017c7a062ef">Catch::Generators::NullGenerator&lt; T &gt;</a>, <a class="el" href="class_catch_1_1_generators_1_1_range_generator.html#a78f7f624b7545823d1a683ebf2ac00e7">Catch::Generators::RangeGenerator&lt; T &gt;</a>, <a class="el" href="class_catch_1_1_generators_1_1_fixed_values_generator.html#a3ed654a5860c170dbe7b01487b83253d">Catch::Generators::FixedValuesGenerator&lt; T &gt;</a>, and <a class="el" href="class_catch_1_1_generators_1_1_single_value_generator.html#ad03af3fe263136425595bfd2eec84209">Catch::Generators::SingleValueGenerator&lt; T &gt;</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="catch_8hpp_source.html">catch.hpp</a></li>
 </ul>
@@ -184,7 +121,7 @@ template&lt;typename T &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_catch.html">Catch</a></li><li class="navelem"><a class="el" href="namespace_catch_1_1_generators.html">Generators</a></li><li class="navelem"><a class="el" href="struct_catch_1_1_generators_1_1_i_generator.html">IGenerator</a></li>
+    <li class="navelem"><b>Catch</b></li><li class="navelem"><b>Generators</b></li><li class="navelem"><a class="el" href="struct_catch_1_1_generators_1_1_i_generator.html">IGenerator</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>

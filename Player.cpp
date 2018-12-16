@@ -14,19 +14,6 @@
 #include <cmath>
 
 using namespace std;
-/**
- * HumanPlayer: implementation for player class that's controlled by human
- */
-class HumanPlayer : public Player{
-    public:
-        HumanPlayer(string nm, const Game& g) : Player(nm, g){};
-        ~HumanPlayer() {};  ///< Destructor for human player
-        virtual bool human() const { return true; };
-        virtual bool placeShips(Board& b);
-        virtual Point recommend();
-        virtual void recordResult(Point p, bool validShot, bool hit, bool destroyed, int shipID);
-        virtual void recordOpponent(Point p);
-};
 
 /**
  * Function for getting two integers from user input
@@ -200,19 +187,6 @@ void HumanPlayer::recordResult(Point p, bool validShot, bool hit, bool destroyed
 void HumanPlayer::recordOpponent(Point p){
     //Null
 }
-/**
- * EasyPlayer: class containing implementation of easy bot
- */
-class EasyPlayer : public Player{
-    public:
-        EasyPlayer(string nm, const Game& g);   ///< Constructor for easy player
-        virtual bool placeShips(Board& b);  ///< Method for placing ships
-        virtual Point recommend();    ///< Recommends attack for easy player
-        virtual void recordResult(Point p, bool validShot, bool hit, bool destroyed, int shipID); ///< Record attack result
-        virtual void recordOpponent(Point p);   ///< Records opponent's result
-    private:
-        Point mLastCell;    ///Last cell attacked
-};
 
 /**
  * Method for creating easy player
@@ -274,41 +248,6 @@ void EasyPlayer::recordResult(Point p , bool validShot, bool hit, bool destroyed
 void EasyPlayer::recordOpponent(Point p){
     //Null
 }
-
-/**
- * MediumPlayer: class implementation for player class that's controlled by medium bot
- */
-class MediumPlayer : public Player{
-    public:
-        ///Constructor for medium bot
-        MediumPlayer(string nm, const Game& g) : Player(nm, g), state1(true), numShots(0){
-            for(int i = 0; i < 100; i++){
-                mShots[i].r = 69;
-                mShots[i].c = 69;
-            }
-        };
-        ~MediumPlayer() {}; ///< Destructor for medium player
-        virtual bool placeShips(Board& b); ///< Method for placing ships
-        virtual Point recommend();  ///< Method for recommending attack
-        ///Method for recording attack result
-        virtual void recordResult(Point p, bool validShot, bool hit, bool destroyed, int shipID);
-        virtual void recordOpponent(Point p);   ///< Method for recording opponent's result
-        /// Method for helping medium bot's operations
-        bool mediumHelper(Board& b, int shipID, int r, int c, Direction ld);
-        virtual bool getState() const { return state1; };   ///< Getter for last state
-        virtual void changeState(bool state) { state1 = state; };   ///< Method for changing state
-        virtual Point getLastP() const { return lastState; };   ///< Getter for last point
-        ///Method for changing last point
-        virtual void changeLastP(Point p) { lastState.r = p.r; lastState.c = p.c; };
-        virtual bool alreadyShot(Point p);  ///< Method for checking if player has already shot
-        virtual void addPoint(Point p); ///< Method for adding point into shots
-
-    private:
-        bool state1;    ///< Boolean for state1
-        Point mShots[100];  ///< Point for shots
-        Point lastState;    ///< Point for last state
-        int numShots;       ///< Integer containing number of shots
-};
 
 /**
  * Method for checking if medium bot has already shot
@@ -541,54 +480,6 @@ void MediumPlayer::recordResult(Point p, bool validShot, bool hit, bool destroye
 void MediumPlayer::recordOpponent(Point p){
     // Null
 }
-
-/**
- *  HardPlayer: implementation for player class that's controlled by hard bot
- */
-class HardPlayer : public Player{
-    public:
-        ///Constructor for hard bot
-        HardPlayer(string nm, const Game& g) : Player(nm, g), state1(true), numShots(0), hitSinceChng(0){
-            for(int i = 0; i < (MAXROWS * MAXCOLS); i++){
-                mShots[i].r = 69;
-                mShots[i].c = 69;
-            }
-            ///Loops through game's rows
-            for(int i = 0; i < game().rows(); i++){
-                ///Loops through games columns
-                for(int j = 0; j < game().cols(); j++){
-                    myShips[i][j] = '.';    ///< Clears screen
-                }
-            }
-        };
-        ~HardPlayer() {};   ///< Destructor for hard player
-        virtual bool placeShips(Board& b);  ///< Method for placing ships
-        virtual Point recommend();  ///< Method for recommending attack
-        /// Method for recording attack result
-        virtual void recordResult(Point p, bool validShot, bool hit, bool destroyed, int shipID);
-        virtual void recordOpponent(Point p);   ///< Method for recording opponent's attack result
-        virtual bool getState() const { return state1; };   ///< Method for getting state 1
-        virtual void changeState(bool state) { state1 = state; };   ///< Method for changing state
-        virtual Point getLastP() const { return lastState; };   ///< Getter for last point
-        virtual bool alreadyShot(Point p);  ///< Method for checking if point has already been shot
-        virtual void addPoint(Point p); ///< Method for adding point to shots
-        /// Method for helping hard bot's operations
-        bool hardHelper(Board& b, int shipID, int c, int track);
-        bool checkShips(Point p, Direction d, int shipID);  ///< Method for checking ships
-        void recordShip(Point p, Direction d, int shipID);  ///< Method for recording ships
-        bool closeBy(Point p);  ///< Method for checking target's that are close by
-    private:
-        bool state1;    ///< boolean for first state
-        Point mShots[MAXCOLS * MAXROWS];    ///< Point object for possible shots
-        Point lastState;    ///< Point object for last state
-        int numShots;   ///< Integer containing number of shots
-        vector<Point> hitShots; ///< Vector containing shots that have hit targets
-        int hitSinceChng;   ///< Integer containing hits since last state change
-        char myShips[MAXROWS][MAXCOLS]; ///< Char array containing player's ships
-};
-
-///Enumeration containing directions for next shot
-enum nextShot { LEFT, RIGHT, UP, DOWN };
 
 /**
  * Method for checking if there are targets close by

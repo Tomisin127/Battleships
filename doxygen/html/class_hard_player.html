@@ -30,9 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Game where players can shoot each other&#39;s ships</div>
   </td>
  </tr>
  </tbody>
@@ -94,6 +93,8 @@ $(document).ready(function(){initNavTree('class_hard_player.html','');});
 <div class="title">HardPlayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_player_8h_source.html">Player.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for HardPlayer:</div>
 <div class="dyncontent">
@@ -106,32 +107,28 @@ Inheritance diagram for HardPlayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a37cfa417c531f1988469965a7b4adc9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a37cfa417c531f1988469965a7b4adc9e">HardPlayer</a> (string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
-<tr class="memdesc:a37cfa417c531f1988469965a7b4adc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for hard bot.  <a href="#a37cfa417c531f1988469965a7b4adc9e">More...</a><br /></td></tr>
-<tr class="separator:a37cfa417c531f1988469965a7b4adc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f3946384b7ca6c3e92a992b11a0ba8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a86f3946384b7ca6c3e92a992b11a0ba8">~HardPlayer</a> ()</td></tr>
-<tr class="separator:a86f3946384b7ca6c3e92a992b11a0ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d564084e88021b21324672bf67b169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a40d564084e88021b21324672bf67b169">HardPlayer</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
+<tr class="memdesc:a40d564084e88021b21324672bf67b169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for hard bot.  <a href="#a40d564084e88021b21324672bf67b169">More...</a><br /></td></tr>
+<tr class="separator:a40d564084e88021b21324672bf67b169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d0ad3353eba585d7a93d2092036f98"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a27d0ad3353eba585d7a93d2092036f98">placeShips</a> (<a class="el" href="class_board.html">Board</a> &amp;b)</td></tr>
 <tr class="memdesc:a27d0ad3353eba585d7a93d2092036f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for hard player.  <a href="#a27d0ad3353eba585d7a93d2092036f98">More...</a><br /></td></tr>
 <tr class="separator:a27d0ad3353eba585d7a93d2092036f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d21325a648a88f1bf51f2b0b286190"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#ae1d21325a648a88f1bf51f2b0b286190">recommend</a> ()</td></tr>
 <tr class="separator:ae1d21325a648a88f1bf51f2b0b286190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8977ca3294daf996707bd0ff434d69e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#aa8977ca3294daf996707bd0ff434d69e">recordResult</a> (<a class="el" href="class_point.html">Point</a> p, bool validShot, bool hit, bool destroyed, int shipID)</td></tr>
-<tr class="memdesc:aa8977ca3294daf996707bd0ff434d69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for recording attack result.  <a href="#aa8977ca3294daf996707bd0ff434d69e">More...</a><br /></td></tr>
 <tr class="separator:aa8977ca3294daf996707bd0ff434d69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a986175fb966099ac5fe39950e18799ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a986175fb966099ac5fe39950e18799ae">recordOpponent</a> (<a class="el" href="class_point.html">Point</a> p)</td></tr>
-<tr class="memdesc:a986175fb966099ac5fe39950e18799ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for recording opponent's attack result.  <a href="#a986175fb966099ac5fe39950e18799ae">More...</a><br /></td></tr>
 <tr class="separator:a986175fb966099ac5fe39950e18799ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063d9f4071b687339fbc134239771ef3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a063d9f4071b687339fbc134239771ef3">getState</a> () const</td></tr>
+<tr class="memitem:a063d9f4071b687339fbc134239771ef3"><td class="memItemLeft" align="right" valign="top"><a id="a063d9f4071b687339fbc134239771ef3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>getState</b> () const</td></tr>
 <tr class="separator:a063d9f4071b687339fbc134239771ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25afded558192bd39d8d2c1b2a8209a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#aa25afded558192bd39d8d2c1b2a8209a">changeState</a> (bool state)</td></tr>
-<tr class="memdesc:aa25afded558192bd39d8d2c1b2a8209a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for getting state 1.  <a href="#aa25afded558192bd39d8d2c1b2a8209a">More...</a><br /></td></tr>
+<tr class="memitem:aa25afded558192bd39d8d2c1b2a8209a"><td class="memItemLeft" align="right" valign="top"><a id="aa25afded558192bd39d8d2c1b2a8209a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>changeState</b> (bool state)</td></tr>
 <tr class="separator:aa25afded558192bd39d8d2c1b2a8209a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad86f7d42434ae5526d7a1ca4ea65b51a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#ad86f7d42434ae5526d7a1ca4ea65b51a">getLastP</a> () const</td></tr>
-<tr class="memdesc:ad86f7d42434ae5526d7a1ca4ea65b51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for changing state.  <a href="#ad86f7d42434ae5526d7a1ca4ea65b51a">More...</a><br /></td></tr>
+<tr class="memitem:ad86f7d42434ae5526d7a1ca4ea65b51a"><td class="memItemLeft" align="right" valign="top"><a id="ad86f7d42434ae5526d7a1ca4ea65b51a"></a>
+virtual <a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getLastP</b> () const</td></tr>
 <tr class="separator:ad86f7d42434ae5526d7a1ca4ea65b51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8107a94c8db7d5f1023dbeeddfaaedb2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a8107a94c8db7d5f1023dbeeddfaaedb2">alreadyShot</a> (<a class="el" href="class_point.html">Point</a> p)</td></tr>
-<tr class="memdesc:a8107a94c8db7d5f1023dbeeddfaaedb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for last point.  <a href="#a8107a94c8db7d5f1023dbeeddfaaedb2">More...</a><br /></td></tr>
 <tr class="separator:a8107a94c8db7d5f1023dbeeddfaaedb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c82c1a36c9e956fdab98837ed888e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a77c82c1a36c9e956fdab98837ed888e5">addPoint</a> (<a class="el" href="class_point.html">Point</a> p)</td></tr>
 <tr class="separator:a77c82c1a36c9e956fdab98837ed888e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,32 +145,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a91cdd6239e111ea02bff561f6a3a0c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for checking target's that are close by.  <a href="#a91cdd6239e111ea02bff561f6a3a0c41">More...</a><br /></td></tr>
 <tr class="separator:a91cdd6239e111ea02bff561f6a3a0c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_player"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_player')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_player.html">Player</a></td></tr>
-<tr class="memitem:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf">Player</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
-<tr class="memdesc:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for player.  <a href="class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf">More...</a><br /></td></tr>
+<tr class="memitem:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="adebc0e1afa34a20c0be570f8e9e3a9bf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf">Player</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
+<tr class="memdesc:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for player. <br /></td></tr>
 <tr class="separator:adebc0e1afa34a20c0be570f8e9e3a9bf inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8981c201ffb2270c0b6dbd467b627376">~Player</a> ()</td></tr>
-<tr class="memdesc:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for player.  <a href="class_player.html#a8981c201ffb2270c0b6dbd467b627376">More...</a><br /></td></tr>
+<tr class="memitem:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a8981c201ffb2270c0b6dbd467b627376"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a8981c201ffb2270c0b6dbd467b627376">~Player</a> ()</td></tr>
+<tr class="memdesc:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for player. <br /></td></tr>
 <tr class="separator:a8981c201ffb2270c0b6dbd467b627376 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a422139ad63182cfc9f82305b87a3f9a5">name</a> () const</td></tr>
-<tr class="memdesc:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for name.  <a href="class_player.html#a422139ad63182cfc9f82305b87a3f9a5">More...</a><br /></td></tr>
+<tr class="memitem:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a422139ad63182cfc9f82305b87a3f9a5"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a422139ad63182cfc9f82305b87a3f9a5">name</a> () const</td></tr>
+<tr class="memdesc:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for name. <br /></td></tr>
 <tr class="separator:a422139ad63182cfc9f82305b87a3f9a5 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab4ef841709083fe60f6647ce0a7ca816">game</a> () const</td></tr>
-<tr class="memdesc:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for reference of game.  <a href="class_player.html#ab4ef841709083fe60f6647ce0a7ca816">More...</a><br /></td></tr>
+<tr class="memitem:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ab4ef841709083fe60f6647ce0a7ca816"></a>
+const <a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab4ef841709083fe60f6647ce0a7ca816">game</a> () const</td></tr>
+<tr class="memdesc:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for reference of game. <br /></td></tr>
 <tr class="separator:ab4ef841709083fe60f6647ce0a7ca816 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a47c5497b2d8bf5d745e85952d0bf097f">human</a> () const</td></tr>
-<tr class="memdesc:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player is human.  <a href="class_player.html#a47c5497b2d8bf5d745e85952d0bf097f">More...</a><br /></td></tr>
+<tr class="memitem:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a47c5497b2d8bf5d745e85952d0bf097f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a47c5497b2d8bf5d745e85952d0bf097f">human</a> () const</td></tr>
+<tr class="memdesc:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player is human. <br /></td></tr>
 <tr class="separator:a47c5497b2d8bf5d745e85952d0bf097f inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4">Player</a> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
-<tr class="memdesc:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents player object from being copied/assigned.  <a href="class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4">More...</a><br /></td></tr>
+<tr class="memitem:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ae8015d1f08ba69d663cfdaea1a64d1a4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4">Player</a> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents player object from being copied/assigned. <br /></td></tr>
 <tr class="separator:ae8015d1f08ba69d663cfdaea1a64d1a4 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81d34e4adb4e329d26b1635d866462d inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab81d34e4adb4e329d26b1635d866462d">operator=</a> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
+<tr class="memitem:ab81d34e4adb4e329d26b1635d866462d inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ab81d34e4adb4e329d26b1635d866462d"></a>
+<a class="el" href="class_player.html">Player</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_player.html">Player</a> &amp;)=delete</td></tr>
 <tr class="separator:ab81d34e4adb4e329d26b1635d866462d inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_hard_player.html">HardPlayer</a>: implementation for player class that's controlled by hard bot </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a37cfa417c531f1988469965a7b4adc9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37cfa417c531f1988469965a7b4adc9e">&#9670;&nbsp;</a></span>HardPlayer()</h2>
+<a id="a40d564084e88021b21324672bf67b169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d564084e88021b21324672bf67b169">&#9670;&nbsp;</a></span>HardPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +188,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">HardPlayer::HardPlayer </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>nm</em>, </td>
         </tr>
         <tr>
@@ -213,31 +217,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a86f3946384b7ca6c3e92a992b11a0ba8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86f3946384b7ca6c3e92a992b11a0ba8">&#9670;&nbsp;</a></span>~HardPlayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HardPlayer::~HardPlayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a77c82c1a36c9e956fdab98837ed888e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77c82c1a36c9e956fdab98837ed888e5">&#9670;&nbsp;</a></span>addPoint()</h2>
@@ -262,7 +241,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method for adding point to shots</p>
 <p>Method for adding target location to shots </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td><a class="el" href="class_point.html">Point</a> containing targeted cell </td></tr>
@@ -295,9 +273,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Getter for last point. </p>
-<p>Method for checking if point has already been shot</p>
 <p>Method for checking if player has already shot targeted location </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td><a class="el" href="class_point.html">Point</a> containing target cell </td></tr>
@@ -307,34 +282,6 @@ Public Member Functions</h2></td></tr>
 <p>Checks if target is OoB</p>
 <p>Loops through number of shots</p>
 <p>Checks if shots contain targeted cell </p>
-
-</div>
-</div>
-<a id="aa25afded558192bd39d8d2c1b2a8209a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25afded558192bd39d8d2c1b2a8209a">&#9670;&nbsp;</a></span>changeState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void HardPlayer::changeState </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>state</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Method for getting state 1. </p>
 
 </div>
 </div>
@@ -446,58 +393,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Loops through number of shots </p>
-
-</div>
-</div>
-<a id="ad86f7d42434ae5526d7a1ca4ea65b51a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad86f7d42434ae5526d7a1ca4ea65b51a">&#9670;&nbsp;</a></span>getLastP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="class_point.html">Point</a> HardPlayer::getLastP </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Method for changing state. </p>
-
-</div>
-</div>
-<a id="a063d9f4071b687339fbc134239771ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a063d9f4071b687339fbc134239771ef3">&#9670;&nbsp;</a></span>getState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool HardPlayer::getState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -619,7 +514,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructor for hard player. </p>
-<p>Method for placing ships</p>
 <p>Method for placing ships </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b</td><td>reference to game board </td></tr>
@@ -964,8 +858,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Method for recording opponent's attack result. </p>
 <p>Method for recording opponent's attacks </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td><a class="el" href="class_point.html">Point</a> containing targeted cell </td></tr>
@@ -1028,8 +920,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Method for recording attack result. </p>
 <p>Method for recording attack result </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td><a class="el" href="class_point.html">Point</a> containing target cell </td></tr>
@@ -1103,7 +993,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="_player_8h_source.html">Player.h</a></li>
 <li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="_player_8cpp.html">Player.cpp</a></li>
 </ul>
 </div><!-- contents -->

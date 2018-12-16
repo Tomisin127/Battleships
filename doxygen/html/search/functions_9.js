@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['lastassertionpassed',['lastAssertionPassed',['../struct_catch_1_1_i_result_capture.html#a973435fbdcb2f6f07a0ec5719a01e956',1,'Catch::IResultCapture']]],
-  ['lazyexpression',['LazyExpression',['../class_catch_1_1_lazy_expression.html#a47186c2487bd4bf871e870ba8048553a',1,'Catch::LazyExpression::LazyExpression(bool isNegated)'],['../class_catch_1_1_lazy_expression.html#ab82d5e94df0e159b018fbde0170e46f8',1,'Catch::LazyExpression::LazyExpression(LazyExpression const &amp;other)']]]
+  ['placeship',['placeShip',['../class_board.html#a47be427a7c565e29dd2606c95972bf91',1,'Board::placeShip()'],['../class_board_impl.html#af0fd0226fc1f401374a0cbbfbab98769',1,'BoardImpl::placeShip()']]],
+  ['placeships',['placeShips',['../class_player.html#ab89c1180c7314d3e19bcf4b2bed2e02a',1,'Player::placeShips()'],['../class_human_player.html#ae9315a3c66f6b2f2bf4d1ebb09669aff',1,'HumanPlayer::placeShips()'],['../class_easy_player.html#a4b9d5815113f393615412f7a98176a6c',1,'EasyPlayer::placeShips()'],['../class_medium_player.html#ac4d4748e2c27a2a51033bbce9f12de26',1,'MediumPlayer::placeShips()'],['../class_hard_player.html#a27d0ad3353eba585d7a93d2092036f98',1,'HardPlayer::placeShips()']]],
+  ['play',['play',['../class_game_impl.html#adf2cc88e7c3f617a7033512d05a6ba0c',1,'GameImpl::play()'],['../class_game.html#a9102360e66754f58044c93d80260f6d0',1,'Game::play()']]],
+  ['player',['Player',['../class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf',1,'Player::Player(std::string nm, const Game &amp;g)'],['../class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4',1,'Player::Player(const Player &amp;)=delete']]],
+  ['point',['Point',['../class_point.html#ad92f2337b839a94ce97dcdb439b4325a',1,'Point']]]
 ];

@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['filtertests',['filterTests',['../namespace_catch.html#ab5da9aa67c42a3f626aea07d0b556829',1,'Catch']]],
-  ['finalizedescription',['finalizeDescription',['../namespace_catch_1_1_matchers_1_1_generic_1_1_detail.html#a79ef1103073f7a8d31735436d2012835',1,'Catch::Matchers::Generic::Detail']]],
-  ['fixedvaluesgenerator',['FixedValuesGenerator',['../class_catch_1_1_generators_1_1_fixed_values_generator.html#a6e9f473655413c1cb15f079890f06b86',1,'Catch::Generators::FixedValuesGenerator']]],
-  ['formatreconstructedexpression',['formatReconstructedExpression',['../namespace_catch.html#a520110c31f26cf9892595772ab814fc0',1,'Catch']]]
+  ['game',['game',['../class_player.html#ab4ef841709083fe60f6647ce0a7ca816',1,'Player::game()'],['../class_game.html#a848102f31ba288bac7aa39db4378db7a',1,'Game::Game(int nRows, int nCols)'],['../class_game.html#abb28875d74d25fa9e0dcdbe37c6ad89c',1,'Game::Game(const Game &amp;)=delete']]],
+  ['gameimpl',['GameImpl',['../class_game_impl.html#a1ec88dfb57e180ee008cff4cf10934bf',1,'GameImpl']]],
+  ['getlastp',['getLastP',['../class_medium_player.html#abd585986250a5b713d6a554ea70e3ba6',1,'MediumPlayer']]],
+  ['getname',['getName',['../class_ship.html#a2ae29387f5c93aa238c3d90526118a20',1,'Ship']]],
+  ['getshipid',['getShipID',['../class_ship.html#add61243cfbd60ea5fc3ab79d4ae0c99d',1,'Ship']]],
+  ['getsymbol',['getSymbol',['../class_ship.html#a86ea5893e49e12ceeb6ff43a6f78d86d',1,'Ship']]],
+  ['gettwointegers',['getTwoIntegers',['../_player_8cpp.html#a72b0e7e7c053e4606495cd4c782504f4',1,'Player.cpp']]]
 ];
