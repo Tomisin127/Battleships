@@ -13,6 +13,8 @@ Inheritance diagram for Medium\+Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_medium_player_a6a51f6bab42f57e8af235f2ab196d74e}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\item 
 \mbox{\Hypertarget{class_medium_player_a76923857c4fa54d192ed4644c72bce2d}\label{class_medium_player_a76923857c4fa54d192ed4644c72bce2d}} 
 \mbox{\hyperlink{class_medium_player_a76923857c4fa54d192ed4644c72bce2d}{Medium\+Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Constructor for medium bot. \end{DoxyCompactList}\item 
@@ -91,7 +93,24 @@ Checks if point\textquotesingle{}s rows and columns correspond to shot\textquote
 
 Method for changing last point. 
 
-Getter for last point \mbox{\Hypertarget{class_medium_player_a502c34f56cfe60def6d01de7c4f300e2}\label{class_medium_player_a502c34f56cfe60def6d01de7c4f300e2}} 
+Getter for last point \mbox{\Hypertarget{class_medium_player_a6a51f6bab42f57e8af235f2ab196d74e}\label{class_medium_player_a6a51f6bab42f57e8af235f2ab196d74e}} 
+\index{Medium\+Player@{Medium\+Player}!create@{create}}
+\index{create@{create}!Medium\+Player@{Medium\+Player}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Medium\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Pure virtual method for creating a player 
+\begin{DoxyParams}{Parameters}
+{\em nm} & string containing player\textquotesingle{}s name \\
+\hline
+{\em g} & reference to game object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_player_a9b9133f3347894da1416953048cecdb2}{Player}}.
+
+\mbox{\Hypertarget{class_medium_player_a502c34f56cfe60def6d01de7c4f300e2}\label{class_medium_player_a502c34f56cfe60def6d01de7c4f300e2}} 
 \index{Medium\+Player@{Medium\+Player}!medium\+Helper@{medium\+Helper}}
 \index{medium\+Helper@{medium\+Helper}!Medium\+Player@{Medium\+Player}}
 \subsubsection{\texorpdfstring{medium\+Helper()}{mediumHelper()}}

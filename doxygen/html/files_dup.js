@@ -20,6 +20,10 @@ var files_dup =
     [ "Player.cpp", "_player_8cpp.html", "_player_8cpp" ],
     [ "Player.h", "_player_8h.html", "_player_8h" ],
     [ "Player_tests.cpp", "_player__tests_8cpp.html", "_player__tests_8cpp" ],
+    [ "PlayerFactory.cpp", "_player_factory_8cpp.html", null ],
+    [ "PlayerFactory.h", "_player_factory_8h.html", [
+      [ "PlayerFactory", "class_player_factory.html", null ]
+    ] ],
     [ "Setup.h", "_setup_8h.html", [
       [ "Setup", "class_setup.html", "class_setup" ]
     ] ],

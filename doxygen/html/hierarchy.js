@@ -109,6 +109,7 @@ var hierarchy =
       [ "HumanPlayer", "class_human_player.html", null ],
       [ "MediumPlayer", "class_medium_player.html", null ]
     ] ],
+    [ "PlayerFactory", "class_player_factory.html", null ],
     [ "Catch::pluralise", "struct_catch_1_1pluralise.html", null ],
     [ "Point", "class_point.html", null ],
     [ "Catch::RegistrarForTagAliases", "struct_catch_1_1_registrar_for_tag_aliases.html", null ],

@@ -18,6 +18,8 @@ Inheritance diagram for Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_player_a9b9133f3347894da1416953048cecdb2}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)=0
+\item 
 \mbox{\Hypertarget{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}\label{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}} 
 \mbox{\hyperlink{class_player_adebc0e1afa34a20c0be570f8e9e3a9bf}{Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Constructor for player. \end{DoxyCompactList}\item 
@@ -55,6 +57,23 @@ virtual void \mbox{\hyperlink{class_player_a768e14edee61e208e6fd295cdd72a49c}{re
 Declaration for \mbox{\hyperlink{class_game}{Game}} class. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a9b9133f3347894da1416953048cecdb2}\label{class_player_a9b9133f3347894da1416953048cecdb2}} 
+\index{Player@{Player}!create@{create}}
+\index{create@{create}!Player@{Player}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_player}{Player}}$\ast$ Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual method for creating a player 
+\begin{DoxyParams}{Parameters}
+{\em nm} & string containing player\textquotesingle{}s name \\
+\hline
+{\em g} & reference to game object \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hard_player_ab3e76893b9c5163a33ea91b201715a98}{Hard\+Player}}, \mbox{\hyperlink{class_medium_player_a6a51f6bab42f57e8af235f2ab196d74e}{Medium\+Player}}, \mbox{\hyperlink{class_easy_player_ae927ab9f7f4d152fd457e037ad7828a5}{Easy\+Player}}, and \mbox{\hyperlink{class_human_player_ac369ccb03a62b40dcf3dc157841a965e}{Human\+Player}}.
+
 \mbox{\Hypertarget{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}\label{class_player_a2cc7a83d11158eafd8d49d4b9f23ce56}} 
 \index{Player@{Player}!recommend@{recommend}}
 \index{recommend@{recommend}!Player@{Player}}

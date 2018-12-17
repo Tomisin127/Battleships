@@ -8,6 +8,7 @@
 #include "Game.h"
 #include "Board.h"
 #include "Player.h"
+#include "PlayerFactory.h"
 #include "Globals.h"
 
 using namespace std;
@@ -17,10 +18,12 @@ TEST_CASE("Test human player", "[player]"){
     Game tg(10, 10);
     Board tb(tg);
 
-    Player* tp1 = create("Human", "TestHuman", tg);
-    Player* tp2 = create("Easy", "TestEasy", tg);
-    Player* tp3 = create("Medium", "TestMedium", tg);
-    Player* tp4 = create("Hard", "TestHard", tg);
+    PlayerFactory tf;
+
+    Player* tp1 = tf.createPlayer(1, "TestHuman", tg);
+    Player* tp2 = tf.createPlayer(2, "TestEasy", tg);
+    Player* tp3 = tf.createPlayer(3, "TestMedium", tg);
+    Player* tp4 = tf.createPlayer(4, "TestHard", tg);
 
     SECTION("Test human flag"){
         REQUIRE(tp1->human() == true);

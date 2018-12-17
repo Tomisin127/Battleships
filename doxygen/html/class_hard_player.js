@@ -7,6 +7,7 @@ var class_hard_player =
     [ "changeState", "class_hard_player.html#aa25afded558192bd39d8d2c1b2a8209a", null ],
     [ "checkShips", "class_hard_player.html#aebad1f5ad6f9ac20eb4f1ca639088c7b", null ],
     [ "closeBy", "class_hard_player.html#a91cdd6239e111ea02bff561f6a3a0c41", null ],
+    [ "create", "class_hard_player.html#ab3e76893b9c5163a33ea91b201715a98", null ],
     [ "getLastP", "class_hard_player.html#ad86f7d42434ae5526d7a1ca4ea65b51a", null ],
     [ "getState", "class_hard_player.html#a063d9f4071b687339fbc134239771ef3", null ],
     [ "hardHelper", "class_hard_player.html#aec6ff0ed3ef8f47ac46d374cff89e6be", null ],

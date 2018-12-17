@@ -3,6 +3,7 @@ var class_player =
     [ "Player", "class_player.html#adebc0e1afa34a20c0be570f8e9e3a9bf", null ],
     [ "~Player", "class_player.html#a8981c201ffb2270c0b6dbd467b627376", null ],
     [ "Player", "class_player.html#ae8015d1f08ba69d663cfdaea1a64d1a4", null ],
+    [ "create", "class_player.html#a9b9133f3347894da1416953048cecdb2", null ],
     [ "game", "class_player.html#ab4ef841709083fe60f6647ce0a7ca816", null ],
     [ "human", "class_player.html#a47c5497b2d8bf5d745e85952d0bf097f", null ],
     [ "name", "class_player.html#a422139ad63182cfc9f82305b87a3f9a5", null ],

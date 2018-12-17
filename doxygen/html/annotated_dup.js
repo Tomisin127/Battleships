@@ -141,6 +141,7 @@ var annotated_dup =
     [ "HumanPlayer", "class_human_player.html", "class_human_player" ],
     [ "MediumPlayer", "class_medium_player.html", "class_medium_player" ],
     [ "Player", "class_player.html", "class_player" ],
+    [ "PlayerFactory", "class_player_factory.html", null ],
     [ "Point", "class_point.html", "class_point" ],
     [ "Setup", "class_setup.html", "class_setup" ],
     [ "Ship", "class_ship.html", "class_ship" ]

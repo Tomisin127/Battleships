@@ -6,6 +6,7 @@ var class_medium_player =
     [ "alreadyShot", "class_medium_player.html#a0c237af510ff84898759ed2e9a9271ce", null ],
     [ "changeLastP", "class_medium_player.html#afc952f7dac91d979743154c021d8dee8", null ],
     [ "changeState", "class_medium_player.html#ae0f69d678d6567e09baed0350468be61", null ],
+    [ "create", "class_medium_player.html#a6a51f6bab42f57e8af235f2ab196d74e", null ],
     [ "getLastP", "class_medium_player.html#abd585986250a5b713d6a554ea70e3ba6", null ],
     [ "getState", "class_medium_player.html#a90a8cd5feeaa759043af77afe266907c", null ],
     [ "mediumHelper", "class_medium_player.html#a502c34f56cfe60def6d01de7c4f300e2", null ],

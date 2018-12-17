@@ -1,3 +1,8 @@
+/**
+ *  @file PlayerFactory.cpp
+ *  @brief contains factory for cloning player objects
+ */
+
 #include "PlayerFactory.h"
 
 

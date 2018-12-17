@@ -1,5 +1,12 @@
 var NAVTREEINDEX2 =
 {
+"struct_catch_1_1_matchers_1_1_std_string_1_1_cased_string.html#ae1c2864c986941536a6e94cca0528f92":[1,0,0,2,3,0,3],
+"struct_catch_1_1_matchers_1_1_std_string_1_1_contains_matcher.html":[1,0,0,2,3,1],
+"struct_catch_1_1_matchers_1_1_std_string_1_1_contains_matcher.html#a630628b234b037be83fe587081a80b53":[1,0,0,2,3,1,1],
+"struct_catch_1_1_matchers_1_1_std_string_1_1_contains_matcher.html#acc892883c8409e34b28c9b39d4ef1fe3":[1,0,0,2,3,1,0],
+"struct_catch_1_1_matchers_1_1_std_string_1_1_ends_with_matcher.html":[1,0,0,2,3,2],
+"struct_catch_1_1_matchers_1_1_std_string_1_1_ends_with_matcher.html#aa5ec700b4629562f74f362080accfd7b":[1,0,0,2,3,2,0],
+"struct_catch_1_1_matchers_1_1_std_string_1_1_ends_with_matcher.html#aca2741fa57374a2a98d2a84ac3e13a6d":[1,0,0,2,3,2,1],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html":[1,0,0,2,3,3],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#a0bb9d64693f7bb1ef7441062d219f21a":[1,0,0,2,3,3,1],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#ab740f1fb2310e9fe3fed5134d4c7e4c8":[1,0,0,2,3,3,0],

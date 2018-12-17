@@ -13,6 +13,8 @@ Inheritance diagram for Human\+Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_human_player_ac369ccb03a62b40dcf3dc157841a965e}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\item 
 \mbox{\Hypertarget{class_human_player_a443ff25b201959966555c0902a10e19c}\label{class_human_player_a443ff25b201959966555c0902a10e19c}} 
 {\bfseries Human\+Player} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \item 
@@ -33,6 +35,23 @@ virtual void \mbox{\hyperlink{class_human_player_a16b18f42e02d7c8d1f0971ce5e9159
 \mbox{\hyperlink{class_human_player}{Human\+Player}}\+: implementation for player class that\textquotesingle{}s controlled by human 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_human_player_ac369ccb03a62b40dcf3dc157841a965e}\label{class_human_player_ac369ccb03a62b40dcf3dc157841a965e}} 
+\index{Human\+Player@{Human\+Player}!create@{create}}
+\index{create@{create}!Human\+Player@{Human\+Player}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Human\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Pure virtual method for creating a player 
+\begin{DoxyParams}{Parameters}
+{\em nm} & string containing player\textquotesingle{}s name \\
+\hline
+{\em g} & reference to game object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_player_a9b9133f3347894da1416953048cecdb2}{Player}}.
+
 \mbox{\Hypertarget{class_human_player_ae9315a3c66f6b2f2bf4d1ebb09669aff}\label{class_human_player_ae9315a3c66f6b2f2bf4d1ebb09669aff}} 
 \index{Human\+Player@{Human\+Player}!place\+Ships@{place\+Ships}}
 \index{place\+Ships@{place\+Ships}!Human\+Player@{Human\+Player}}

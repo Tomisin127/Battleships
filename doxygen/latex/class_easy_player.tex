@@ -13,6 +13,8 @@ Inheritance diagram for Easy\+Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_easy_player_ae927ab9f7f4d152fd457e037ad7828a5}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\item 
 \mbox{\hyperlink{class_easy_player_abf0692676d0bf3c0eb6f6741c621c7ec}{Easy\+Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Constructor for easy player. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_easy_player_a4b9d5815113f393615412f7a98176a6c}{place\+Ships}} (\mbox{\hyperlink{class_board}{Board}} \&b)
@@ -49,6 +51,23 @@ Method for creating easy player
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_player_ae927ab9f7f4d152fd457e037ad7828a5}\label{class_easy_player_ae927ab9f7f4d152fd457e037ad7828a5}} 
+\index{Easy\+Player@{Easy\+Player}!create@{create}}
+\index{create@{create}!Easy\+Player@{Easy\+Player}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Easy\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Pure virtual method for creating a player 
+\begin{DoxyParams}{Parameters}
+{\em nm} & string containing player\textquotesingle{}s name \\
+\hline
+{\em g} & reference to game object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_player_a9b9133f3347894da1416953048cecdb2}{Player}}.
+
 \mbox{\Hypertarget{class_easy_player_a4b9d5815113f393615412f7a98176a6c}\label{class_easy_player_a4b9d5815113f393615412f7a98176a6c}} 
 \index{Easy\+Player@{Easy\+Player}!place\+Ships@{place\+Ships}}
 \index{place\+Ships@{place\+Ships}!Easy\+Player@{Easy\+Player}}

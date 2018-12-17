@@ -10,6 +10,5 @@ var _player_8h =
       [ "RIGHT", "_player_8h.html#a1e07068d5a987b2549ecb468bd821b56aec8379af7490bb9eaaf579cf17876f38", null ],
       [ "UP", "_player_8h.html#a1e07068d5a987b2549ecb468bd821b56aba595d8bca8bc5e67c37c0a9d89becfa", null ],
       [ "DOWN", "_player_8h.html#a1e07068d5a987b2549ecb468bd821b56a9b0b4a95b99523966e0e34ffdadac9da", null ]
-    ] ],
-    [ "create", "_player_8h.html#af7e3874732b33899b107a77fb0d4f339", null ]
+    ] ]
 ];

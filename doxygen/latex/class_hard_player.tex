@@ -13,6 +13,8 @@ Inheritance diagram for Hard\+Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_hard_player_ab3e76893b9c5163a33ea91b201715a98}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\item 
 \mbox{\hyperlink{class_hard_player_a40d564084e88021b21324672bf67b169}{Hard\+Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Constructor for hard bot. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_hard_player_a27d0ad3353eba585d7a93d2092036f98}{place\+Ships}} (\mbox{\hyperlink{class_board}{Board}} \&b)
@@ -192,7 +194,24 @@ Method for checking if there are targets close by
 {\em p} & \mbox{\hyperlink{class_point}{Point}} containing targeted cell \\
 \hline
 \end{DoxyParams}
-Loops through number of shots \mbox{\Hypertarget{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}\label{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}} 
+Loops through number of shots \mbox{\Hypertarget{class_hard_player_ab3e76893b9c5163a33ea91b201715a98}\label{class_hard_player_ab3e76893b9c5163a33ea91b201715a98}} 
+\index{Hard\+Player@{Hard\+Player}!create@{create}}
+\index{create@{create}!Hard\+Player@{Hard\+Player}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Hard\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Pure virtual method for creating a player 
+\begin{DoxyParams}{Parameters}
+{\em nm} & string containing player\textquotesingle{}s name \\
+\hline
+{\em g} & reference to game object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_player_a9b9133f3347894da1416953048cecdb2}{Player}}.
+
+\mbox{\Hypertarget{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}\label{class_hard_player_aec6ff0ed3ef8f47ac46d374cff89e6be}} 
 \index{Hard\+Player@{Hard\+Player}!hard\+Helper@{hard\+Helper}}
 \index{hard\+Helper@{hard\+Helper}!Hard\+Player@{Hard\+Player}}
 \subsubsection{\texorpdfstring{hard\+Helper()}{hardHelper()}}
