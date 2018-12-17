@@ -15,6 +15,12 @@ class Game;     ///< Declaration for Game class
 
 class Player{
     public:
+        /**
+        * Pure virtual method for creating a player
+        * @param nm string containing player's name
+        * @param g reference to game object
+        */
+        virtual Player* create(std::string nm, const Game& g) = 0;
         Player(std::string nm, const Game& g) : mName(nm), mGame(g) {}  ///< Constructor for player
         virtual ~Player() {}    ///< Destructor for player
         std::string name() const { return mName; }  ///< Getter for name
@@ -38,6 +44,9 @@ class Player{
  */
 class HumanPlayer : public Player{
     public:
+        Player* create(std::string nm, const Game& g){
+            return new HumanPlayer(nm, g);
+        }
         HumanPlayer(std::string nm, const Game& g) : Player(nm, g){};
         ~HumanPlayer() {};  ///< Destructor for human player
         virtual bool human() const { return true; };
@@ -52,6 +61,9 @@ class HumanPlayer : public Player{
  */
 class EasyPlayer : public Player{
     public:
+        Player* create(std::string nm, const Game& g){
+            return new EasyPlayer(nm, g);
+        }
         EasyPlayer(std::string nm, const Game& g);   ///< Constructor for easy player
         virtual bool placeShips(Board& b);  ///< Method for placing ships
         virtual Point recommend();    ///< Recommends attack for easy player
@@ -67,6 +79,9 @@ class EasyPlayer : public Player{
  */
 class MediumPlayer : public Player{
     public:
+        Player* create(std::string nm, const Game& g){
+            return new MediumPlayer(nm, g);
+        }
         ///Constructor for medium bot
         MediumPlayer(std::string nm, const Game& g) : Player(nm, g), state1(true), numShots(0){
             for(int i = 0; i < 100; i++){
@@ -102,6 +117,9 @@ class MediumPlayer : public Player{
  */
 class HardPlayer : public Player{
     public:
+        Player* create(std::string nm, const Game& g){
+            return new HardPlayer(nm, g);
+        }
         ///Constructor for hard bot
         HardPlayer(std::string nm, const Game& g) : Player(nm, g), state1(true), numShots(0), hitSinceChng(0){
             for(int i = 0; i < (MAXROWS * MAXCOLS); i++){
@@ -143,10 +161,5 @@ class HardPlayer : public Player{
 
 ///Enumeration containing directions for next shot
 enum nextShot { LEFT, RIGHT, UP, DOWN };
-
-
-
-///Method for creating player
-Player* create(std::string type, std::string nm, const Game& g);
 
 #endif // PLAYER_INCLUDED

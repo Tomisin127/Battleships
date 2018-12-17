@@ -5,6 +5,7 @@
 
 #include "Setup.h"
 #include "Player.h"
+#include "PlayerFactory.h"
 #include <iostream>
 #include <string>
 #include <cassert>
@@ -80,12 +81,13 @@ void Setup::start(){
 void Setup::init(){
     int answer1 = selectMode();
     Game g(10, 10); ///< Creates a game object
+    PlayerFactory pf; ///< Creates a player factory object
 
     ///Checks if player selected Human vs Human
     if(answer1 == '1'){
-        ///Creates pointers into player objects
-        Player* p1 = create("Human", "Player1", g);
-        Player* p2 = create("Human", "Player2", g);
+        ///Calls Player Factory for creating players
+        Player* p1 = pf.createPlayer(1, "Player1", g);
+        Player* p2 = pf.createPlayer(1, "Player2", g);
         addShips(g);    ///< Adds ships into the game
         g.play(p1, p2); ///< Starts game
 
@@ -98,8 +100,8 @@ void Setup::init(){
         ///Checks if bot difficulty is easy
         if(answer2 == '1'){
             ///Creates pointers into player objects
-            Player* p1 = create("Human", "Player1", g);
-            Player* p2 = create("Easy", "EasyBot", g);
+            Player* p1 = pf.createPlayer(1, "Player1", g);
+            Player* p2 = pf.createPlayer(2, "EasyBot", g);
             addShips(g);    ///< Adds ships into the game
             g.play(p1, p2); ///< Starts game
 
@@ -109,8 +111,8 @@ void Setup::init(){
 
         } else if(answer2 == '2'){   ///< Checks if bot difficulty is medium
             ///Creates pointers into player objects
-            Player* p1 = create("Human", "Player1", g);
-            Player* p2 = create("Medium", "MediumBot", g);
+            Player* p1 = pf.createPlayer(1, "Player1", g);
+            Player* p2 = pf.createPlayer(3, "MediumBot", g);
             addShips(g);    ///< Adds ships into the game
             g.play(p1, p2); ///< Starts game
 
@@ -120,8 +122,8 @@ void Setup::init(){
 
         } else if(answer2 == '3'){   ///< Checks if bot difficulty is hard
             ///Creates pointers player objects
-            Player* p1 = create("Human", "Player1", g);
-            Player* p2 = create("Hard", "HardBot", g);
+            Player* p1 = pf.createPlayer(1, "Player1", g);
+            Player* p2 = pf.createPlayer(4, "HardBot", g);
             addShips(g);    ///< Adds ships into the game
             g.play(p1, p2); ///< Starts game
 
@@ -131,8 +133,8 @@ void Setup::init(){
         }
     } else if(answer1 == '3'){ ///< Checks if player selected MediumBot vs HardBot
             ///Creates pointers into player objects
-            Player* p1 = create("Medium", "MediumBot", g);
-            Player* p2 = create("Hard", "HardBot", g);
+            Player* p1 = pf.createPlayer(3, "MediumBot", g);
+            Player* p2 = pf.createPlayer(4, "HardBot", g);
             addShips(g);    ///< Adds ships into the game
             g.play(p1, p2); ///< Starts game
 

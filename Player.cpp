@@ -927,31 +927,3 @@ void HardPlayer::recordResult(Point p, bool validShot, bool hit, bool destroyed,
 void HardPlayer::recordOpponent(Point p){
     //Null
 }
-
-/**
- * Method for creating a player
- * @param type string containing player type
- * @param nm string containing player's name
- * @param g reference to game object
- */
-Player* create(string type, string nm, const Game& g){
-    ///String array containing player types
-    static string types[] = {
-        "Human", "Easy", "Medium", "Hard"
-    };
-
-    int pl;
-    for(pl = 0; pl != sizeof(types) / sizeof(types[0]) && type != types[pl]; pl++);
-    switch(pl){ ///< Switch case for creating players
-        case 0:
-            return new HumanPlayer(nm, g);
-        case 1:
-            return new EasyPlayer(nm, g);
-        case 2:
-            return new MediumPlayer(nm, g);
-        case 3:
-            return new HardPlayer(nm, g);
-        default:
-            return nullptr;
-    }
-}
