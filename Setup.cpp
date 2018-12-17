@@ -4,7 +4,6 @@
  */
 
 #include "Setup.h"
-#include "Player.h"
 #include "PlayerFactory.h"
 #include <iostream>
 #include <string>
