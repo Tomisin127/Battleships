@@ -51,7 +51,7 @@ var NAVTREEINDEX =
 [
 ".html",
 "class_game.html#a783885809649e4799b199ece36c72be0",
-"struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#ab740f1fb2310e9fe3fed5134d4c7e4c8"
+"struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

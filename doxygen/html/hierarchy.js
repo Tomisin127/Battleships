@@ -119,6 +119,7 @@ var hierarchy =
     [ "Catch::ScopedMessage", "class_catch_1_1_scoped_message.html", null ],
     [ "Catch::SectionEndInfo", "struct_catch_1_1_section_end_info.html", null ],
     [ "Catch::SectionInfo", "struct_catch_1_1_section_info.html", null ],
+    [ "Setup", "class_setup.html", null ],
     [ "Ship", "class_ship.html", null ],
     [ "Catch::SourceLineInfo", "struct_catch_1_1_source_line_info.html", null ],
     [ "Catch::StreamEndStop", "struct_catch_1_1_stream_end_stop.html", null ],

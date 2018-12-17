@@ -1,11 +1,10 @@
 /**
  *  @file Game.cpp
- *  @brief contains implementation for Game classes and assisting functions
+ *  @brief contains implementation for Game class which delegates into game implementation
  */
 
 #include "Game.h"
 #include "Globals.h"
-
 #include <iostream>
 #include <string>
 #include <cstdlib>

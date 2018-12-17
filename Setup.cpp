@@ -49,8 +49,6 @@ int Setup::selectBot(){
  * Method for selecting game mode
  */
 int Setup::selectMode(){
-
-    cout << "BATTLESHIPS" << endl;
     cout << "Select choice for game mode: " << endl;
     cout << "1. Human vs Human" << endl;
     cout << "2. Human vs Bot" << endl;
@@ -68,11 +66,18 @@ int Setup::selectMode(){
         return '0';
     }
 }
+/**
+ * Public method for starting the setup
+ */
+void Setup::start(){
+    cout << "BATTLESHIPS" << endl;
+    init();
+}
 
 /**
  *  Method for setup and starting the game
  */
-bool Setup::start(){
+void Setup::init(){
     int answer1 = selectMode();
     Game g(10, 10); ///< Creates a game object
 
@@ -137,7 +142,5 @@ bool Setup::start(){
 
     } else {    ///< Else choice was invalid
         cout << "Invalid choice" << endl;
-        return false;
     }
-    return true;
 }

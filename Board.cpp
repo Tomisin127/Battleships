@@ -1,6 +1,6 @@
 /**
  *  @file Board.cpp
- *  @brief delegates to Board implementation
+ *  @brief contains board class which delegates into Board implementation
  */
 
 #include "Board.h"

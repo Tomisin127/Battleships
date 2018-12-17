@@ -4,6 +4,7 @@ var searchData=
   ['section',['Section',['../class_catch_1_1_section.html',1,'Catch']]],
   ['sectionendinfo',['SectionEndInfo',['../struct_catch_1_1_section_end_info.html',1,'Catch']]],
   ['sectioninfo',['SectionInfo',['../struct_catch_1_1_section_info.html',1,'Catch']]],
+  ['setup',['Setup',['../class_setup.html',1,'']]],
   ['ship',['Ship',['../class_ship.html',1,'']]],
   ['singlevaluegenerator',['SingleValueGenerator',['../class_catch_1_1_generators_1_1_single_value_generator.html',1,'Catch::Generators']]],
   ['sourcelineinfo',['SourceLineInfo',['../struct_catch_1_1_source_line_info.html',1,'Catch']]],

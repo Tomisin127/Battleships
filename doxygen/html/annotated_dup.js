@@ -142,5 +142,6 @@ var annotated_dup =
     [ "MediumPlayer", "class_medium_player.html", "class_medium_player" ],
     [ "Player", "class_player.html", "class_player" ],
     [ "Point", "class_point.html", "class_point" ],
+    [ "Setup", "class_setup.html", "class_setup" ],
     [ "Ship", "class_ship.html", "class_ship" ]
 ];

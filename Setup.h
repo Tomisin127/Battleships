@@ -13,10 +13,11 @@
  */
 class Setup{
     public:
-        bool start();
+        void start();
     private:
         bool addShips(Game& g);
         int selectMode();
         int selectBot();
+        void init();
 };
 #endif // SETUP_INCLUDED

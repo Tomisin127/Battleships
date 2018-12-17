@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html":[1,0,0,2,3,3],
+"struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#a0bb9d64693f7bb1ef7441062d219f21a":[1,0,0,2,3,3,1],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_equals_matcher.html#ab740f1fb2310e9fe3fed5134d4c7e4c8":[1,0,0,2,3,3,0],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_regex_matcher.html":[1,0,0,2,3,4],
 "struct_catch_1_1_matchers_1_1_std_string_1_1_regex_matcher.html#a1f788cd5258c987e5043f6c7f43adeb9":[1,0,0,2,3,4,1],

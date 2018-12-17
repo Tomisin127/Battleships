@@ -2,153 +2,29 @@
 \label{_main_8cpp}\index{D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\+Main.\+cpp@{D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\+Main.\+cpp}}
 
 
-contains Main function of the program with assisting functions  
+contains Main function of the program  
 
 
-{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Player.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$iostream$>$}\newline
-{\ttfamily \#include $<$string$>$}\newline
-{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include \char`\"{}Setup.\+h\char`\"{}}\newline
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{_main_8cpp_ac76b0229964cc6dc169aa5a2f1388ff7}{add\+Ships}} (\mbox{\hyperlink{class_game}{Game}} \&g)
-\item 
-int \mbox{\hyperlink{_main_8cpp_a34f202909819f5d93192830d691e7a7b}{select\+Bot}} ()
-\item 
-int \mbox{\hyperlink{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+int \mbox{\hyperlink{_main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-contains Main function of the program with assisting functions 
+contains Main function of the program 
 
-
+contains Main function of the program with assisting functions
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{_main_8cpp_ac76b0229964cc6dc169aa5a2f1388ff7}\label{_main_8cpp_ac76b0229964cc6dc169aa5a2f1388ff7}} 
-\index{Main.\+cpp@{Main.\+cpp}!add\+Ships@{add\+Ships}}
-\index{add\+Ships@{add\+Ships}!Main.\+cpp@{Main.\+cpp}}
-\subsubsection{\texorpdfstring{add\+Ships()}{addShips()}}
-{\footnotesize\ttfamily bool add\+Ships (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})}
-
-Adds all the ships into the game 
-\begin{DoxyParams}{Parameters}
-{\em g} & reference to game object \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\mbox{\Hypertarget{_main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{_main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
 \index{Main.\+cpp@{Main.\+cpp}!main@{main}}
 \index{main@{main}!Main.\+cpp@{Main.\+cpp}}
 \subsubsection{\texorpdfstring{main()}{main()}}
-{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-Main function of the program $<$ Creates a game object
+Main function of the program $<$ Creates a setup
 
-Prints game modes for player
-
-Checks if player selected Human vs Human
-
-Creates pointers into player objects
-
-$<$ Adds ships into the game
-
-$<$ Starts game
-
-Deletes players
-
-$<$ Checks if player selected Human vs Bot
-
-$<$ Asks user for bot difficulty ~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
- Checks if bot difficulty is easy
-
-Creates pointers into player objects
-
-$<$ Adds ships into the game
-
-$<$ Starts game
-
-Deletes players
-
-$<$ Checks if bot difficulty is medium ~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
- Creates pointers into player objects
-
-$<$ Adds ships into the game
-
-$<$ Starts game
-
-Deletes players
-
-$<$ Checks if bot difficulty is hard ~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
-~\newline
- Creates pointers player objects
-
-$<$ Adds ships into the game
-
-$<$ Starts game
-
-Deletes players
-
-$<$ Checks if player selected Medium\+Bot vs Hard\+Bot ~\newline
-~\newline
-~\newline
-~\newline
-~\newline
- Creates pointers into player objects
-
-$<$ Adds ships into the game
-
-$<$ Starts game
-
-Deletes players
-
-$<$ Else choice was invalid \mbox{\Hypertarget{_main_8cpp_a34f202909819f5d93192830d691e7a7b}\label{_main_8cpp_a34f202909819f5d93192830d691e7a7b}} 
-\index{Main.\+cpp@{Main.\+cpp}!select\+Bot@{select\+Bot}}
-\index{select\+Bot@{select\+Bot}!Main.\+cpp@{Main.\+cpp}}
-\subsubsection{\texorpdfstring{select\+Bot()}{selectBot()}}
-{\footnotesize\ttfamily int select\+Bot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Function for selecting bot difficulty 
+$<$ Starts the setup process 
