@@ -49,6 +49,8 @@
 		<Unit filename="Main.cpp" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
+		<Unit filename="PlayerFactory.cpp" />
+		<Unit filename="PlayerFactory.h" />
 		<Unit filename="Player_tests.cpp">
 			<Option compile="0" />
 			<Option link="0" />

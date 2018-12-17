@@ -4,14 +4,15 @@
  */
 
 #include "Player.h"
-#include "Board.h"
-#include "Game.h"
-#include "Globals.h"
+#include "HumanPlayer.h"
+#include "EasyPlayer.h"
+#include "MediumPlayer.h"
+#include "HardPlayer.h"
 #include <iostream>
 #include <string>
 #include <vector>
-#include <algorithm>
-#include <cmath>
+//#include <algorithm>
+//#include <cmath>
 
 using namespace std;
 

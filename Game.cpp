@@ -6,11 +6,7 @@
 #include "Game.h"
 #include "Globals.h"
 #include <iostream>
-#include <string>
-#include <cstdlib>
-#include <cctype>
-#include <vector>
-#include <algorithm>
+
 
 using namespace std;
 

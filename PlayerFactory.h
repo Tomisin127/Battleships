@@ -6,11 +6,10 @@
 #ifndef PLAYERFACTORY_INCLUDED
 #define PLAYERFACTORY_INCLUDED
 
-#include "Player.h"
-
-
-class Board;    ///< Declaration for Board class
-class Game;     ///< Declaration for Game class
+#include "HumanPlayer.h"
+#include "EasyPlayer.h"
+#include "MediumPlayer.h"
+#include "HardPlayer.h"
 
 class PlayerFactory{
     public:
