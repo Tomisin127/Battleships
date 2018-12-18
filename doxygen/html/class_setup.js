@@ -1,4 +1,4 @@
 var class_setup =
 [
-    [ "start", "class_setup.html#a28f3240b979d436ac1aa463a637afae6", null ]
+    [ "Setup", "class_setup.html#a0921e54e5a0200af117192e4c0c845b7", null ]
 ];

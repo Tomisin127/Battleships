@@ -2,7 +2,7 @@
 \label{class_medium_player}\index{Medium\+Player@{Medium\+Player}}
 
 
-{\ttfamily \#include $<$Player.\+h$>$}
+{\ttfamily \#include $<$Medium\+Player.\+h$>$}
 
 Inheritance diagram for Medium\+Player\+:\begin{figure}[H]
 \begin{center}
@@ -13,7 +13,7 @@ Inheritance diagram for Medium\+Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_medium_player_a6a51f6bab42f57e8af235f2ab196d74e}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_medium_player_a7a681c6bebf67740d1919339bd423ac5}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g) override
 \item 
 \mbox{\Hypertarget{class_medium_player_a76923857c4fa54d192ed4644c72bce2d}\label{class_medium_player_a76923857c4fa54d192ed4644c72bce2d}} 
 \mbox{\hyperlink{class_medium_player_a76923857c4fa54d192ed4644c72bce2d}{Medium\+Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
@@ -46,7 +46,7 @@ virtual void \mbox{\hyperlink{class_medium_player_a4cd5cbf0327e002112c80a52b2793
 
 
 \subsection{Detailed Description}
-\mbox{\hyperlink{class_medium_player}{Medium\+Player}}\+: class implementation for player class that\textquotesingle{}s controlled by medium bot 
+\mbox{\hyperlink{class_medium_player}{Medium\+Player}}\+: class declaration for player class that\textquotesingle{}s controlled by medium bot 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{class_medium_player_a4cd5cbf0327e002112c80a52b279358f}\label{class_medium_player_a4cd5cbf0327e002112c80a52b279358f}} 
@@ -93,11 +93,11 @@ Checks if point\textquotesingle{}s rows and columns correspond to shot\textquote
 
 Method for changing last point. 
 
-Getter for last point \mbox{\Hypertarget{class_medium_player_a6a51f6bab42f57e8af235f2ab196d74e}\label{class_medium_player_a6a51f6bab42f57e8af235f2ab196d74e}} 
+Getter for last point \mbox{\Hypertarget{class_medium_player_a7a681c6bebf67740d1919339bd423ac5}\label{class_medium_player_a7a681c6bebf67740d1919339bd423ac5}} 
 \index{Medium\+Player@{Medium\+Player}!create@{create}}
 \index{create@{create}!Medium\+Player@{Medium\+Player}}
 \subsubsection{\texorpdfstring{create()}{create()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Medium\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Medium\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Pure virtual method for creating a player 
 \begin{DoxyParams}{Parameters}
@@ -309,5 +309,5 @@ Implements \mbox{\hyperlink{class_player_a368527cfefaac58dc942b32658f977ed}{Play
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_medium_player_8h}{Medium\+Player.\+h}}\item 
 D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

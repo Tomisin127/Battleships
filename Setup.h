@@ -19,8 +19,8 @@ class Setup{
         int selectMode();
         int selectBot();
         void init();
-        int nTrials = 0;
-        int p1wins = 0;
-        int p2wins = 0;
+        int nTrials = 0;    ///< Integer containing number of trials
+        int p1wins = 0;     ///< Integer containing number of first player's victories
+        int p2wins = 0;     ///< Integer containing number of second player's victories
 };
 #endif // SETUP_INCLUDED

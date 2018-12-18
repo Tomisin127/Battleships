@@ -2,7 +2,7 @@ var class_human_player =
 [
     [ "HumanPlayer", "class_human_player.html#a443ff25b201959966555c0902a10e19c", null ],
     [ "~HumanPlayer", "class_human_player.html#abdeb9d120fc74c8d82ec0c688883f16f", null ],
-    [ "create", "class_human_player.html#ac369ccb03a62b40dcf3dc157841a965e", null ],
+    [ "create", "class_human_player.html#acc99520ffa6b0a1885d081fde6f2297b", null ],
     [ "human", "class_human_player.html#acecbe621447504a013c2a763aaba05fa", null ],
     [ "placeShips", "class_human_player.html#ae9315a3c66f6b2f2bf4d1ebb09669aff", null ],
     [ "recommend", "class_human_player.html#a718f16f3ddeeb34c9f2e93cf1d805b46", null ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Battleships
-   &#160;<span id="projectnumber">1.3</span>
+   &#160;<span id="projectnumber">1.4</span>
    </div>
   </td>
  </tr>
@@ -94,21 +94,21 @@ $(document).ready(function(){initNavTree('class_hard_player.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_player_8h_source.html">Player.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_hard_player_8h_source.html">HardPlayer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for HardPlayer:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_hard_player.png" usemap="#HardPlayer_map" alt=""/>
   <map id="HardPlayer_map" name="HardPlayer_map">
-<area href="class_player.html" title="Declaration for Game class. " alt="Player" shape="rect" coords="0,0,77,24"/>
+<area href="class_player.html" alt="Player" shape="rect" coords="0,0,77,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab3e76893b9c5163a33ea91b201715a98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#ab3e76893b9c5163a33ea91b201715a98">create</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
-<tr class="separator:ab3e76893b9c5163a33ea91b201715a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa435bcb65ee8b3aea7553196c95fc4e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#aa435bcb65ee8b3aea7553196c95fc4e1">create</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g) override</td></tr>
+<tr class="separator:aa435bcb65ee8b3aea7553196c95fc4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40d564084e88021b21324672bf67b169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hard_player.html#a40d564084e88021b21324672bf67b169">HardPlayer</a> (std::string nm, const <a class="el" href="class_game.html">Game</a> &amp;g)</td></tr>
 <tr class="memdesc:a40d564084e88021b21324672bf67b169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for hard bot.  <a href="#a40d564084e88021b21324672bf67b169">More...</a><br /></td></tr>
 <tr class="separator:a40d564084e88021b21324672bf67b169"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +176,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:ab81d34e4adb4e329d26b1635d866462d inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_hard_player.html">HardPlayer</a>: implementation for player class that's controlled by hard bot </p>
+<div class="textblock"><p><a class="el" href="class_hard_player.html">HardPlayer</a>: declaration for player class that's controlled by hard bot </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a40d564084e88021b21324672bf67b169"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40d564084e88021b21324672bf67b169">&#9670;&nbsp;</a></span>HardPlayer()</h2>
@@ -398,8 +398,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ab3e76893b9c5163a33ea91b201715a98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3e76893b9c5163a33ea91b201715a98">&#9670;&nbsp;</a></span>create()</h2>
+<a id="aa435bcb65ee8b3aea7553196c95fc4e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa435bcb65ee8b3aea7553196c95fc4e1">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +427,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1041,7 +1041,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="_player_8h_source.html">Player.h</a></li>
+<li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="_hard_player_8h_source.html">HardPlayer.h</a></li>
 <li>D:/kouluhommat/Advanced Object-Oriented Programming/lopputyö/Battleship/Battleship/<a class="el" href="_player_8cpp.html">Player.cpp</a></li>
 </ul>
 </div><!-- contents -->

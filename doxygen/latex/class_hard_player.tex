@@ -2,7 +2,7 @@
 \label{class_hard_player}\index{Hard\+Player@{Hard\+Player}}
 
 
-{\ttfamily \#include $<$Player.\+h$>$}
+{\ttfamily \#include $<$Hard\+Player.\+h$>$}
 
 Inheritance diagram for Hard\+Player\+:\begin{figure}[H]
 \begin{center}
@@ -13,7 +13,7 @@ Inheritance diagram for Hard\+Player\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_hard_player_ab3e76893b9c5163a33ea91b201715a98}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_hard_player_aa435bcb65ee8b3aea7553196c95fc4e1}{create}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g) override
 \item 
 \mbox{\hyperlink{class_hard_player_a40d564084e88021b21324672bf67b169}{Hard\+Player}} (std\+::string nm, const \mbox{\hyperlink{class_game}{Game}} \&g)
 \begin{DoxyCompactList}\small\item\em Constructor for hard bot. \end{DoxyCompactList}\item 
@@ -49,7 +49,7 @@ bool \mbox{\hyperlink{class_hard_player_a91cdd6239e111ea02bff561f6a3a0c41}{close
 
 
 \subsection{Detailed Description}
-\mbox{\hyperlink{class_hard_player}{Hard\+Player}}\+: implementation for player class that\textquotesingle{}s controlled by hard bot 
+\mbox{\hyperlink{class_hard_player}{Hard\+Player}}\+: declaration for player class that\textquotesingle{}s controlled by hard bot 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_hard_player_a40d564084e88021b21324672bf67b169}\label{class_hard_player_a40d564084e88021b21324672bf67b169}} 
@@ -194,11 +194,11 @@ Method for checking if there are targets close by
 {\em p} & \mbox{\hyperlink{class_point}{Point}} containing targeted cell \\
 \hline
 \end{DoxyParams}
-Loops through number of shots \mbox{\Hypertarget{class_hard_player_ab3e76893b9c5163a33ea91b201715a98}\label{class_hard_player_ab3e76893b9c5163a33ea91b201715a98}} 
+Loops through number of shots \mbox{\Hypertarget{class_hard_player_aa435bcb65ee8b3aea7553196c95fc4e1}\label{class_hard_player_aa435bcb65ee8b3aea7553196c95fc4e1}} 
 \index{Hard\+Player@{Hard\+Player}!create@{create}}
 \index{create@{create}!Hard\+Player@{Hard\+Player}}
 \subsubsection{\texorpdfstring{create()}{create()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Hard\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Hard\+Player\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Pure virtual method for creating a player 
 \begin{DoxyParams}{Parameters}
@@ -721,5 +721,5 @@ $<$ Direction is vertical ~\newline
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_hard_player_8h}{Hard\+Player.\+h}}\item 
 D\+:/kouluhommat/\+Advanced Object-\/\+Oriented Programming/lopputyö/\+Battleship/\+Battleship/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}
