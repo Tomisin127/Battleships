@@ -10,7 +10,6 @@
  */
 int main(void){
     Setup * s = new Setup();    ///< Creates a setup
-    s->start();   ///< Starts the setup process
-    delete s;
+    delete s;   ///< Deletes the setup
     return 0;
 }

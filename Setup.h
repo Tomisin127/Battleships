@@ -13,11 +13,14 @@
  */
 class Setup{
     public:
-        void start();
+        Setup();
     private:
         bool addShips(Game& g);
         int selectMode();
         int selectBot();
         void init();
+        int nTrials = 0;
+        int p1wins = 0;
+        int p2wins = 0;
 };
 #endif // SETUP_INCLUDED

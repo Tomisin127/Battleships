@@ -20,10 +20,10 @@ TEST_CASE("Test human player", "[player]"){
 
     PlayerFactory tf;
 
-    Player* tp1 = tf.createPlayer(1, "TestHuman", tg);
-    Player* tp2 = tf.createPlayer(2, "TestEasy", tg);
-    Player* tp3 = tf.createPlayer(3, "TestMedium", tg);
-    Player* tp4 = tf.createPlayer(4, "TestHard", tg);
+    Player* tp1 = tf.clone(1, "TestHuman", tg);
+    Player* tp2 = tf.clone(2, "TestEasy", tg);
+    Player* tp3 = tf.clone(3, "TestMedium", tg);
+    Player* tp4 = tf.clone(4, "TestHard", tg);
 
     SECTION("Test human flag"){
         REQUIRE(tp1->human() == true);

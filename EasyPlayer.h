@@ -13,7 +13,7 @@
  */
 class EasyPlayer : public Player{
     public:
-        Player* create(std::string nm, const Game& g){
+        Player* create(std::string nm, const Game& g) override {
             return new EasyPlayer(nm, g);
         }
         EasyPlayer(std::string nm, const Game& g);   ///< Constructor for easy player

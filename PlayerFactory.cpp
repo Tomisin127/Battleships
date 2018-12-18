@@ -26,7 +26,7 @@ Player* PlayerFactory::getPrototypes(int choice, string nm, const Game& g){
  * @param nm string containing player's name
  * @param g reference to game object
  */
-Player* PlayerFactory::createPlayer(int choice, string nm, const Game& g){
+Player* PlayerFactory::clone(int choice, string nm, const Game& g){
     return getPrototypes(choice, nm, g)->create(nm, g);
 }
 

@@ -13,7 +13,7 @@
 
 class PlayerFactory{
     public:
-        static Player* createPlayer(int choice, std::string nm, const Game& g);
+        static Player* clone(int choice, std::string nm, const Game& g);
     private:
         static Player* getPrototypes(int choice, std::string nm, const Game& g);
 };

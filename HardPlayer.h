@@ -12,7 +12,7 @@
  */
 class HardPlayer : public Player{
     public:
-        Player* create(std::string nm, const Game& g){
+        Player* create(std::string nm, const Game& g) override {
             return new HardPlayer(nm, g);
         }
         ///Constructor for hard bot

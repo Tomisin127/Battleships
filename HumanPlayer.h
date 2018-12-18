@@ -13,7 +13,7 @@
  */
 class HumanPlayer : public Player{
     public:
-        Player* create(std::string nm, const Game& g){
+        Player* create(std::string nm, const Game& g) override {
             return new HumanPlayer(nm, g);
         }
         HumanPlayer(std::string nm, const Game& g) : Player(nm, g){};

@@ -13,7 +13,7 @@
  */
 class MediumPlayer : public Player{
     public:
-        Player* create(std::string nm, const Game& g){
+        Player* create(std::string nm, const Game& g) override {
             return new MediumPlayer(nm, g);
         }
         ///Constructor for medium bot

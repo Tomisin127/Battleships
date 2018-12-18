@@ -38,6 +38,7 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="EasyPlayer.h" />
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
 		<Unit filename="GameImpl.cpp" />
@@ -46,7 +47,10 @@
 			<Option link="0" />
 		</Unit>
 		<Unit filename="Globals.h" />
+		<Unit filename="HardPlayer.h" />
+		<Unit filename="HumanPlayer.h" />
 		<Unit filename="Main.cpp" />
+		<Unit filename="MediumPlayer.h" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
 		<Unit filename="PlayerFactory.cpp" />
