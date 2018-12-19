@@ -16,11 +16,7 @@ using namespace std;
  * Loops through rows and columns and fills them with '.'
  */
 BoardImpl::BoardImpl(const Game& g) : mGame(g){
-    for(int i = 0; i < mGame.rows(); i++){
-        for(int j = 0; j < mGame.cols(); j++){
-            mArr[i][j] = '.';
-        }
-    }
+    clear();
 }
 
 /**
@@ -85,7 +81,7 @@ void BoardImpl::display(bool showShots) const{
             if(showShots){
                 ///Checks if cells don't contain 'X' and 'o' and if cells contain alphabetic character
                 if(isalpha(mArr[i][j]) && mArr[i][j] != 'X' && mArr[i][j] != 'o'){
-                    cout << '.';    ///< If cell is alphabetic, turns it into '.'
+                    cout << '.';    ///< Prints empty cell '.'
                 } else{ ///< If cell is not alphabetic or contains 'X' or 'o'
                     cout << mArr[i][j]; ///Prints the cell
                 }

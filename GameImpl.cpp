@@ -15,7 +15,6 @@
 
 using namespace std;
 
-
 /**
  * Ship constructor
  * @param length integer containing ship's length

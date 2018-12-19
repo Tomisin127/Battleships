@@ -54,7 +54,7 @@ int Setup::selectBot(){
     string input;
     /// Loops while user input is invalid
     while(true){
-        cout << "\nSelect bot difficulty\n: " << endl;
+        cout << "\nSelect bot difficulty:\n " << endl;
         cout << "1. Easy" << endl;
         cout << "2. Medium" << endl;
         cout << "3. Hard" << endl;
@@ -66,7 +66,7 @@ int Setup::selectBot(){
         } else if(input[0] == '3'){ ///< Checks if choice was 3
             return 3;
         } else {    ///< Else choice was invalid
-            cout << "Invalid choice" << endl;
+            cout << "\nInvalid choice" << endl;
         }
     }
 }
@@ -143,7 +143,7 @@ void Setup::init(){
             if(!rematch())
                 break;
         } else if(answer1 == 2){ ///< Checks if player selected Human vs Bot
-            int answer2 = selectBot();   ///< Asks user for bot difficulty
+            int answer2 = selectBot();   ///< Prompts user to select bot difficulty
             ///Checks if bot difficulty is easy
             if(answer2 == 1){
                 Game g(10, 10); ///< Creates a game object
