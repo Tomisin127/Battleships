@@ -19,7 +19,7 @@ Setup::Setup(){
     init();
 }
 
-///Function which prints the instructions
+///Function which prints out the instructions
 void instructions(){
     cout << "In battleships your objective is to destroy all of your opponent's ships." << endl;
     cout << "Both players have 5 ships at their disposal: " << endl;
@@ -98,17 +98,19 @@ int Setup::selectMode(){
     }
 }
 
+/**
+ *  Method for checking if user wants to play again
+ */
 bool Setup::rematch(){
     string input;
-    while(true){
-        cout << "Do you want to play again?" << endl;
-        cout << "(Y)es/(N)o :" << endl;
-        getline(cin, input);
-        if(input[0] == 'Y' || input[0] == 'y'){
-            return true;
-        } else{
-            return false;
-        }
+    cout << "Do you want to play again?" << endl;
+    cout << "(Y)es/(N)o :" << endl;
+    getline(cin, input);
+    ///Checks user input
+    if(input[0] == 'Y' || input[0] == 'y'){
+        return true;
+    } else{
+        return false;
     }
 }
 
@@ -118,9 +120,10 @@ bool Setup::rematch(){
 void Setup::init(){
     PlayerFactory pf; ///< Creates a player factory object
     while(true){
-        cout << "=================" << endl;
-        cout << "|| BATTLESHIPS ||" << endl;
-        cout << "=================" << endl;
+        cout << " " << endl;
+        cout << "  *=========================*" << endl;
+        cout << "  || B A T T L E S H I P S ||" << endl;
+        cout << "  *=========================*\n" << endl;
         int answer1 = selectMode(); ///< Prompts user to select game mode
         ///Checks if player selected Human vs Human
         if(answer1 == '1'){
@@ -134,6 +137,7 @@ void Setup::init(){
             ///Deletes players
             delete p1;
             delete p2;
+            ///Checks if user wants to play again
             if(!rematch())
                 break;
         } else if(answer1 == '2'){ ///< Checks if player selected Human vs Bot
@@ -151,6 +155,7 @@ void Setup::init(){
                 delete p1;
                 delete p2;
 
+                ///Checks if user wants to play again
                 if(!rematch())
                     break;
             } else if(answer2 == '2'){   ///< Checks if bot difficulty is medium
@@ -165,6 +170,7 @@ void Setup::init(){
                 delete p1;
                 delete p2;
 
+                ///Checks if user wants to play again
                 if(!rematch())
                     break;
             } else if(answer2 == '3'){   ///< Checks if bot difficulty is hard
@@ -179,6 +185,7 @@ void Setup::init(){
                 delete p1;
                 delete p2;
 
+                ///Checks if user wants to play again
                 if(!rematch())
                     break;
             }
@@ -220,6 +227,7 @@ void Setup::init(){
                 } else{
                     cout << "HardBot won with " << p2wins << " wins out of " << nTrials << " games." << endl;
                 }
+                ///Checks if user wants to play again
                 if(!rematch())
                     break;
         } else {    ///< Else something went wrong and choice was invalid
