@@ -13,6 +13,14 @@
 using namespace std;
 
 /**
+ *  Template for deleting objects
+ */
+template <typename T>
+inline T del (T a, T b) {
+   delete a, b;
+}
+
+/**
  * Constructor for setup
  */
 Setup::Setup(){
@@ -130,7 +138,7 @@ void Setup::init(){
         ///Checks if player selected Human vs Human
         if(answer1 == 1){
             Game g(10, 10); ///< Creates a game object
-            ///Calls Player Factory for creating players
+            ///Calls Player Factory for creating pointers to players
             Player* p1 = pf.clone(1, "Player1", g);
             Player* p2 = pf.clone(1, "Player2", g);
             addShips(g);    ///< Adds ships into the game
@@ -147,45 +155,42 @@ void Setup::init(){
             ///Checks if bot difficulty is easy
             if(answer2 == 1){
                 Game g(10, 10); ///< Creates a game object
-                ///Creates pointers into player objects
+                ///Calls Player Factory for creating pointers to players
                 Player* p1 = pf.clone(1, "Player1", g);
                 Player* p2 = pf.clone(2, "EasyBot", g);
                 addShips(g);    ///< Adds ships into the game
                 g.play(p1, p2); ///< Starts game
 
                 ///Deletes players
-                delete p1;
-                delete p2;
+                del(p1, p2);
 
                 ///Checks if user wants to play again
                 if(!rematch())
                     break;
             } else if(answer2 == 2){   ///< Checks if bot difficulty is medium
                 Game g(10, 10); ///< Creates a game object
-                ///Creates pointers into player objects
+                ///Calls Player Factory for creating pointers to players
                 Player* p1 = pf.clone(1, "Player1", g);
                 Player* p2 = pf.clone(3, "MediumBot", g);
                 addShips(g);    ///< Adds ships into the game
                 g.play(p1, p2); ///< Starts game
 
                 ///Deletes players
-                delete p1;
-                delete p2;
+                del(p1, p2);
 
                 ///Checks if user wants to play again
                 if(!rematch())
                     break;
             } else if(answer2 == 3){   ///< Checks if bot difficulty is hard
                 Game g(10, 10); ///< Creates a game object
-                ///Creates pointers player objects
+                ///Calls Player Factory for creating pointers to players
                 Player* p1 = pf.clone(1, "Player1", g);
                 Player* p2 = pf.clone(4, "HardBot", g);
                 addShips(g);    ///< Adds ships into the game
                 g.play(p1, p2); ///< Starts game
 
                 ///Deletes players
-                delete p1;
-                delete p2;
+                del(p1, p2);
 
                 ///Checks if user wants to play again
                 if(!rematch())
@@ -209,7 +214,7 @@ void Setup::init(){
                 for(auto i = 0 ; i < nTrials; i++){
                     Game g(10, 10); ///< Creates a game object
                     addShips(g);    ///< Adds ships into the game
-                    ///Creates pointers into player objects
+                    ///Calls Player Factory for creating pointers to players
                     Player* p1 = pf.clone(3, "MediumBot", g);
                     Player* p2 = pf.clone(4, "HardBot", g);
                     Player* winner = g.play(p1, p2, false); ///< Starts game and returns winner
@@ -221,8 +226,7 @@ void Setup::init(){
                         p2wins++;   ///< Increments second player's victory count
                     }
                     ///Deletes players
-                    delete p1;
-                    delete p2;
+                    del(p1, p2);
                 }
                 if(p1wins > p2wins){
                     cout << "MediumBot won with " << p1wins << " wins out of " << nTrials << " games." << endl;
@@ -236,5 +240,5 @@ void Setup::init(){
             cout << "Invalid choice" << endl;
         }
     }
-    cout << "Thanks for playing!" << endl;
+    cout << "\nThanks for playing!\n" << endl;
 }
