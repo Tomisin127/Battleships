@@ -55,7 +55,7 @@ public:
 private:
 	int gRows;  ///< Game rows
 	int gCols;  ///< Game columns
-	std::vector<Ship> gShips;    ///< Vector for game's ships
+	std::vector<Ship> gShips = {};    ///< Vector for game's ships
 };
 
 #endif // GAME_INCLUDED
