@@ -437,7 +437,7 @@ Point MediumPlayer::recommend(){
             return answer;
         }
     }
-}   // Some problems? fix this
+}
 
 /**
  * Method for recording attack result

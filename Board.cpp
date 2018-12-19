@@ -4,6 +4,7 @@
  */
 
 #include "Board.h"
+#include "BoardImpl.h"
 
 /**
  * Delegates to board implementation

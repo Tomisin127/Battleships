@@ -21,19 +21,20 @@ Setup::Setup(){
 
 ///Function which prints out the instructions
 void instructions(){
-    cout << "In battleships your objective is to destroy all of your opponent's ships." << endl;
+    cout << "\nIn battleships your objective is to destroy all of your opponent's ships." << endl;
     cout << "Both players have 5 ships at their disposal: " << endl;
-    cout << "(A)ircraft Carrier with length of 5 cells." << endl;
-    cout << "(B)attleship with length of 4 cells." << endl;
-    cout << "(D)estroyer with length of 3 cells." << endl;
-    cout << "(S)ubmarine with length of 3 cells." << endl;
-    cout << "(P)atrol Boat with length of 2 cells" << endl;
+    cout << "* (A)ircraft Carrier with length of 5 cells." << endl;
+    cout << "* (B)attleship with length of 4 cells." << endl;
+    cout << "* (D)estroyer with length of 3 cells." << endl;
+    cout << "* (S)ubmarine with length of 3 cells." << endl;
+    cout << "* (P)atrol Boat with length of 2 cells" << endl;
     cout << "Players can place these boats where they like on their own 10x10 game board." << endl;
     cout << "Players take turns shooting their opponents board with coordinates (e.g. 5 2)." << endl;
     cout << "Note that rows and columns start from 0." << endl;
-    cout << "Press enter to continue ";
+    cout << "\nPress enter to continue." << endl;
     cin.ignore(10000, '\n');
 }
+
 /**
  * Adds all the ships into the game
  * @param g reference to game object
@@ -53,17 +54,17 @@ int Setup::selectBot(){
     string input;
     /// Loops while user input is invalid
     while(true){
-        cout << "Select bot difficulty: " << endl;
+        cout << "\nSelect bot difficulty\n: " << endl;
         cout << "1. Easy" << endl;
         cout << "2. Medium" << endl;
         cout << "3. Hard" << endl;
         getline(cin, input);
         if(input[0] == '1'){    ///< Checks if choice was 1
-            return '1';
+            return 1;
         } else if(input[0] == '2'){ ///< Checks if choice was 2
-            return '2';
+            return 2;
         } else if(input[0] == '3'){ ///< Checks if choice was 3
-            return '3';
+            return 3;
         } else {    ///< Else choice was invalid
             cout << "Invalid choice" << endl;
         }
@@ -77,7 +78,7 @@ int Setup::selectMode(){
     string input;
     ///Loops while user's input is invalid
     while(true){
-        cout << "Select choice for game mode: " << endl;
+        cout << "\nSelect choice for game mode: \n" << endl;
         cout << "0. Instructions" << endl;
         cout << "1. Human vs Human" << endl;
         cout << "2. Human vs Bot" << endl;
@@ -85,15 +86,15 @@ int Setup::selectMode(){
         getline(cin, input);
         ///Checks if choice was 1
         if(input[0] == '1'){
-            return '1';
+            return 1;
         } else if(input[0] == '2'){ ///< Checks if choice was 2
-            return '2';
+            return 2;
         } else if(input[0] == '3'){ ///< Checks if choice was 3
-            return '3';
+            return 3;
         } else if(input[0] == '0'){ ///< Checks if choice was 0
             instructions();
         } else{    ///< Else choice was invalid
-            cout << "Invalid choice" << endl;
+            cout << "\nInvalid choice" << endl;
         }
     }
 }
@@ -103,7 +104,7 @@ int Setup::selectMode(){
  */
 bool Setup::rematch(){
     string input;
-    cout << "Do you want to play again?" << endl;
+    cout << "\nDo you want to play again?" << endl;
     cout << "(Y)es/(N)o :" << endl;
     getline(cin, input);
     ///Checks user input
@@ -119,6 +120,7 @@ bool Setup::rematch(){
  */
 void Setup::init(){
     PlayerFactory pf; ///< Creates a player factory object
+    ///Loops while player wants a rematch
     while(true){
         cout << " " << endl;
         cout << "  *=========================*" << endl;
@@ -126,7 +128,7 @@ void Setup::init(){
         cout << "  *=========================*\n" << endl;
         int answer1 = selectMode(); ///< Prompts user to select game mode
         ///Checks if player selected Human vs Human
-        if(answer1 == '1'){
+        if(answer1 == 1){
             Game g(10, 10); ///< Creates a game object
             ///Calls Player Factory for creating players
             Player* p1 = pf.clone(1, "Player1", g);
@@ -140,10 +142,10 @@ void Setup::init(){
             ///Checks if user wants to play again
             if(!rematch())
                 break;
-        } else if(answer1 == '2'){ ///< Checks if player selected Human vs Bot
+        } else if(answer1 == 2){ ///< Checks if player selected Human vs Bot
             int answer2 = selectBot();   ///< Asks user for bot difficulty
             ///Checks if bot difficulty is easy
-            if(answer2 == '1'){
+            if(answer2 == 1){
                 Game g(10, 10); ///< Creates a game object
                 ///Creates pointers into player objects
                 Player* p1 = pf.clone(1, "Player1", g);
@@ -158,7 +160,7 @@ void Setup::init(){
                 ///Checks if user wants to play again
                 if(!rematch())
                     break;
-            } else if(answer2 == '2'){   ///< Checks if bot difficulty is medium
+            } else if(answer2 == 2){   ///< Checks if bot difficulty is medium
                 Game g(10, 10); ///< Creates a game object
                 ///Creates pointers into player objects
                 Player* p1 = pf.clone(1, "Player1", g);
@@ -173,7 +175,7 @@ void Setup::init(){
                 ///Checks if user wants to play again
                 if(!rematch())
                     break;
-            } else if(answer2 == '3'){   ///< Checks if bot difficulty is hard
+            } else if(answer2 == 3){   ///< Checks if bot difficulty is hard
                 Game g(10, 10); ///< Creates a game object
                 ///Creates pointers player objects
                 Player* p1 = pf.clone(1, "Player1", g);
@@ -189,7 +191,7 @@ void Setup::init(){
                 if(!rematch())
                     break;
             }
-        } else if(answer1 == '3'){ ///< Checks if player selected MediumBot vs HardBot
+        } else if(answer1 == 3){ ///< Checks if player selected MediumBot vs HardBot
                 int p1wins = 0;     ///< Integer containing number of first player's victories
                 int p2wins = 0;     ///< Integer containing number of second player's victories
 
@@ -234,5 +236,5 @@ void Setup::init(){
             cout << "Invalid choice" << endl;
         }
     }
+    cout << "Thanks for playing!" << endl;
 }
-

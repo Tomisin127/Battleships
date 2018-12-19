@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"class_catch_1_1_unary_expr.html#ae02f666a1e64da728628aa2033e1d6e7":[1,0,0,83,0],
+"class_easy_player.html":[1,0,4],
+"class_easy_player.html#a2121149ace67b4a67a5dfa7633738ea3":[1,0,4,4],
+"class_easy_player.html#a254a5ddcd421e1dc71e45125e7ab04d8":[1,0,4,5],
 "class_easy_player.html#a4b9d5815113f393615412f7a98176a6c":[1,0,4,2],
 "class_easy_player.html#a5c9837adc8dd76f5bb9e3ee7a576658f":[1,0,4,1],
 "class_easy_player.html#a9b00f4a9acc74ff688c609bc15bdbb4d":[1,0,4,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html":[1,0,0,2,2,5],
 "struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html#a181d693c0258e582d80dc6117a1f2b66":[1,0,0,2,2,5,2],
 "struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html#a47afdd9e4c3354cef85adc3186097ae4":[1,0,0,2,2,5,0],
-"struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html#ac5fb4ef6a9069d23a4098c3c818f06b0":[1,0,0,2,2,5,1],
-"struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html#af7ac67f112b0e93796b048a47329aad4":[1,0,0,2,2,5,3],
-"struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html":[1,0,0,2,2,2],
-"struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html#a23c336f6d9457735ddc8dc7ea864d7c9":[1,0,0,2,2,2,1],
-"struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html#a5bb94bf2ff5c7ef73b7c11eb173bdf3b":[1,0,0,2,2,2,0]
+"struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html#ac5fb4ef6a9069d23a4098c3c818f06b0":[1,0,0,2,2,5,1]
 };

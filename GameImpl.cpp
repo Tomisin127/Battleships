@@ -3,7 +3,7 @@
  *  @brief contains implementation for Game classes and assisting functions
  */
 
-#include "Game.h"
+#include "GameImpl.h"
 #include "Player.h"
 #include "Globals.h"
 #include <iostream>

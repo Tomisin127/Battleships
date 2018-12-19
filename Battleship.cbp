@@ -34,6 +34,7 @@
 		<Unit filename="Board.cpp" />
 		<Unit filename="Board.h" />
 		<Unit filename="BoardImpl.cpp" />
+		<Unit filename="BoardImpl.h" />
 		<Unit filename="Board_tests.cpp">
 			<Option compile="0" />
 			<Option link="0" />
@@ -42,6 +43,7 @@
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
 		<Unit filename="GameImpl.cpp" />
+		<Unit filename="GameImpl.h" />
 		<Unit filename="Game_tests.cpp">
 			<Option compile="0" />
 			<Option link="0" />

@@ -2,22 +2,26 @@ var files_dup =
 [
     [ "Board.cpp", "_board_8cpp.html", null ],
     [ "Board.h", "_board_8h.html", [
-      [ "Board", "class_board.html", "class_board" ],
-      [ "BoardImpl", "class_board_impl.html", "class_board_impl" ]
+      [ "Board", "class_board.html", "class_board" ]
     ] ],
     [ "Board_tests.cpp", "_board__tests_8cpp.html", "_board__tests_8cpp" ],
     [ "BoardImpl.cpp", "_board_impl_8cpp.html", null ],
+    [ "BoardImpl.h", "_board_impl_8h.html", [
+      [ "BoardImpl", "class_board_impl.html", "class_board_impl" ]
+    ] ],
     [ "catch.hpp", "catch_8hpp_source.html", null ],
     [ "EasyPlayer.h", "_easy_player_8h.html", [
       [ "EasyPlayer", "class_easy_player.html", "class_easy_player" ]
     ] ],
     [ "Game.cpp", "_game_8cpp.html", null ],
     [ "Game.h", "_game_8h.html", [
-      [ "Game", "class_game.html", "class_game" ],
-      [ "GameImpl", "class_game_impl.html", "class_game_impl" ]
+      [ "Game", "class_game.html", "class_game" ]
     ] ],
     [ "Game_tests.cpp", "_game__tests_8cpp.html", "_game__tests_8cpp" ],
     [ "GameImpl.cpp", "_game_impl_8cpp.html", "_game_impl_8cpp" ],
+    [ "GameImpl.h", "_game_impl_8h.html", [
+      [ "GameImpl", "class_game_impl.html", "class_game_impl" ]
+    ] ],
     [ "Globals.h", "_globals_8h.html", "_globals_8h" ],
     [ "HardPlayer.h", "_hard_player_8h.html", [
       [ "HardPlayer", "class_hard_player.html", "class_hard_player" ]

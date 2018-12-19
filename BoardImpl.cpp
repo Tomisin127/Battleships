@@ -3,7 +3,7 @@
  *  @brief contains implementation for Board classes and assisting functions
  */
 
-#include "Board.h"
+#include "BoardImpl.h"
 #include "Game.h"
 #include "Globals.h"
 #include <iostream>

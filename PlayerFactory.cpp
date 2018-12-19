@@ -29,5 +29,3 @@ Player* PlayerFactory::getPrototypes(int choice, string nm, const Game& g){
 Player* PlayerFactory::clone(int choice, string nm, const Game& g){
     return getPrototypes(choice, nm, g)->create(nm, g);
 }
-
-

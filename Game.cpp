@@ -4,6 +4,7 @@
  */
 
 #include "Game.h"
+#include "GameImpl.h"
 #include "Globals.h"
 #include <iostream>
 
