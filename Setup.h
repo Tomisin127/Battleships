@@ -16,7 +16,7 @@ class Setup{
     public:
         Setup();
     private:
-        std::function <void()> instruction;
+//        std::function <void()> instruction;
         bool addShips(Game& g);
         int selectMode();
         int selectBot();

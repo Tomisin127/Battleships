@@ -11,7 +11,7 @@
 #include <cstdlib>
 #include <cctype>
 #include <vector>
-#include <algorithm>
+//#include <algorithm>
 
 using namespace std;
 

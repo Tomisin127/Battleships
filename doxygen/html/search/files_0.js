@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['board_2ecpp',['Board.cpp',['../_board_8cpp.html',1,'']]],
-  ['board_2eh',['Board.h',['../_board_8h.html',1,'']]],
-  ['board_5ftests_2ecpp',['Board_tests.cpp',['../_board__tests_8cpp.html',1,'']]],
-  ['boardimpl_2ecpp',['BoardImpl.cpp',['../_board_impl_8cpp.html',1,'']]],
-  ['boardimpl_2eh',['BoardImpl.h',['../_board_impl_8h.html',1,'']]]
-];
